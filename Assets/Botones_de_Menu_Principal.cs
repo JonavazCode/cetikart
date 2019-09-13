@@ -19,6 +19,12 @@ public class Botones_de_Menu_Principal : MonoBehaviour
 
         }
 
+        if (Inicio_Menu_Principal.flagMultijugador)
+        {
+            GameObject disableMultiplayerButton = GameObject.Find("botonMultijugador");
+            disableMultiplayerButton.SetActive(false);
+        }
+
         if (CrossPlatformInputManager.GetButton("multijugador") && !Inicio_Menu_Principal.flagMultijugador)//Esta condicion hace que cuando se presiona el boton de "Multijugador" se envie al usuario al loggeo del multijugador
         {
 

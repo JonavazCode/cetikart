@@ -64,7 +64,7 @@ public class Movimiento_Profesor_Molina : MonoBehaviour
             molina.velocity = new Vector2(limitedSpeed, molina.velocity.y);
             freno = true;
 
-            Debug.Log("Frenado");
+            
         }
         else
         {

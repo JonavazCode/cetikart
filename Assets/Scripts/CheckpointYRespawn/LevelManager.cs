@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public GameObject currentCheckPoint, checkPointRandom; //checkpoint actual, checkpoint elegido aleatoriamente
+    public GameObject currentCheckPoint, checkPointRandom, checkPoint5; //checkpoint actual, checkpoint elegido aleatoriamente
     public List<GameObject> checkPoints; //lista de checkpoints colectados
     private Movimiento_Profesor_Molina player; //jugador
 
@@ -52,7 +52,13 @@ public class LevelManager : MonoBehaviour
         checkPointRandom = checkPoints[randomPosition]; //Instancia de checkpoint random
         int randomRange = Random.Range(0, obj.Length); //numero random entre 0 y el numero de objetos existentes
         Instantiate(obj[randomRange], transform.position = checkPointRandom.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
-        
+       
+    }
+
+    public void Atajo()
+    {
+        Debug.Log("Atajo");
+        player.transform.position = checkPoint5.transform.position;
 
     }
 
