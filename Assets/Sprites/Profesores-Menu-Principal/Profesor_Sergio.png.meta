@@ -1,16 +1,48 @@
 fileFormatVersion: 2
 guid: 4829bd2bfba66b840984ce66bc5c6b3a
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Profesor_Sergio_Boton
-    21300002: Profesor_Sergio_Boton_2
-    21300004: Profesor_Sergio_0
-    21300006: Profesor_Sergio_1
-    21300008: Profesor_Sergio_2
-    21300010: Profesor_Sergio_3
-    21300012: Profesor_Sergio_4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Profesor_Sergio_Boton
+  - first:
+      213: 21300002
+    second: Profesor_Sergio_Boton_2
+  - first:
+      213: 21300004
+    second: Profesor_Sergio_0
+  - first:
+      213: 21300006
+    second: Profesor_Sergio_1
+  - first:
+      213: 21300008
+    second: Profesor_Sergio_2
+  - first:
+      213: 21300010
+    second: Profesor_Sergio_3
+  - first:
+      213: 21300012
+    second: Profesor_Sergio_4
+  - first:
+      213: 3954341117898774747
+    second: Profesor_Sergio_5
+  - first:
+      213: -3485932430369286797
+    second: Profesor_Sergio_6
+  - first:
+      213: 3554664963604000003
+    second: Profesor_Sergio_7
+  - first:
+      213: -8871685306846806994
+    second: Profesor_Sergio_8
+  - first:
+      213: -4343895630806882633
+    second: Profesor_Sergio_9
+  - first:
+      213: 6656328857928587675
+    second: Profesor_Sergio_10
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,7 +97,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -76,7 +108,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -87,7 +120,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,6 +132,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -117,6 +152,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8dc9b3aa2f67aa3468f8a1d5d046ec7d
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -137,6 +173,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2f10b76896e7b5242a54c84c1157b7c6
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -149,34 +186,15 @@ TextureImporter:
         y: 264
         width: 48
         height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2e7ac153e828d5d42a46791a00d4d159
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Profesor_Sergio_1
-      rect:
-        serializedVersion: 2
-        x: 255
-        y: 184
-        width: 55
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9940853cc8189c14bb637cb0cbdaa117
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -189,14 +207,15 @@ TextureImporter:
         y: 104
         width: 55
         height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 8d48e21ef8bd5584ea052734fea451a8
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -209,14 +228,15 @@ TextureImporter:
         y: 104
         width: 63
         height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: c718633fce1e67747ab1eabbf64d3c45
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -229,14 +249,141 @@ TextureImporter:
         y: 104
         width: 63
         height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 20a326b7d411b3f489e1c6b2bb43963b
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Sergio_5
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 264
+        width: 48
+        height: 43
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b1bcf263eeed774d9d8f8c34f6e4203
+      internalID: 3954341117898774747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Sergio_6
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 264
+        width: 55
+        height: 43
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0de321876afb6bb429295cb90adbf405
+      internalID: -3485932430369286797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Sergio_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 184
+        width: 55
+        height: 43
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d00a05422fbce854793a95249584b1c4
+      internalID: 3554664963604000003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Sergio_8
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 184
+        width: 61
+        height: 43
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d993d6e2e181dfe45b023996ee9aa008
+      internalID: -8871685306846806994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Sergio_9
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 184
+        width: 62
+        height: 43
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54b425d4740b8c4f8c2122057204983
+      internalID: -4343895630806882633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesor_Sergio_10
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 184
+        width: 51
+        height: 43
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681fb07dca4b5d3419ee3a935bee8417
+      internalID: 6656328857928587675
       vertices: []
       indices: 
       edges: []
@@ -245,10 +392,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 932c5066999cafc499bef2dbba86f1de
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

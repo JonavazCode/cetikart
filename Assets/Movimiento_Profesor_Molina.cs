@@ -2,19 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.Animations;
 
 public class Movimiento_Profesor_Molina : MonoBehaviour
 {
-    public float maxSpeed = 5f;
-    public float maxSpeedN = 1f;
-    public float speed = 20;
+    public float maxSpeed = 80f;
+    public float maxSpeedN = 0f;
+    public float speed = 10f;
     public bool grounder;
     private Rigidbody2D molina;
     private Animator anim;
     public float jumpPower = 1f;
     private bool jump;
     public bool freno;
+    public float h;
    
+    
+    
+    //public int cargasValor;
+
+
 
     // Use this for initialization
     void Start()
@@ -25,15 +32,16 @@ public class Movimiento_Profesor_Molina : MonoBehaviour
         freno = false;
         
         
-
-
+        
     }
     void Update()
     {
-        anim.SetFloat("speed", Mathf.Abs(molina.velocity.x));
+        /*anim.SetFloat("speed", Mathf.Abs(molina.velocity.x));
         anim.SetBool("grounder", grounder);
-        anim.SetBool("freno", freno);
-        
+        anim.SetBool("freno", freno);*/
+
+        /*Item cargas01 = GetComponent<Item>();
+        cargasValor = cargas01.cargas;*/
         
 
 
@@ -47,19 +55,27 @@ public class Movimiento_Profesor_Molina : MonoBehaviour
     {
         if (CrossPlatformInputManager.GetButton("Run"))
         {
-            float h = 1;
+            
+            
             molina.AddForce(Vector2.right * speed * h);
             h++;
 
             float limitedSpeed = Mathf.Clamp(molina.velocity.x, -maxSpeed, maxSpeed);
             molina.velocity = new Vector2(limitedSpeed, molina.velocity.y);
 
+
+
+        }
+        else {
+            
+
         }
         if (CrossPlatformInputManager.GetButton("Freno"))
         {
 
-            float h = 1;
+            
             molina.AddForce(Vector2.left * speed * h);
+            h--;
             float limitedSpeed = Mathf.Clamp(molina.velocity.x, -maxSpeedN, maxSpeedN);
             molina.velocity = new Vector2(limitedSpeed, molina.velocity.y);
             freno = true;
@@ -70,10 +86,14 @@ public class Movimiento_Profesor_Molina : MonoBehaviour
         {
             freno = false;
         }
+        if (CrossPlatformInputManager.GetButton("PowerUp"))
+        {
+            anim.SetTrigger("PowerUp");
+
+        }
 
 
-
-        if (jump)
+            if (jump)
         {
             molina.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             jump = false;
@@ -112,4 +132,5 @@ public class Movimiento_Profesor_Molina : MonoBehaviour
             grounder = true;
         }
     }
+   
 }

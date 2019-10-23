@@ -1,16 +1,45 @@
 fileFormatVersion: 2
 guid: c8d7158417c0c1f41a69973d424d9287
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Profesora_Susana_Boton
-    21300002: Profesora_Susana_Boton_2
-    21300004: Profesora_Susana_0
-    21300006: Profesora_Susana_1
-    21300008: Profesora_Susana_2
-    21300010: Profesora_Susana_3
-    21300012: Profesora_Susana_4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Profesora_Susana_Boton
+  - first:
+      213: 21300002
+    second: Profesora_Susana_Boton_2
+  - first:
+      213: 21300004
+    second: Profesora_Susana_0
+  - first:
+      213: 21300006
+    second: Profesora_Susana_1
+  - first:
+      213: 21300008
+    second: Profesora_Susana_2
+  - first:
+      213: 21300010
+    second: Profesora_Susana_3
+  - first:
+      213: 21300012
+    second: Profesora_Susana_4
+  - first:
+      213: 3278609633486070506
+    second: Profesora_Susana_5
+  - first:
+      213: -3795923636281022115
+    second: Profesora_Susana_6
+  - first:
+      213: -5790842980542289839
+    second: Profesora_Susana_7
+  - first:
+      213: -5504115489928980264
+    second: Profesora_Susana_8
+  - first:
+      213: -6869417214680804861
+    second: Profesora_Susana_9
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,7 +94,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -76,7 +105,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -87,7 +117,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,6 +129,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -117,6 +149,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 6eedb24ee3d7ad746be71a71b4c935db
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -137,6 +170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 14fc3b30db165334c833e452872ae574
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -149,14 +183,15 @@ TextureImporter:
         y: 262
         width: 51
         height: 41
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ed82cb52ec845f048804f8c1f32f616d
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -169,14 +204,15 @@ TextureImporter:
         y: 182
         width: 51
         height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 3dc1bdedc9c55464ca6b6b2ae0f08fa3
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -189,14 +225,15 @@ TextureImporter:
         y: 102
         width: 56
         height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 627f43aeb98a30741b6ac255ca0ab4b8
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -209,14 +246,15 @@ TextureImporter:
         y: 102
         width: 56
         height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: ddd793952814d5448a5527d654725bc3
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -229,14 +267,120 @@ TextureImporter:
         y: 102
         width: 56
         height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 0316c81d2dc82374b9908226a635fd9b
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Susana_5
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 262
+        width: 51
+        height: 41
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66d9bec0379d6c4f99a3fddad454864
+      internalID: 3278609633486070506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Susana_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 262
+        width: 53
+        height: 41
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5317e63c4f02a4da7827e1cb37a11d
+      internalID: -3795923636281022115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Susana_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 182
+        width: 60
+        height: 41
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67161f6ec8ae77b449a336130d88d587
+      internalID: -5790842980542289839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Susana_8
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 182
+        width: 60
+        height: 41
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aaef90a87e0bee4d85c1dbf5395ee03
+      internalID: -5504115489928980264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Susana_9
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 182
+        width: 62
+        height: 41
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840fc82b1eb9c81458961889b3041cf1
+      internalID: -6869417214680804861
       vertices: []
       indices: 
       edges: []
@@ -245,10 +389,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: de894917df19fa940bde1455c77cfb37
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

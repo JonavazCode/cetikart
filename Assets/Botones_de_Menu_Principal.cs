@@ -38,7 +38,7 @@ public class Botones_de_Menu_Principal : MonoBehaviour
 
         if (CrossPlatformInputManager.GetButton("crear_jugador"))//Esta condicion hace que cuando se presiona el boton de "Crear Player" se envie al usuario a la creacion de su personaje
         {
-            SceneManager.LoadScene("Crear_Personaje");//Esta funcion hace que la escena seleccionada se cargue
+            SceneManager.LoadScene("Custom");//Esta funcion hace que la escena seleccionada se cargue
             
         }
 

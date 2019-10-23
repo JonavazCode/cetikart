@@ -1,16 +1,45 @@
 fileFormatVersion: 2
 guid: 0798a68edd4845a4c80510dc55d8b662
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Profesora_Areli_Boton
-    21300002: Profesora_Areli_Boton_2
-    21300004: Profesora_Areli_0
-    21300006: Profesora_Areli_1
-    21300008: Profesora_Areli_2
-    21300010: Profesora_Areli_3
-    21300012: Profesora_Areli_4
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Profesora_Areli_Boton
+  - first:
+      213: 21300002
+    second: Profesora_Areli_Boton_2
+  - first:
+      213: 21300004
+    second: Profesora_Areli_0
+  - first:
+      213: 21300006
+    second: Profesora_Areli_1
+  - first:
+      213: 21300008
+    second: Profesora_Areli_2
+  - first:
+      213: 21300010
+    second: Profesora_Areli_3
+  - first:
+      213: 21300012
+    second: Profesora_Areli_4
+  - first:
+      213: 3814558203794370492
+    second: Profesora_Areli_5
+  - first:
+      213: -8806355011080184073
+    second: Profesora_Areli_6
+  - first:
+      213: -2081738062897444896
+    second: Profesora_Areli_7
+  - first:
+      213: -9191716873160708464
+    second: Profesora_Areli_8
+  - first:
+      213: -5883739036604330003
+    second: Profesora_Areli_9
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 10
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -65,7 +94,7 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -76,7 +105,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -87,7 +117,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -98,6 +129,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -117,6 +149,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: b729490f7e7a59e4c9c9a7331c1ea4d9
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -137,6 +170,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5d03b0b424be40148888442d1c5a6a46
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -149,14 +183,15 @@ TextureImporter:
         y: 267
         width: 44
         height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: f3857c2cf49ae1948a7d7ad2bf8c885c
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -169,14 +204,15 @@ TextureImporter:
         y: 267
         width: 44
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: acdc991662e1eee4da65fe5171b0e6fc
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -189,14 +225,15 @@ TextureImporter:
         y: 187
         width: 51
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 7404516f28cbd52459c8f12c2735ffea
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -209,14 +246,15 @@ TextureImporter:
         y: 187
         width: 62
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: b590c5e0e097b574392c6cf013642708
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -229,14 +267,120 @@ TextureImporter:
         y: 187
         width: 62
         height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: d391c07d8613b0e42893a4392c84bcc4
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Areli_5
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 267
+        width: 44
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc717d06b4a83d740ab134581d54144b
+      internalID: 3814558203794370492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Areli_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 187
+        width: 45
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbb5713d80a4c442872fc76ae14256a
+      internalID: -8806355011080184073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Areli_7
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 107
+        width: 45
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b034048de023c5f40a8b3c23befd746f
+      internalID: -2081738062897444896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Areli_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 107
+        width: 49
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ec153d39f320c248becbe49e3216f6a
+      internalID: -9191716873160708464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Profesora_Areli_9
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 107
+        width: 52
+        height: 34
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5a799ed148e654ca0dac5f7b27f69e
+      internalID: -5883739036604330003
       vertices: []
       indices: 
       edges: []
@@ -245,10 +389,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 3962e029d03904d469eca54e403273cc
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
