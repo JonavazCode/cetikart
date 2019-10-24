@@ -9,7 +9,7 @@ public class CuentaAtras : MonoBehaviour
     public GameObject contadorNumerosGO;
     public SpriteRenderer contadorNumerosComp;
 
-    public GameObject movimiento_camaraGO;
+    //public GameObject movimiento_camaraGO;
     public GameObject mobileStickGO;
   
 
@@ -23,7 +23,7 @@ public class CuentaAtras : MonoBehaviour
     {
         contadorNumerosGO = GameObject.Find("ContadorNumeros");
         contadorNumerosComp = contadorNumerosGO.GetComponent<SpriteRenderer>();
-        movimiento_camaraGO = GameObject.Find("Main Camera");
+        //movimiento_camaraGO = GameObject.Find("Main Camera");
         mobileStickGO = GameObject.Find("MobileSingleStickControl");
         
         InicioCuentaAtras();
@@ -38,7 +38,7 @@ public class CuentaAtras : MonoBehaviour
     IEnumerator Contando()
     {
         //linea que desactiva cositos
-        movimiento_camaraGO.GetComponent<movimiento_camara>().enabled = false;
+       // movimiento_camaraGO.GetComponent<movimiento_camara>().enabled = false;
         mobileStickGO.SetActive(false);
         contadorNumerosComp.sprite = numeros[0];
         this.gameObject.GetComponent<AudioSource>().Play();
@@ -55,16 +55,11 @@ public class CuentaAtras : MonoBehaviour
         contadorNumerosComp.sprite = numeros[3];
         this.gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1);
-        movimiento_camaraGO.GetComponent<movimiento_camara>().enabled = true;
+       // movimiento_camaraGO.GetComponent<movimiento_camara>().enabled = true;
         mobileStickGO.SetActive(true);
         contadorNumerosGO.SetActive(false);
 
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
