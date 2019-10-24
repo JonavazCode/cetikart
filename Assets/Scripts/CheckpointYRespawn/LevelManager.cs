@@ -40,10 +40,13 @@ public class LevelManager : MonoBehaviour
     }
 
 
-    public void RespawnPlayer()
+    public void RespawnPlayer(string pjName, GameObject currentCheckpoint)
     {
-        Debug.Log("Player Respawn");
-        player.transform.position = currentCheckPoint.transform.position; //posición del jugador ahora es la posición del último checkpoint que pasó
+       Debug.Log("Nombre del  personaje: " + pjName);
+        Debug.Log("nombre del checkpoint: " + currentCheckpoint.name);
+        GameObject pj = GameObject.Find(pjName);
+        pj.transform.position = currentCheckpoint.transform.position;
+        //player.transform.position = currentCheckPoint.transform.position; //posición del jugador ahora es la posición del último checkpoint que pasó
     }
     public void GenerarItems()
     {

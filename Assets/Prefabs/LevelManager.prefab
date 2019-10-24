@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2274518318991820743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2274518318991820736}
+  - component: {fileID: 2274518318991820737}
+  - component: {fileID: 2274518318991820742}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2274518318991820736
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274518318991820743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.407325, y: 1.3674724, z: -1492.041}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2274518318991820737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274518318991820743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 748ec51c86f31024c83513109efcb2e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentCheckPoint: {fileID: 0}
+  checkPointRandom: {fileID: 0}
+  checkPoint5: {fileID: 0}
+  checkPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  timeCount: 0
+  obj:
+  - {fileID: 7373517794962114862, guid: a09e5ef07e77e2d4aa363e2324ed410e, type: 3}
+  - {fileID: 4661594347277617679, guid: 75e42c0fe483ac045b834d47e79535c2, type: 3}
+--- !u!114 &2274518318991820742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2274518318991820743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba1c6b3df2617749855d1f466b1935f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  molina: {fileID: 0}
+  coco: {fileID: 0}
+  nino: {fileID: 0}
+  ruben: {fileID: 0}
+  sergio: {fileID: 0}
+  ulyses: {fileID: 0}
+  areli: {fileID: 0}
+  susana: {fileID: 0}
+  profesores: []
