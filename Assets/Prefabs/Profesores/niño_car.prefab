@@ -134,10 +134,11 @@ GameObject:
   - component: {fileID: 4589704309157020616}
   - component: {fileID: 1622784904250996483}
   - component: {fileID: 8358759745159767800}
-  - component: {fileID: 2413507725150694526}
+  - component: {fileID: 4475605813107307357}
+  - component: {fileID: 4943192397996962297}
   m_Layer: 0
   m_Name: "ni\xF1o_car"
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -295,7 +296,7 @@ MonoBehaviour:
   frontWheel: {fileID: 4589704309157020616}
   rb: {fileID: 445122911378116497}
   rotation: 0
---- !u!60 &2413507725150694526
+--- !u!60 &4475605813107307357
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -320,31 +321,42 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.7153416, y: 1.6769886}
-      - {x: -1.7266521, y: 1.746175}
-      - {x: -1.6698885, y: 1.7412689}
-      - {x: -1.6659975, y: 2.4099417}
-      - {x: -1.9626999, y: 2.5885806}
-      - {x: -2.3329058, y: 2.6046357}
-      - {x: -2.5521173, y: 2.4620311}
-      - {x: -2.660407, y: 2.3252735}
-      - {x: -2.66574, y: 2.0528617}
-      - {x: -2.5812616, y: 2.0619597}
-      - {x: -2.574543, y: 1.7543778}
-      - {x: -2.5349169, y: 1.6788495}
-      - {x: -2.7140694, y: 1.5686252}
-      - {x: -2.731122, y: 1.24809}
-      - {x: -2.518571, y: 1.2028672}
-      - {x: -2.5519733, y: 1.0225339}
-      - {x: -2.8595, y: 0.8016289}
-      - {x: -3.180934, y: 0.6437739}
+    - - {x: -1.5810356, y: 1.3348032}
+      - {x: -2.502263, y: 1.1632509}
+      - {x: -2.537714, y: 0.9941776}
+      - {x: -2.7496767, y: 0.8545612}
+      - {x: -3.146021, y: 0.6221055}
       - {x: -3.2000003, y: 0}
       - {x: 0, y: 0}
-      - {x: -0.07318592, y: 0.5411057}
-      - {x: -0.2503214, y: 0.7194266}
-      - {x: -0.74323463, y: 0.82758975}
-      - {x: -1.121481, y: 1.3347014}
-      - {x: -1.5330915, y: 1.3699899}
+      - {x: -0.22158813, y: 0.6904453}
+      - {x: -0.77107334, y: 0.85380065}
+      - {x: -1.1358118, y: 1.2520823}
+--- !u!61 &4943192397996962297
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468317218400471558}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.0288801, y: 1.3714796}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 1, y: 0}
+    oldSize: {x: 3.2, y: 2.6}
+    newSize: {x: 3.2, y: 2.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9841194, y: 0.3555262}
+  m_EdgeRadius: 0
 --- !u!1 &7678441217244894421
 GameObject:
   m_ObjectHideFlags: 0

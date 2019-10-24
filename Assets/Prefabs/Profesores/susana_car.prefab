@@ -133,10 +133,11 @@ GameObject:
   - component: {fileID: 4088715075725525490}
   - component: {fileID: 3876432347326009851}
   - component: {fileID: 5368328788735705636}
-  - component: {fileID: 5867611298275642940}
+  - component: {fileID: 7779496414791587287}
+  - component: {fileID: 7641342655304582107}
   m_Layer: 0
   m_Name: susana_car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -294,7 +295,33 @@ MonoBehaviour:
   frontWheel: {fileID: 4088715075725525490}
   rb: {fileID: 2317998966079140398}
   rotation: 0
---- !u!60 &5867611298275642940
+--- !u!61 &7779496414791587287
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4810421906095083062}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.9219117, y: 1.3564866}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 1, y: 0}
+    oldSize: {x: 3.4, y: 2.6}
+    newSize: {x: 3.4, y: 2.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1647387, y: 0.42122507}
+  m_EdgeRadius: 0
+--- !u!60 &7641342655304582107
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -319,32 +346,21 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.5315027, y: 0.79280686}
-      - {x: -0.9250107, y: 0.7992109}
-      - {x: -1.3361692, y: 1.19212}
-      - {x: -1.340023, y: 1.4475216}
-      - {x: -1.524663, y: 1.6068537}
-      - {x: -1.5354204, y: 1.6673644}
-      - {x: -1.4697752, y: 1.6787441}
-      - {x: -1.480237, y: 2.314714}
-      - {x: -1.7290983, y: 2.6042194}
-      - {x: -2.136016, y: 2.6044579}
-      - {x: -2.4574032, y: 2.3018146}
-      - {x: -2.4291906, y: 1.6647474}
-      - {x: -2.3238764, y: 1.6577547}
-      - {x: -2.3185387, y: 1.590608}
-      - {x: -2.4249249, y: 1.5782849}
-      - {x: -2.5327196, y: 1.4706417}
-      - {x: -2.5292692, y: 1.2046361}
-      - {x: -3.0613995, y: 0.5918952}
-      - {x: -3.0672312, y: 0.42099607}
-      - {x: -3.284483, y: 0.39341235}
-      - {x: -3.4021416, y: 0.22924173}
-      - {x: -3.4, y: 0}
+    - - {x: -0.99962807, y: 0.8084414}
+      - {x: -1.2466793, y: 1.1394138}
+      - {x: -2.7414036, y: 1.20397}
+      - {x: -2.8264523, y: 1.1262146}
+      - {x: -2.67091, y: 1.055743}
+      - {x: -2.9256392, y: 0.82727253}
+      - {x: -2.9305468, y: 0.7095815}
+      - {x: -3.0549545, y: 0.44178033}
+      - {x: -3.3354435, y: 0.33755398}
+      - {x: -3.4322786, y: 0.06455636}
+      - {x: -3.0951653, y: 0.11515772}
+      - {x: -3.0537825, y: 0.023051739}
       - {x: 0, y: 0}
-      - {x: -0.022287369, y: 0.5373963}
-      - {x: -0.24351597, y: 0.75308263}
-      - {x: -0.5254059, y: 0.7329389}
+      - {x: -0.08069515, y: 0.6182492}
+      - {x: -0.50664234, y: 0.7859713}
 --- !u!1 &6088844591327336756
 GameObject:
   m_ObjectHideFlags: 0

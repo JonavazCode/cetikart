@@ -133,11 +133,12 @@ GameObject:
   - component: {fileID: 2739628406145726405}
   - component: {fileID: 2977274173104149888}
   - component: {fileID: 51378987482700710}
-  - component: {fileID: 1988605717256456699}
   - component: {fileID: 3144888188007973788}
+  - component: {fileID: 4560316622032249247}
+  - component: {fileID: 6221878781368575904}
   m_Layer: 0
   m_Name: areli_car
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -277,7 +278,51 @@ WheelJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
---- !u!60 &1988605717256456699
+--- !u!114 &3144888188007973788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3506944848720654381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b769630a8ba9ce944a110774ac9b5d14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1000
+  rotationSpeed: 15
+  backWheel: {fileID: 2977274173104149888}
+  frontWheel: {fileID: 2977274173104149888}
+  rb: {fileID: 2739628406145726405}
+  rotation: 0
+--- !u!61 &4560316622032249247
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3506944848720654381}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.6927333, y: 1.073209}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 1, y: 0}
+    oldSize: {x: 2.9333334, y: 2.2666667}
+    newSize: {x: 2.9333334, y: 2.2666667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.79772663, y: 0.4533248}
+  m_EdgeRadius: 0
+--- !u!60 &6221878781368575904
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -302,64 +347,29 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.2287998, y: 1.6352336}
-      - {x: -1.0812559, y: 1.7497529}
-      - {x: -1.0765524, y: 1.9910488}
-      - {x: -1.2004671, y: 2.127923}
-      - {x: -2.0598536, y: 2.2577157}
-      - {x: -2.3436298, y: 2.1537967}
-      - {x: -2.2935658, y: 1.7620405}
-      - {x: -2.487175, y: 1.6482971}
-      - {x: -2.3820925, y: 1.4978516}
-      - {x: -2.471693, y: 1.4558623}
-      - {x: -2.46097, y: 1.3366463}
-      - {x: -2.5421658, y: 1.347668}
-      - {x: -2.59097, y: 1.0308888}
-      - {x: -2.6696033, y: 0.9364272}
-      - {x: -2.7319317, y: 0.9404151}
-      - {x: -2.7167273, y: 0.81315845}
-      - {x: -2.92097, y: 0.7960108}
-      - {x: -2.920313, y: 0.53937805}
-      - {x: -2.6603222, y: 0.53520274}
-      - {x: -2.3408833, y: 0.031329155}
-      - {x: -0.57534885, y: 0.022148728}
-      - {x: -0.5232916, y: 0.281963}
-      - {x: -0.062190056, y: 0.27748728}
-      - {x: -0.06265831, y: 0.3352028}
-      - {x: -0.0035123825, y: 0.34000993}
-      - {x: -0.011008263, y: 0.45831108}
-      - {x: -0.055757523, y: 0.45392942}
-      - {x: -0.07211399, y: 0.54243416}
-      - {x: -0.25958538, y: 0.54088247}
-      - {x: -0.2623768, y: 0.7067851}
-      - {x: -0.31574917, y: 0.71105963}
-      - {x: -0.3183632, y: 0.8034139}
-      - {x: -0.38529587, y: 0.7833824}
-      - {x: -0.38227177, y: 0.8474939}
-      - {x: -0.4588108, y: 0.8678794}
-      - {x: -0.46066666, y: 0.9430794}
-      - {x: -0.78797245, y: 0.9411658}
-      - {x: -0.85299015, y: 1.0043097}
-      - {x: -1.114233, y: 1.1793226}
-      - {x: -0.9253168, y: 1.3597195}
---- !u!114 &3144888188007973788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3506944848720654381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b769630a8ba9ce944a110774ac9b5d14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1000
-  rotationSpeed: 15
-  backWheel: {fileID: 2977274173104149888}
-  frontWheel: {fileID: 2977274173104149888}
-  rb: {fileID: 2739628406145726405}
-  rotation: 0
+    - - {x: -1.0054817, y: 1.1919327}
+      - {x: -1.1960192, y: 1.183764}
+      - {x: -1.1910524, y: 0.91026807}
+      - {x: -1.3642855, y: 0.81442046}
+      - {x: -1.4008751, y: 0.64843696}
+      - {x: -2.2653217, y: 0.67458177}
+      - {x: -2.3926706, y: 0.80576247}
+      - {x: -2.4138155, y: 0.9860196}
+      - {x: -2.6130857, y: 1.0503241}
+      - {x: -2.7216969, y: 0.94988394}
+      - {x: -2.746645, y: 0.8024248}
+      - {x: -2.9232645, y: 0.77763253}
+      - {x: -2.8667688, y: 0.5531918}
+      - {x: -2.654358, y: 0.52159274}
+      - {x: -2.4970016, y: 0.3923539}
+      - {x: -2.3361263, y: 0.019239664}
+      - {x: -0.5813284, y: 0.024049759}
+      - {x: -0.53871155, y: 0.2734934}
+      - {x: -0.043289185, y: 0.28339243}
+      - {x: -0.05015278, y: 0.49395657}
+      - {x: -0.23087692, y: 0.5072669}
+      - {x: -0.4527197, y: 0.9285773}
+      - {x: -0.8288593, y: 0.9286274}
 --- !u!1 &6115768216445822907
 GameObject:
   m_ObjectHideFlags: 0
