@@ -11,12 +11,14 @@ public class CheckpointsPerPJ : MonoBehaviour
     void Start()
     {
         levelManager = FindObjectOfType<LevelManager>(); //encuentra el objeto LevelManager
+        StartCoroutine(defaultCheckpoint());
         defaultCheckpoint();
         //agregarProfesoresList();
     }
 
-    private void defaultCheckpoint()
+    IEnumerator defaultCheckpoint()
     {
+        yield return new WaitForSeconds(0.5f);
         molina = levelManager.checkPoints[0];
         coco = levelManager.checkPoints[0];
         nino = levelManager.checkPoints[0];
