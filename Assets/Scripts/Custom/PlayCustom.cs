@@ -20,7 +20,7 @@ public class PlayCustom : MonoBehaviour
     public void SceneTransition()
     {
 
-        SceneManager.LoadScene("Mapa_Pruebas");
+        SceneManager.LoadScene("Seleccion_Mapa");
 
     }
 }
