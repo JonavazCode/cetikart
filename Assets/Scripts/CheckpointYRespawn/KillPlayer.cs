@@ -54,5 +54,6 @@ public class KillPlayer : MonoBehaviour
         {
             levelManager.RespawnPlayer(other.name, cpp.ulyses);
         }
+
     }
 }
