@@ -16,18 +16,21 @@ public class CambiarOpcion : MonoBehaviour
     public Sprite Carro_0, Carro_1, Carro_2, Carro_3, Carro_4;
 
 
-    public int OpcionCabeza = 0;
-    public int OpcionTorso = 0;
-    public int OpcionPiernas = 0;
-    public int OpcionPies = 0;
-    public int OpcionCarro = 0;
-    // Start is called before the first frame update
-    void Start()
+    public int OpcionCabeza;
+    public int OpcionTorso;
+    public int OpcionPiernas;
+    public int OpcionPies;
+    public int OpcionCarro;
+
+    private void Awake()
     {
-        
+        OpcionCabeza = PlayerPrefs.GetInt("cabeza", 0);
+        OpcionTorso = PlayerPrefs.GetInt("torso", 0);
+        OpcionPiernas = PlayerPrefs.GetInt("piernas", 0);
+        OpcionPies = PlayerPrefs.GetInt("pies", 0);
+        OpcionCarro = PlayerPrefs.GetInt("carro", 0);
     }
 
-    // Update is called once per frame
     void Update()
     {
         // CABEZA ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -177,6 +180,10 @@ public class CambiarOpcion : MonoBehaviour
 
 
         panel_1.SetActive(true);
+        ClosePanel_2();
+        ClosePanel_3();
+        ClosePanel_4();
+        ClosePanel_5();
     }
 
     public void ClosePanel_1()
@@ -192,6 +199,11 @@ public class CambiarOpcion : MonoBehaviour
 
 
         panel_2.SetActive(true);
+        ClosePanel_1();
+
+        ClosePanel_3();
+        ClosePanel_4();
+        ClosePanel_5();
     }
 
     public void ClosePanel_2()
@@ -207,6 +219,11 @@ public class CambiarOpcion : MonoBehaviour
 
 
         panel_3.SetActive(true);
+        ClosePanel_1();
+        ClosePanel_2();
+
+        ClosePanel_4();
+        ClosePanel_5();
     }
 
     public void ClosePanel_3()
@@ -222,6 +239,11 @@ public class CambiarOpcion : MonoBehaviour
 
 
         panel_4.SetActive(true);
+        ClosePanel_1();
+        ClosePanel_2();
+        ClosePanel_3();
+
+        ClosePanel_5();
     }
 
     public void ClosePanel_4()
@@ -236,6 +258,11 @@ public class CambiarOpcion : MonoBehaviour
 
 
         panel_5.SetActive(true);
+        ClosePanel_1();
+        ClosePanel_2();
+        ClosePanel_3();
+        ClosePanel_4();
+  
     }
 
     public void ClosePanel_5()
