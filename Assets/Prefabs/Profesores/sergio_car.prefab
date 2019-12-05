@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5278235553334833251}
   - component: {fileID: 5278235553334833249}
   - component: {fileID: 5278235553334833250}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,9 +68,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 838907675
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 5278235553354087971}
   - component: {fileID: 5278235553354087970}
   - component: {fileID: 5278235553354087969}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: sergio_car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -195,8 +195,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 838907675
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 3076512280576705038, guid: 31d6176f54e8b3c4096d89c84931003d,
     type: 3}
@@ -348,6 +348,7 @@ MonoBehaviour:
   backWheel: {fileID: 5278235553354087972}
   frontWheel: {fileID: 5278235553354087971}
   rb: {fileID: 5278235553354087974}
+  movement: 0
   rotation: 0
 --- !u!1 &5278235553440559567
 GameObject:
@@ -361,7 +362,7 @@ GameObject:
   - component: {fileID: 5278235553440559554}
   - component: {fileID: 5278235553440559552}
   - component: {fileID: 5278235553440559553}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,9 +418,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 838907675
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -479,7 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5278235554212152901}
   - component: {fileID: 5278235554212152902}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Sergio_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -535,9 +536,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 838907675
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 6719796205516934991, guid: 31d6176f54e8b3c4096d89c84931003d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
