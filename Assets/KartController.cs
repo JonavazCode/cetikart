@@ -12,7 +12,7 @@ public class KartController : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    private float movement = 0f;
+    public float movement = 0f;
     public float rotation = 0f;
 
     private bool canJump;
@@ -45,7 +45,7 @@ public class KartController : MonoBehaviour
         else
         {
             backWheel.useMotor = true;
-            backWheel.useMotor = true;
+            frontWheel.useMotor = true;
 
             JointMotor2D motor = new JointMotor2D { motorSpeed = movement, maxMotorTorque = 10000 };
             backWheel.motor = motor;
