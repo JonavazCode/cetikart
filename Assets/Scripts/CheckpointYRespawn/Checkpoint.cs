@@ -5,6 +5,7 @@ using UnityEngine;
 public class Checkpoint : MonoBehaviour
 {
     private LevelManager levelManager; //instancia de LevelManager
+    private static string _carE = "_carE";
     private CheckpointsPerPJ cpp;
     // Start is called before the first frame update
     void Start()
@@ -27,15 +28,15 @@ public class Checkpoint : MonoBehaviour
              }
          }*/
 
-        if (other.name == "molina_car" || other.name == "MolinaE")
+        if (other.name == "molina_car" || other.name == ("molina" + _carE))
         {
             cpp.molina = gameObject;
         }
-        else if (other.name == "coco_car" || other.name == "CocoE")
+        else if (other.name == "coco_car" || other.name == ("coco" + _carE))
         {
             cpp.coco = gameObject;
         }
-        else if (other.name == "niño_car" || other.name == "NinoE")
+        else if (other.name == "niño_car" || other.name == ("nino" + _carE))
         {
             cpp.nino = gameObject;
         }
