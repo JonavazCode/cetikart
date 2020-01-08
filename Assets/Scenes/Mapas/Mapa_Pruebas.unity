@@ -306,6 +306,22 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 262447829, guid: c8f7dd917df9c1f469f9852f7b5e93ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 262447829, guid: c8f7dd917df9c1f469f9852f7b5e93ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.9323258
+      objectReference: {fileID: 0}
+    - target: {fileID: 262447829, guid: c8f7dd917df9c1f469f9852f7b5e93ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.36161944
+      objectReference: {fileID: 0}
+    - target: {fileID: 262447829, guid: c8f7dd917df9c1f469f9852f7b5e93ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 137.60101
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c8f7dd917df9c1f469f9852f7b5e93ab, type: 3}
 --- !u!1001 &186045804
@@ -564,6 +580,33 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bfe723a9750e204a888c4d4cc20db70, type: 3}
+--- !u!1 &342229811 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1216736043, guid: c8f7dd917df9c1f469f9852f7b5e93ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 178494144}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &342229815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 342229811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d23dcee9b0e794bb9ec62a467ddf31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controles: {fileID: 0}
+  tacometro: {fileID: 0}
+  punteroGO: {fileID: 0}
+  jugador: {fileID: 0}
+  punteroEjeZ: {fileID: 0}
+  factorDeAngulo: -8.5
+  AnguloEulerInicial: {x: 0, y: 0, z: 0}
+  _rigidbody: {fileID: 0}
+  velocidadJugador: 0
 --- !u!1001 &374371821
 PrefabInstance:
   m_ObjectHideFlags: 0
