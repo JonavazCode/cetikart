@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 5278235553354087971}
   - component: {fileID: 5278235553354087970}
   - component: {fileID: 5278235553354087969}
+  - component: {fileID: 7011873294591325644}
   m_Layer: 1
   m_Name: sergio_car
   m_TagString: Player
@@ -350,6 +351,19 @@ MonoBehaviour:
   rb: {fileID: 5278235553354087974}
   movement: 0
   rotation: 0
+--- !u!114 &7011873294591325644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5278235553354087968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41f9593dcf9d23a4fbc958f524aecbd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cargas: 0
 --- !u!1 &5278235553440559567
 GameObject:
   m_ObjectHideFlags: 0
