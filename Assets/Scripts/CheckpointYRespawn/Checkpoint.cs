@@ -36,27 +36,27 @@ public class Checkpoint : MonoBehaviour
         {
             cpp.coco = gameObject;
         }
-        else if (other.name == "niño_car" || other.name == ("nino" + _carE))
+        else if (other.name == "nino_car" || other.name == ("nino" + _carE))
         {
             cpp.nino = gameObject;
         }
-        else if (other.name == "ruben_car" || other.name == "RubenE")
+        else if (other.name == "agentek_car" || other.name == ("agentek" + _carE))
         {
             cpp.ruben = gameObject;
         }
-        else if (other.name == "sergio_car" || other.name == "SergioE")
+        else if (other.name == "sergio_car" || other.name == ("sergio" + _carE))
         {
             cpp.sergio = gameObject;
         }
-        else if (other.name == "areli_car" || other.name == "AreliE")
+        else if (other.name == "areli_car" || other.name == ("areli" + _carE))
         {
             cpp.areli = gameObject;
         }
-        else if (other.name == "susana_car" || other.name == "SusanaE")
+        else if (other.name == "gussa_car" || other.name == ("gussa" + _carE))
         {
             cpp.susana = gameObject;
         }
-        else if (other.name == "ulyses_car" || other.name == "MolinaE")
+        else if (other.name == "ulyses_car" || other.name == ("ulyses" + _carE))
         {
             cpp.ulyses = gameObject;
         }

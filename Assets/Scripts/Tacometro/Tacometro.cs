@@ -14,7 +14,7 @@ public class Tacometro : MonoBehaviour
 
 
     public Transform punteroEjeZ;
-    public float factorDeAngulo = 2.0f;
+    public float factorDeAngulo = -8.5f;
 
     public Vector3 AnguloEulerInicial;
     public Rigidbody2D _rigidbody;
