@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityStandardAssets.CrossPlatformInput;
 
 
 public class Barra_PowerUp : MonoBehaviour
@@ -39,6 +40,11 @@ public class Barra_PowerUp : MonoBehaviour
         if (cargasDeJugador.cargas == 3)
         {
             this.gameObject.GetComponent<Image>().sprite = cargas_3;
+        }
+        if (CrossPlatformInputManager.GetButton("PowerUp") && cargasDeJugador.cargas == 3)
+        {
+            //this.gameObject.GetComponent<Image>().sprite = cargas_0;
+            cargasDeJugador.cargas = 0;
         }
     }
 

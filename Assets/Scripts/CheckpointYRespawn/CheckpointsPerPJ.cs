@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CheckpointsPerPJ : MonoBehaviour
 {
+    public int Sprite_Pos;
     #region flags
 
     private bool firstFlag = false; //bandera de espera para los items
@@ -29,6 +30,7 @@ public class CheckpointsPerPJ : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         levelManager = FindObjectOfType<LevelManager>(); //encuentra el objeto LevelManager
         StartCoroutine(defaultCheckpoint());
         defaultCheckpoint();
@@ -126,34 +128,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (molina == pos[0])
         {
             ocho = molina_pos.name;
+            Sprite_Pos = 8;
         }
         else if (molina == pos[1])
         {
             siete = molina_pos.name;
+            Sprite_Pos = 7;
         }
         else if (molina == pos[2])
         {
             seis = molina_pos.name;
+            Sprite_Pos = 6;
         }
         else if (molina == pos[3])
         {
             cinco = molina_pos.name;
+            Sprite_Pos = 5;
         }
         else if (molina == pos[4])
         {
             cuatro = molina_pos.name;
+            Sprite_Pos = 4;
         }
         else if (molina == pos[5])
         {
             tres = molina_pos.name;
+            Sprite_Pos = 3;
         }
         else if (molina == pos[6])
         {
             dos = molina_pos.name;
+            Sprite_Pos = 2;
         }
         else if (molina == pos[7])
         {
             uno = molina_pos.name;
+            Sprite_Pos = 1;
         }
 
 
