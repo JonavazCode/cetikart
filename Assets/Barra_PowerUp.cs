@@ -43,7 +43,6 @@ public class Barra_PowerUp : MonoBehaviour
         }
         if (CrossPlatformInputManager.GetButton("PowerUp") && cargasDeJugador.cargas == 3)
         {
-            //this.gameObject.GetComponent<Image>().sprite = cargas_0;
             cargasDeJugador.cargas = 0;
         }
     }

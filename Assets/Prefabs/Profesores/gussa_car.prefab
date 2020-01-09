@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4879978107615841953}
   - component: {fileID: 4879978107615841958}
   - component: {fileID: 6318864349778048813}
+  - component: {fileID: 987660053121022679}
   m_Layer: 1
   m_Name: gussa_car
   m_TagString: Player
@@ -244,6 +245,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cargas: 0
+--- !u!95 &987660053121022679
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4879978107615841959}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 425b85f3156ccc847ba678f022ee173b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4879978107769335160
 GameObject:
   m_ObjectHideFlags: 0

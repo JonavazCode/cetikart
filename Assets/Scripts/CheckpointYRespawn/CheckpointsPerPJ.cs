@@ -170,101 +170,127 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (coco == pos[0])
         {
             ocho = coco_pos.name;
+            Sprite_Pos = 8;
         }
         else if (coco == pos[1])
         {
             siete = coco_pos.name;
+            Sprite_Pos = 7;
         }
         else if (coco == pos[2])
         {
             seis = coco_pos.name;
+            Sprite_Pos = 6;
         }
         else if (coco == pos[3])
         {
             cinco = coco_pos.name;
+            Sprite_Pos = 5;
         }
         else if (coco == pos[4])
         {
             cuatro = coco_pos.name;
+            Sprite_Pos = 4;
         }
         else if (coco == pos[5])
         {
             tres = coco_pos.name;
+            Sprite_Pos = 3;
         }
         else if (coco == pos[6])
         {
             dos = coco_pos.name;
+            Sprite_Pos = 2;
         }
         else if (coco == pos[7])
         {
             uno = coco_pos.name;
+            Sprite_Pos = 1;
         }
+
+
 
         if (ruben == pos[0])
         {
             ocho = ruben_pos.name;
+            Sprite_Pos = 8;
         }
         else if (ruben == pos[1])
         {
             siete = ruben_pos.name;
+            Sprite_Pos = 7;
         }
         else if (ruben == pos[2])
         {
             seis = ruben_pos.name;
+            Sprite_Pos = 6;
         }
         else if (ruben == pos[3])
         {
             cinco = ruben_pos.name;
+            Sprite_Pos = 5;
         }
         else if (ruben == pos[4])
         {
             cuatro = ruben_pos.name;
+            Sprite_Pos = 4;
         }
         else if (ruben == pos[5])
         {
             tres = ruben_pos.name;
+            Sprite_Pos = 3;
         }
         else if (ruben == pos[6])
         {
             dos = ruben_pos.name;
+            Sprite_Pos = 2;
         }
         else if (ruben == pos[7])
         {
             uno = ruben_pos.name;
+            Sprite_Pos = 1;
         }
 
         #region areli
         if (areli == pos[0])
         {
             ocho = areli_pos.name;
+            Sprite_Pos = 8;
         }
         else if (areli == pos[1])
         {
             siete = areli_pos.name;
+            Sprite_Pos = 7;
         }
         else if (areli == pos[2])
         {
             seis = areli_pos.name;
+            Sprite_Pos = 6;
         }
         else if (areli == pos[3])
         {
             cinco = areli_pos.name;
+            Sprite_Pos = 5;
         }
         else if (areli == pos[4])
         {
             cuatro = areli_pos.name;
+            Sprite_Pos = 4;
         }
         else if (areli == pos[5])
         {
             tres = areli_pos.name;
+            Sprite_Pos = 3;
         }
         else if (areli == pos[6])
         {
             dos = areli_pos.name;
+            Sprite_Pos = 2;
         }
         else if (areli == pos[7])
         {
             uno = areli_pos.name;
+            Sprite_Pos = 1;
         }
         #endregion
 
@@ -272,34 +298,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (susana == pos[0])
         {
             ocho = susana_pos.name;
+            Sprite_Pos = 8;
         }
         else if (susana == pos[1])
         {
             siete = susana_pos.name;
+            Sprite_Pos = 7;
         }
         else if (susana == pos[2])
         {
             seis = susana_pos.name;
+            Sprite_Pos = 6;
         }
         else if (susana == pos[3])
         {
             cinco = susana_pos.name;
+            Sprite_Pos = 5;
         }
         else if (susana == pos[4])
         {
             cuatro = susana_pos.name;
+            Sprite_Pos = 4;
         }
         else if (susana == pos[5])
         {
             tres = susana_pos.name;
+            Sprite_Pos = 3;
         }
         else if (susana == pos[6])
         {
             dos = susana_pos.name;
+            Sprite_Pos = 2;
         }
         else if (susana == pos[7])
         {
             uno = susana_pos.name;
+            Sprite_Pos = 1;
         }
         #endregion
 
@@ -307,34 +341,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (nino == pos[0])
         {
             ocho = nino_pos.name;
+            Sprite_Pos = 8;
         }
         else if (nino == pos[1])
         {
             siete = nino_pos.name;
+            Sprite_Pos = 7;
         }
         else if (nino == pos[2])
         {
             seis = nino_pos.name;
+            Sprite_Pos = 6;
         }
         else if (nino == pos[3])
         {
             cinco = nino_pos.name;
+            Sprite_Pos = 5;
         }
         else if (nino == pos[4])
         {
             cuatro = nino_pos.name;
+            Sprite_Pos = 4;
         }
         else if (nino == pos[5])
         {
             tres = nino_pos.name;
+            Sprite_Pos = 3;
         }
         else if (nino == pos[6])
         {
             dos = nino_pos.name;
+            Sprite_Pos = 2;
         }
         else if (nino == pos[7])
         {
             uno = nino_pos.name;
+            Sprite_Pos = 1;
         }
         #endregion
 
@@ -342,34 +384,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (sergio == pos[0])
         {
             ocho = sergio_pos.name;
+            Sprite_Pos = 8;
         }
         else if (sergio == pos[1])
         {
             siete = sergio_pos.name;
+            Sprite_Pos = 7;
         }
         else if (sergio == pos[2])
         {
             seis = sergio_pos.name;
+            Sprite_Pos = 6;
         }
         else if (sergio == pos[3])
         {
             cinco = sergio_pos.name;
+            Sprite_Pos = 5;
         }
         else if (sergio == pos[4])
         {
             cuatro = sergio_pos.name;
+            Sprite_Pos = 4;
         }
         else if (sergio == pos[5])
         {
             tres = sergio_pos.name;
+            Sprite_Pos = 3;
         }
         else if (sergio == pos[6])
         {
             dos = sergio_pos.name;
+            Sprite_Pos = 2;
         }
         else if (sergio == pos[7])
         {
             uno = sergio_pos.name;
+            Sprite_Pos = 1;
         }
         #endregion
 
@@ -377,34 +427,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (ulyses == pos[0])
         {
             ocho = ulyses_pos.name;
+            Sprite_Pos = 8;
         }
         else if (ulyses == pos[1])
         {
             siete = ulyses_pos.name;
+            Sprite_Pos = 7;
         }
         else if (ulyses == pos[2])
         {
             seis = ulyses_pos.name;
+            Sprite_Pos = 6;
         }
         else if (ulyses == pos[3])
         {
             cinco = ulyses_pos.name;
+            Sprite_Pos = 5;
         }
         else if (ulyses == pos[4])
         {
             cuatro = ulyses_pos.name;
+            Sprite_Pos = 4;
         }
         else if (ulyses == pos[5])
         {
             tres = ulyses_pos.name;
+            Sprite_Pos = 3;
         }
         else if (ulyses == pos[6])
         {
             dos = ulyses_pos.name;
+            Sprite_Pos = 2;
         }
         else if (ulyses == pos[7])
         {
             uno = ulyses_pos.name;
+            Sprite_Pos = 1;
         }
         #endregion
     }
