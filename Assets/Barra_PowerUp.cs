@@ -21,7 +21,12 @@ public class Barra_PowerUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(cargasDeJugador.cargas == 1)
+        if (cargasDeJugador.cargas == 0)
+        {
+            this.gameObject.GetComponent<Image>().sprite = cargas_0;
+        }
+
+        if (cargasDeJugador.cargas == 1)
         {
             this.gameObject.GetComponent<Image>().sprite = cargas_1;
         }
