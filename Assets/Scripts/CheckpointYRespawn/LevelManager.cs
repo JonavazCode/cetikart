@@ -8,7 +8,6 @@ public class LevelManager : MonoBehaviour
     public GameObject[] checkPoints; //lista de checkpoints colectados
     private Movimiento_Profesor_Molina player; //jugador
 
-    private float gameTimer = -3f; //tiempo de juego
     public int timeCount; // conversion a segundos
 
     public GameObject[] obj;//variable para instanciar los objetos

@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class Sprite_de_Posicion : MonoBehaviour
 {
-    public CheckpointsPerPJ Num_Pos;
+    public CheckpointsPerPJ cppj;
+    public GameObject jugador;
     public Sprite posicion_1 = Resources.Load<Sprite>("Numeros_Posiciones_1");
     public Sprite posicion_2 = Resources.Load<Sprite>("Numeros_Posiciones_2");
     public Sprite posicion_3 = Resources.Load<Sprite>("Numeros_Posiciones_3");
@@ -17,42 +18,43 @@ public class Sprite_de_Posicion : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Num_Pos = FindObjectOfType<CheckpointsPerPJ>();
-        
+        cppj = FindObjectOfType<CheckpointsPerPJ>();
+        jugador = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Num_Pos.Sprite_Pos == 8)
+        
+        if(cppj.ocho == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_8;
         }
-        if (Num_Pos.Sprite_Pos == 7)
+        if (cppj.siete == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_7;
         }
-        if (Num_Pos.Sprite_Pos == 6)
+        if (cppj.seis == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_6;
         }
-        if (Num_Pos.Sprite_Pos == 5)
+        if (cppj.cinco == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_5;
         }
-        if (Num_Pos.Sprite_Pos == 4)
+        if (cppj.cuatro == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_4;
         }
-        if (Num_Pos.Sprite_Pos == 3)
+        if (cppj.tres == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_3;
         }
-        if (Num_Pos.Sprite_Pos == 2)
+        if (cppj.dos == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_2;
         }
-        if (Num_Pos.Sprite_Pos == 1)
+        if (cppj.uno == jugador.name)
         {
             this.gameObject.GetComponent<Image>().sprite = posicion_1;
         }

@@ -12,7 +12,7 @@ public class CheckpointsPerPJ : MonoBehaviour
     #endregion
     public bool carreraFinalizada = false;
     private LevelManager levelManager; //instancia de LevelManager
-    public GameObject molina, coco, nino, ruben, sergio, ulyses, areli, susana;
+    public GameObject molina, coco, nino, ruben, sergio, ulyses, areli, susana, jugador;
     public List<GameObject> profesores;
     public string uno, dos, tres, cuatro, cinco, seis, siete, ocho;
 
@@ -53,7 +53,7 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     IEnumerator GenerarPosiciones()
     {
-        while (true)
+        while (!carreraFinalizada)
         {
             
             asociarPosiciones();
@@ -79,8 +79,6 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     public void asociarPosiciones()
     {
-        //si no los encuentra hacer que se guarde algun numero en x
-        /// eso que lo haga mi yo del futuro
 
 
         molina_pos = GameObject.Find("molina_car") ?  GameObject.Find("molina_car").transform : GameObject.Find("molina_carE").transform;
@@ -91,6 +89,8 @@ public class CheckpointsPerPJ : MonoBehaviour
         nino_pos = GameObject.Find("nino_car") ? GameObject.Find("nino_car").transform : GameObject.Find("nino_carE").transform;
         sergio_pos = GameObject.Find("sergio_car") ? GameObject.Find("sergio_car").transform : GameObject.Find("sergio_carE").transform;
         ulyses_pos = GameObject.Find("ulyses_car") ? GameObject.Find("ulyses_car").transform : GameObject.Find("ulyses_carE").transform;
+
+  
 
     }
 
@@ -107,105 +107,87 @@ public class CheckpointsPerPJ : MonoBehaviour
                     pos[b] = t;
                 }
             }
-        /*
-        for (int f = 6; f >= 0; f--)
-        {
-            
-            if (molina == pos[f])
-            {
-                Debug.Log("molina es el lugar: " + f);
-            }
-            if (coco == pos[f])
-            {
-                Debug.Log("coco es el lugar: " + f);
-            }
-            
-
-            //Debug.Log(pos[f] + "  ");
-        }
-        */
 
         if (molina == pos[0])
         {
             ocho = molina_pos.name;
-            Sprite_Pos = 8;
+            
         }
         else if (molina == pos[1])
         {
             siete = molina_pos.name;
-            Sprite_Pos = 7;
+            
         }
         else if (molina == pos[2])
         {
             seis = molina_pos.name;
-            Sprite_Pos = 6;
+            
         }
         else if (molina == pos[3])
         {
             cinco = molina_pos.name;
-            Sprite_Pos = 5;
+            
         }
         else if (molina == pos[4])
         {
             cuatro = molina_pos.name;
-            Sprite_Pos = 4;
+            
         }
         else if (molina == pos[5])
         {
             tres = molina_pos.name;
-            Sprite_Pos = 3;
+           
         }
         else if (molina == pos[6])
         {
             dos = molina_pos.name;
-            Sprite_Pos = 2;
+            
         }
         else if (molina == pos[7])
         {
             uno = molina_pos.name;
-            Sprite_Pos = 1;
+            
         }
 
 
         if (coco == pos[0])
         {
             ocho = coco_pos.name;
-            Sprite_Pos = 8;
         }
         else if (coco == pos[1])
         {
             siete = coco_pos.name;
-            Sprite_Pos = 7;
+
         }
         else if (coco == pos[2])
         {
             seis = coco_pos.name;
-            Sprite_Pos = 6;
+
         }
         else if (coco == pos[3])
         {
             cinco = coco_pos.name;
-            Sprite_Pos = 5;
+
         }
         else if (coco == pos[4])
         {
             cuatro = coco_pos.name;
-            Sprite_Pos = 4;
+
         }
         else if (coco == pos[5])
         {
             tres = coco_pos.name;
-            Sprite_Pos = 3;
+
         }
         else if (coco == pos[6])
         {
             dos = coco_pos.name;
-            Sprite_Pos = 2;
+
         }
         else if (coco == pos[7])
         {
             uno = coco_pos.name;
-            Sprite_Pos = 1;
+
         }
 
 
@@ -213,84 +195,84 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (ruben == pos[0])
         {
             ocho = ruben_pos.name;
-            Sprite_Pos = 8;
+         
         }
         else if (ruben == pos[1])
         {
             siete = ruben_pos.name;
-            Sprite_Pos = 7;
+            
         }
         else if (ruben == pos[2])
         {
             seis = ruben_pos.name;
-            Sprite_Pos = 6;
+          
         }
         else if (ruben == pos[3])
         {
             cinco = ruben_pos.name;
-            Sprite_Pos = 5;
+         
         }
         else if (ruben == pos[4])
         {
             cuatro = ruben_pos.name;
-            Sprite_Pos = 4;
+            
         }
         else if (ruben == pos[5])
         {
             tres = ruben_pos.name;
-            Sprite_Pos = 3;
+          
         }
         else if (ruben == pos[6])
         {
             dos = ruben_pos.name;
-            Sprite_Pos = 2;
+         
         }
         else if (ruben == pos[7])
         {
             uno = ruben_pos.name;
-            Sprite_Pos = 1;
+ 
         }
 
         #region areli
         if (areli == pos[0])
         {
             ocho = areli_pos.name;
-            Sprite_Pos = 8;
+          
         }
         else if (areli == pos[1])
         {
             siete = areli_pos.name;
-            Sprite_Pos = 7;
+            
         }
         else if (areli == pos[2])
         {
             seis = areli_pos.name;
-            Sprite_Pos = 6;
+           
         }
         else if (areli == pos[3])
         {
             cinco = areli_pos.name;
-            Sprite_Pos = 5;
+            
         }
         else if (areli == pos[4])
         {
             cuatro = areli_pos.name;
-            Sprite_Pos = 4;
+            
         }
         else if (areli == pos[5])
         {
             tres = areli_pos.name;
-            Sprite_Pos = 3;
+            
         }
         else if (areli == pos[6])
         {
             dos = areli_pos.name;
-            Sprite_Pos = 2;
+            
         }
         else if (areli == pos[7])
         {
             uno = areli_pos.name;
-            Sprite_Pos = 1;
+            
         }
         #endregion
 
@@ -298,42 +280,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (susana == pos[0])
         {
             ocho = susana_pos.name;
-            Sprite_Pos = 8;
+            
         }
         else if (susana == pos[1])
         {
             siete = susana_pos.name;
-            Sprite_Pos = 7;
+           
         }
         else if (susana == pos[2])
         {
             seis = susana_pos.name;
-            Sprite_Pos = 6;
+            
         }
         else if (susana == pos[3])
         {
             cinco = susana_pos.name;
-            Sprite_Pos = 5;
+            
         }
         else if (susana == pos[4])
         {
             cuatro = susana_pos.name;
-            Sprite_Pos = 4;
+            
         }
         else if (susana == pos[5])
         {
             tres = susana_pos.name;
-            Sprite_Pos = 3;
+            
         }
         else if (susana == pos[6])
         {
             dos = susana_pos.name;
-            Sprite_Pos = 2;
+            
         }
         else if (susana == pos[7])
         {
             uno = susana_pos.name;
-            Sprite_Pos = 1;
+            
         }
         #endregion
 
@@ -341,42 +323,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (nino == pos[0])
         {
             ocho = nino_pos.name;
-            Sprite_Pos = 8;
+            
         }
         else if (nino == pos[1])
         {
             siete = nino_pos.name;
-            Sprite_Pos = 7;
+            
         }
         else if (nino == pos[2])
         {
             seis = nino_pos.name;
-            Sprite_Pos = 6;
+            
         }
         else if (nino == pos[3])
         {
             cinco = nino_pos.name;
-            Sprite_Pos = 5;
+            
         }
         else if (nino == pos[4])
         {
             cuatro = nino_pos.name;
-            Sprite_Pos = 4;
+            
         }
         else if (nino == pos[5])
         {
             tres = nino_pos.name;
-            Sprite_Pos = 3;
+            
         }
         else if (nino == pos[6])
         {
             dos = nino_pos.name;
-            Sprite_Pos = 2;
+            
         }
         else if (nino == pos[7])
         {
             uno = nino_pos.name;
-            Sprite_Pos = 1;
+            
         }
         #endregion
 
@@ -384,42 +366,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (sergio == pos[0])
         {
             ocho = sergio_pos.name;
-            Sprite_Pos = 8;
+            
         }
         else if (sergio == pos[1])
         {
             siete = sergio_pos.name;
-            Sprite_Pos = 7;
+            
         }
         else if (sergio == pos[2])
         {
             seis = sergio_pos.name;
-            Sprite_Pos = 6;
+            
         }
         else if (sergio == pos[3])
         {
             cinco = sergio_pos.name;
-            Sprite_Pos = 5;
+            
         }
         else if (sergio == pos[4])
         {
             cuatro = sergio_pos.name;
-            Sprite_Pos = 4;
+            
         }
         else if (sergio == pos[5])
         {
             tres = sergio_pos.name;
-            Sprite_Pos = 3;
+            
         }
         else if (sergio == pos[6])
         {
             dos = sergio_pos.name;
-            Sprite_Pos = 2;
+            
         }
         else if (sergio == pos[7])
         {
             uno = sergio_pos.name;
-            Sprite_Pos = 1;
+            
         }
         #endregion
 
@@ -427,42 +409,42 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (ulyses == pos[0])
         {
             ocho = ulyses_pos.name;
-            Sprite_Pos = 8;
+           
         }
         else if (ulyses == pos[1])
         {
             siete = ulyses_pos.name;
-            Sprite_Pos = 7;
+           
         }
         else if (ulyses == pos[2])
         {
             seis = ulyses_pos.name;
-            Sprite_Pos = 6;
+            
         }
         else if (ulyses == pos[3])
         {
             cinco = ulyses_pos.name;
-            Sprite_Pos = 5;
+            
         }
         else if (ulyses == pos[4])
         {
             cuatro = ulyses_pos.name;
-            Sprite_Pos = 4;
+            
         }
         else if (ulyses == pos[5])
         {
             tres = ulyses_pos.name;
-            Sprite_Pos = 3;
+            
         }
         else if (ulyses == pos[6])
         {
             dos = ulyses_pos.name;
-            Sprite_Pos = 2;
+            
         }
         else if (ulyses == pos[7])
         {
             uno = ulyses_pos.name;
-            Sprite_Pos = 1;
+           
         }
         #endregion
     }
