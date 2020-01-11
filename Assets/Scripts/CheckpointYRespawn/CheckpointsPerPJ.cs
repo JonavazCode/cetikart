@@ -462,6 +462,7 @@ public class CheckpointsPerPJ : MonoBehaviour
 <<<<<<< HEAD
         /*
 =======
+>>>>>>> parent of 0c955e7... AVANCE de Meta
 =======
 >>>>>>> parent of 0c955e7... AVANCE de Meta
         Debug.Log("primer lugar: " + uno);
