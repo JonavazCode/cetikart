@@ -1,14 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-
 
 public class CheckpointsPerPJ : MonoBehaviour
 {
-
     
-    public int Sprite_Pos;
     #region flags
 
     private bool firstFlag = false; //bandera de espera para los items
@@ -32,7 +28,6 @@ public class CheckpointsPerPJ : MonoBehaviour
     private float[] pos;
 
     // Start is called before the first frame update
- 
     void Start()
     {
        
@@ -116,7 +111,6 @@ public class CheckpointsPerPJ : MonoBehaviour
         if (molina == pos[0])
         {
             ocho = molina_pos.name;
-            
             
         }
         else if (molina == pos[1])
@@ -457,7 +451,7 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     void imprimirPosiciones()
     {
-        
+        /*
         Debug.Log("primer lugar: " + uno);
         Debug.Log("segundo lugar: " + dos);
         Debug.Log("tercer lugar: " + tres);
@@ -466,5 +460,6 @@ public class CheckpointsPerPJ : MonoBehaviour
         Debug.Log("sexto lugar: " + seis);
         Debug.Log("septimo lugar: " + siete);
         Debug.Log("octavo lugar: " + ocho);
+        */
     }
 }
