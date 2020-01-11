@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckpointsPerPJ : MonoBehaviour
 {
-    public int Sprite_Pos;
+    
     #region flags
 
     private bool firstFlag = false; //bandera de espera para los items
@@ -451,6 +451,7 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     void imprimirPosiciones()
     {
+        /*
         Debug.Log("primer lugar: " + uno);
         Debug.Log("segundo lugar: " + dos);
         Debug.Log("tercer lugar: " + tres);
@@ -459,5 +460,6 @@ public class CheckpointsPerPJ : MonoBehaviour
         Debug.Log("sexto lugar: " + seis);
         Debug.Log("septimo lugar: " + siete);
         Debug.Log("octavo lugar: " + ocho);
+        */
     }
 }

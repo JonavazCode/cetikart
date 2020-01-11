@@ -4,19 +4,77 @@ using UnityEngine;
 
 public class Propiedades : MonoBehaviour
 {
+    public CheckpointsPerPJ cppj;
     public int cargas = 0;
+    public int posicion;
+    public int pos_anterior = 0;
     // Start is called before the first frame update
     void Start()
     {
+        cppj = FindObjectOfType<CheckpointsPerPJ>();
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(cargas > 3)
+        posicion = posicion_carrera(gameObject.name);
+        si_rebasa();
+        posicion = posicion_carrera(gameObject.name);
+        pos_anterior = posicion;
+        cargas = limite_cargas(cargas);
+
+    }
+
+    void si_rebasa()
+    {
+        if ((pos_anterior != 0) && (pos_anterior > posicion))
         {
-            cargas = 3;
+            cargas++;
         }
+    }
+    int limite_cargas(int carga)
+    {
+        if (carga > 3)
+            return 3;
+        else
+            return carga;
+    }
+
+    int posicion_carrera(string nombre_personaje)
+    {
+        if (cppj.uno == this.name)
+        {
+            return 1;
+        }
+        else if (cppj.dos == this.name)
+        {
+            return 2;
+        }
+        else if (cppj.tres == this.name)
+        {
+            return  3;
+        }
+        else if (cppj.cuatro == this.name)
+        {
+            return  4;
+        }
+        else if (cppj.cinco == this.name)
+        {
+            return  5;
+        }
+        else if (cppj.seis == this.name)
+        {
+            return 6;
+        }
+        else if (cppj.siete == this.name)
+        {
+            return  7;
+        }
+        else
+        {
+            return 8;
+        }
+
     }
 }
