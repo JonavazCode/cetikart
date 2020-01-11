@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class CheckpointsPerPJ : MonoBehaviour
 {
+<<<<<<< HEAD
     
+=======
+    public int Sprite_Pos;
+>>>>>>> parent of 0c955e7... AVANCE de Meta
     #region flags
 
     private bool firstFlag = false; //bandera de espera para los items
@@ -451,7 +455,10 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     void imprimirPosiciones()
     {
+<<<<<<< HEAD
         /*
+=======
+>>>>>>> parent of 0c955e7... AVANCE de Meta
         Debug.Log("primer lugar: " + uno);
         Debug.Log("segundo lugar: " + dos);
         Debug.Log("tercer lugar: " + tres);
