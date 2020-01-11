@@ -5,8 +5,11 @@ using UnityEngine;
 public class CheckpointsPerPJ : MonoBehaviour
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
+=======
+>>>>>>> parent of 0c955e7... AVANCE de Meta
     public int Sprite_Pos;
 >>>>>>> parent of 0c955e7... AVANCE de Meta
     #region flags
@@ -456,7 +459,9 @@ public class CheckpointsPerPJ : MonoBehaviour
     void imprimirPosiciones()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         /*
+=======
 =======
 >>>>>>> parent of 0c955e7... AVANCE de Meta
         Debug.Log("primer lugar: " + uno);
