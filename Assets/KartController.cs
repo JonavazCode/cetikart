@@ -19,16 +19,16 @@ public class KartController : MonoBehaviour
 
     private void Update()
     {
-        if (CrossPlatformInputManager.GetButton("Run"))
+        if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
             movement = -1 * speed;
         else
             movement = 0;
 
-        if (CrossPlatformInputManager.GetButton("Freno"))
+        if (CrossPlatformInputManager.GetButton("Freno") || Input.GetKey(KeyCode.A))
             movement = 1 * speed;
  
 
-        if (CrossPlatformInputManager.GetButton("Jump") && canJump)
+        if ((CrossPlatformInputManager.GetButton("Jump") || Input.GetKeyDown(KeyCode.Space)) && canJump )
         {
             canJump = false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1000f));
