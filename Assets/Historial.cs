@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Esta clase es la encargada de mostrar las posiciones de los jugadores al final de la carrera.
+/// </summary>
 public class Historial : MonoBehaviour
 {
     public int numero;
@@ -11,65 +13,69 @@ public class Historial : MonoBehaviour
 
     private Checkpoint_Meta cpm;
 
-    // Start is called before the first frame update
     void Start()
     {
         cpm = FindObjectOfType<Checkpoint_Meta>();
         MostrarJugadores();
     }
-
-
+    /// <summary>
+    /// Función para mostrar la lista de jugadores
+    /// </summary>
     void MostrarJugadores()
     {
-        
+
         foreach (string jugador in cpm.jugadores)
         {
-            Debug.Log(jugador);
             numero++;
-
-            //historial.text += "\n" + numero + "° Lugar: Profesor " + (jugador.Contains("_carE")? jugador.Replace("_carE", " (BOT)") : jugador.Replace("_car", " (Tú)"));
-            historial.text += "\n" + numero + "° Lugar: " + nombre_profesor(jugador) + jugador_o_bot(jugador);
+            historial.text += "\n" + numero + "° Lugar: " + nombre_profesor(jugador) + jugador_o_bot(jugador) + "\n";
         } 
     }
-
+    /// <summary>
+    /// Este método es el encargado de regresar un nombre "estético" de acuerdo al nombre de objeto que recibe por argumento
+    /// </summary>
+    /// <param name="nombre"> Nombre del personaje </param>
+    /// <returns>Retorna un string personalizado de acuerdo al argumento envíado en el siguiente formato "Profesor(a) NombreProfesor" </returns>
     string nombre_profesor(string nombre)
     {
         if (nombre.Contains("molina"))
         {
-            return nombre = "Profesor Molina";
+            return "Profesor Molina";
         }
         else if (nombre.Contains("ulyses"))
         {
-            return nombre = "Profesor Ulyses";
+            return "Profesor Ulyses";
         }
         else if (nombre.Contains("sergio"))
         {
-            return nombre = "Profesor Sergio";
+            return "Profesor Sergio";
         }
         else if (nombre.Contains("nino"))
         {
-            return nombre = "Profesor Niño";
+            return "Profesor Niño";
         }
         else if (nombre.Contains("gussa"))
         {
-            return nombre = "Profesora Susana";
+            return "Profesora Susana";
         }
         else if (nombre.Contains("coco"))
         {
-            return nombre = "Profesor Ismael";
+            return "Profesor Ismael";
         }
         else if (nombre.Contains("areli"))
         {
-            return nombre = "Profesora Areli";
+            return "Profesora Areli";
         }
         else
         {
-            return nombre = "Profesor Ulyses";
-
+            return "Profesor Ulyses";
         }
 
     }
-
+    /// <summary>
+    /// Este método es el encargado de identificar cuál personaje es un bot o un jugador, dependiendo del nombre enviado por argumento
+    /// </summary>
+    /// <param name="nombre"> Nombre del personaje</param>
+    /// <returns>Regresa un string con " (BOT)" o " (Tú)"</returns>
     string jugador_o_bot(string nombre)
     {
 
