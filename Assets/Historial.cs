@@ -9,6 +9,8 @@ public class Historial : MonoBehaviour
 {
     public int numero;
     public Text historial;
+
+
     private Checkpoint_Meta cpm;
 
     void Start()
