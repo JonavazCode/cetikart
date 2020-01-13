@@ -24,38 +24,7 @@ public class icono_Profesores : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (profesor.selec_profesor == 0)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_ulyses;
-        }
-        if (profesor.selec_profesor == 1)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_rene;
-        }
-        if (profesor.selec_profesor == 2)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_areli;
-        }
-        if (profesor.selec_profesor == 3)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_ismael;
-        }
-        if (profesor.selec_profesor == 4)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_sergio;
-        }
-        if (profesor.selec_profesor == 5)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_nino;
-        }
-        if (profesor.selec_profesor == 6)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_molina;
-        }
-        if (profesor.selec_profesor == 7)
-        {
-            this.gameObject.GetComponent<Image>().sprite = profesor_susana;
-        }
+        
 
     }
 }

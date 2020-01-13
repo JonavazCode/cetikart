@@ -28,7 +28,7 @@ public class Historial : MonoBehaviour
             numero++;
 
             //historial.text += "\n" + numero + "° Lugar: Profesor " + (jugador.Contains("_carE")? jugador.Replace("_carE", " (BOT)") : jugador.Replace("_car", " (Tú)"));
-            historial.text += "\n" + numero + "° Lugar: " + nombre_profesor(jugador) + jugador_o_bot(jugador) + "\n";
+            historial.text += "\n" + numero + "° Lugar: " + nombre_profesor(jugador) + jugador_o_bot(jugador);
         } 
     }
 
@@ -73,6 +73,6 @@ public class Historial : MonoBehaviour
     string jugador_o_bot(string nombre)
     {
 
-        return nombre.Contains("_carE") ? " (BOT)" : " (Tú)";
+        return nombre.Contains("_carE") ? " (BOT)" : " (TÚ)";
     }
 }
