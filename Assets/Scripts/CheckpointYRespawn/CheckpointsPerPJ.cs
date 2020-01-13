@@ -29,8 +29,7 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     private float[] pos;
 
-    // Start is called before the first frame update
- 
+   
     void Start()
     {
        
@@ -74,7 +73,7 @@ public class CheckpointsPerPJ : MonoBehaviour
             float molina = pos[0], coco = pos[1], ruben = pos[2], areli = pos[3], susana = pos[4], nino = pos[5], sergio = pos[6], ulyses = pos[7];
             MetodoBurbuja(molina, coco, ruben, areli, susana, nino, sergio, ulyses);
             imprimirPosiciones();
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(.4f);
         }
 
     
@@ -455,7 +454,7 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     void imprimirPosiciones()
     {
-        /*
+        
         Debug.Log("primer lugar: " + uno);
         Debug.Log("segundo lugar: " + dos);
         Debug.Log("tercer lugar: " + tres);
@@ -464,6 +463,6 @@ public class CheckpointsPerPJ : MonoBehaviour
         Debug.Log("sexto lugar: " + seis);
         Debug.Log("septimo lugar: " + siete);
         Debug.Log("octavo lugar: " + ocho);
-        */
+        
     }
 }

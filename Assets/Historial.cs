@@ -7,44 +7,72 @@ public class Historial : MonoBehaviour
 {
     public int numero;
     public Text historial;
-    private Checkpoint_Meta ganador;
-    public int selec_profesor;
+
+
+    private Checkpoint_Meta cpm;
+
     // Start is called before the first frame update
     void Start()
     {
-        ganador = FindObjectOfType<Checkpoint_Meta>();
+        cpm = FindObjectOfType<Checkpoint_Meta>();
         MostrarJugadores();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-            
-        
-    }
 
     void MostrarJugadores()
     {
-        foreach (string jugador in ganador.jugadores)
+        
+        foreach (string jugador in cpm.jugadores)
         {
             Debug.Log(jugador);
             numero++;
-          
-            historial.text += jugador.Contains("molina_car") ? "\n" + numero + "° Lugar: " + "Profesor Molina" : "";
-            historial.text += jugador.Contains("ulyses_car") ? "\n" + numero + "° Lugar: " + "Profesor Ulyses" : "";
-            historial.text += jugador.Contains("nino_car") ? "\n" + numero + "° Lugar: " + "Profesor Niño" : "";
-            historial.text += jugador.Contains("areli_car") ? "\n" + numero + "° Lugar: " + "Profesora Areli" : "";
-            historial.text += jugador.Contains("sergio_car") ? "\n" + numero + "° Lugar: " + "Profesor Sergio" : "";
-            historial.text += jugador.Contains("coco_car") ? "\n" + numero + "° Lugar: " + "Profesor Ismael" : "";
-            historial.text += jugador.Contains("gussa_car") ? "\n" + numero + "° Lugar: " + "Profesora Susana" : "";
-            historial.text += jugador.Contains("agentek_car") ? "\n" + numero + "° Lugar: " + "Profesor Luis Rene" : "";
 
+            //historial.text += "\n" + numero + "° Lugar: Profesor " + (jugador.Contains("_carE")? jugador.Replace("_carE", " (BOT)") : jugador.Replace("_car", " (Tú)"));
+            historial.text += "\n" + numero + "° Lugar: " + nombre_profesor(jugador) + jugador_o_bot(jugador) + "\n";
+        } 
+    }
 
-            //historial.text += "\n" + numero + "° Lugar: "+ jugador.Replace("_car","");
+    string nombre_profesor(string nombre)
+    {
+        if (nombre.Contains("molina"))
+        {
+            return nombre = "Profesor Molina";
+        }
+        else if (nombre.Contains("ulyses"))
+        {
+            return nombre = "Profesor Ulyses";
+        }
+        else if (nombre.Contains("sergio"))
+        {
+            return nombre = "Profesor Sergio";
+        }
+        else if (nombre.Contains("nino"))
+        {
+            return nombre = "Profesor Niño";
+        }
+        else if (nombre.Contains("gussa"))
+        {
+            return nombre = "Profesora Susana";
+        }
+        else if (nombre.Contains("coco"))
+        {
+            return nombre = "Profesor Ismael";
+        }
+        else if (nombre.Contains("areli"))
+        {
+            return nombre = "Profesora Areli";
+        }
+        else
+        {
+            return nombre = "Profesor Ulyses";
 
         }
 
+    }
 
+    string jugador_o_bot(string nombre)
+    {
+
+        return nombre.Contains("_carE") ? " (BOT)" : " (Tú)";
     }
 }
