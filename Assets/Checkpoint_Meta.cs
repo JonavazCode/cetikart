@@ -10,6 +10,7 @@ using System.Collections.Generic;
 public class Checkpoint_Meta : MonoBehaviour
 {
     public List<string> jugadores;
+    public CheckpointsPerPJ cppj;
     // Start is called before the first frame update
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class Checkpoint_Meta : MonoBehaviour
     void Start()
     {
         jugadores = new List<string>();
+        cppj = FindObjectOfType<CheckpointsPerPJ>();
     }
 
     // Update is called once per frame
@@ -29,16 +31,25 @@ public class Checkpoint_Meta : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string tag = collision.tag;
-        string nombre = collision.name;
+       /* string nombre = collision.name;
 
         if (!jugadores.Contains(nombre))
             jugadores.Add(nombre);
-
+       */
         
         
 
         if (tag == "Player")
         {
+            cppj.carreraFinalizada = !cppj.carreraFinalizada;
+            jugadores.Add(cppj.uno);
+            jugadores.Add(cppj.dos);
+            jugadores.Add(cppj.tres);
+            jugadores.Add(cppj.cuatro);
+            jugadores.Add(cppj.cinco);
+            jugadores.Add(cppj.seis);
+            jugadores.Add(cppj.siete);
+            jugadores.Add(cppj.ocho);
             SceneManager.LoadScene("Historial Ganador");
 
         }
