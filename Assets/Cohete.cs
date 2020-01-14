@@ -5,42 +5,33 @@ using UnityEngine.UI;
 
 public class Cohete : MonoBehaviour
 {
-    public Rigidbody2D profesor;
+    public KartController kc;
     public GameObject trash;
-   
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         trash = GameObject.Find("Trash");
+        kc = FindObjectOfType<KartController>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-      
-    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        
-        StartCoroutine(RegresarPosicion());
+        string nombre_profesor = collision.name;
+        var rb2d_profesor = GameObject.Find(nombre_profesor).GetComponent<Rigidbody2D>();
+        StartCoroutine(RegresarPosicion(rb2d_profesor));
         
     }
-    IEnumerator RegresarPosicion()
+    IEnumerator RegresarPosicion(Rigidbody2D profesor)
     {
         gameObject.transform.position = trash.transform.position;
-        profesor.gravityScale = -2f;
+        //profesor.gravityScale = -3f;
+        
+        kc.item_cohete_fly = !kc.item_cohete_fly;
         yield return new WaitForSeconds(5);
-        Debug.Log("Llego");
-        profesor.gravityScale = 1f;
+        kc.item_cohete_fly = !kc.item_cohete_fly;
+        Debug.Log("cohetazo");
+       // profesor.gravityScale = 1f;
         Destroy(gameObject);
-
-
-    }
-
-   
+    }   
 }
 

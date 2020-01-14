@@ -27,7 +27,7 @@ public class Historial : MonoBehaviour
         foreach (string jugador in cpm.jugadores)
         {
             numero++;
-            historial.text += "\n" + numero + "° Lugar: " + nombre_profesor(jugador) + jugador_o_bot(jugador) + "\n";
+            historial.text += "\n" + numero + "° Lugar: " + nombre_profesor(jugador) + jugador_o_bot(jugador);
         } 
     }
     /// <summary>
