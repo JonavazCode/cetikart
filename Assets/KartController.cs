@@ -17,6 +17,9 @@ public class KartController : MonoBehaviour
 
     private bool canJump;
 
+
+    public bool item_cohete_fly = false;
+
     private void Update()
     {
         if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
@@ -32,6 +35,13 @@ public class KartController : MonoBehaviour
         {
             canJump = false;
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1000f));
+        }
+
+        //Si toma el cohete y pulsa el espacio podrá saltar
+        if ((CrossPlatformInputManager.GetButton("Jump") || Input.GetKeyDown(KeyCode.Space)) && item_cohete_fly && !canJump)
+        {
+            StartCoroutine(esperar_milisegundos(.15f));
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 300f));
         }
     }
 
@@ -61,6 +71,11 @@ public class KartController : MonoBehaviour
         {
             canJump = true;
         }
+    }
+
+    IEnumerator esperar_milisegundos(float seg)
+    {
+        yield return new WaitForSeconds(seg);
     }
 
 }
