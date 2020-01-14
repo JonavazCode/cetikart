@@ -454,7 +454,7 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     void imprimirPosiciones()
     {
-        
+        /*
         Debug.Log("primer lugar: " + uno);
         Debug.Log("segundo lugar: " + dos);
         Debug.Log("tercer lugar: " + tres);
@@ -463,6 +463,6 @@ public class CheckpointsPerPJ : MonoBehaviour
         Debug.Log("sexto lugar: " + seis);
         Debug.Log("septimo lugar: " + siete);
         Debug.Log("octavo lugar: " + ocho);
-        
+        */
     }
 }
