@@ -257,7 +257,6 @@ GameObject:
   - component: {fileID: 4413777397568218521}
   - component: {fileID: 4413777397568218502}
   - component: {fileID: 3963746363229461575}
-  - component: {fileID: 8016590427724284721}
   m_Layer: 1
   m_Name: coco_car
   m_TagString: Player
@@ -484,26 +483,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f9593dcf9d23a4fbc958f524aecbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cppj: {fileID: 0}
   cargas: 0
---- !u!95 &8016590427724284721
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4413777397568218503}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 73d04a3be689c2840bf265ab936d8fff, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  posicion: 0
+  pos_anterior: 0
 --- !u!1 &4413777397858264251
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +497,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4413777397858264250}
   - component: {fileID: 4413777397858264253}
+  - component: {fileID: 1651273072418304156}
   m_Layer: 1
   m_Name: coco
   m_TagString: Untagged
@@ -585,3 +569,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1651273072418304156
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413777397858264251}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7dd23355ca04d9144bbc39aedd421911, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
