@@ -15,7 +15,7 @@ public class Llanta_Ponchada : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log(collision.name);
+        //Debug.Log(collision.name);
         StartCoroutine(RegresarPosicion(collision.name));
 
     }
@@ -25,9 +25,9 @@ public class Llanta_Ponchada : MonoBehaviour
 
         int posicion = posicion_jugador(nombre_jugador);
         string nombre_sig_jugador = siguienteJugador(posicion);
-        Debug.Log(posicion);
-        Debug.Log(nombre_sig_jugador);
-        yield return new WaitForSeconds(5);
+       // Debug.Log(posicion);
+        //Debug.Log(nombre_sig_jugador);
+        yield return new WaitForSeconds(3);
         if (nombre_sig_jugador != "uno")
         {
             var sig_jugador = GameObject.Find(nombre_sig_jugador);
