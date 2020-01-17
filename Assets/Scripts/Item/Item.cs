@@ -10,13 +10,6 @@ public class Item : MonoBehaviour
     {
         cargasDeJugador = FindObjectOfType<Propiedades>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string tag = collision.tag;
@@ -25,11 +18,6 @@ public class Item : MonoBehaviour
             cargasDeJugador.cargas++;
 
         }
-        Debug.Log(tag);
-        Destroy(gameObject);
-       
-
-        
+        Destroy(gameObject);   
     }
-
 }

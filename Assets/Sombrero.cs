@@ -41,6 +41,7 @@ public class Sombrero : MonoBehaviour
         
         yield return new WaitForSeconds(5);
         //afectado.transform.localScale = new Vector3(x_2, y_2, z_2);
+        Debug.Log("se debería hacer grandote");
         afectado.transform.localScale = trans_afectado;
         try
         {
