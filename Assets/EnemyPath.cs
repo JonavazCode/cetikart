@@ -18,7 +18,7 @@ public class EnemyPath : MonoBehaviour
     private float movement = 0f;
     public float rotation = 0f;
 
-    private bool canJump;
+    public bool canJump;
 
 
     private int checkpointIndex = 0;
