@@ -5,12 +5,11 @@ using UnityEngine;
 public class Crash : MonoBehaviour
 {
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.tag == "Player")
+        if (col.transform.tag == "Player")
         {
             col.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
-
 }

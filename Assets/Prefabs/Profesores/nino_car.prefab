@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4878928756488429263}
   - component: {fileID: 4878928756488429262}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: "Ni\xF1o_0"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,9 +66,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
+  m_SortingOrder: 0
   m_Sprite: {fileID: 1455718929532272802, guid: d390bbf3200eebf48beff844c01ee47b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 4878928756743995198}
   - component: {fileID: 4878928756743995192}
   - component: {fileID: 4878928756743995199}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,8 +149,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 4878928756770540138}
   - component: {fileID: 2159690879858219441}
   - component: {fileID: 8396309677856938762}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: nino_car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -278,8 +278,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 1104935239978568762, guid: 7190c0ace7a580546b45fa32591d95ec,
     type: 3}
@@ -407,6 +407,7 @@ MonoBehaviour:
   rb: {fileID: 4878928756770540141}
   movement: 0
   rotation: 0
+  item_cohete_fly: 0
 --- !u!61 &4878928756770540138
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -445,7 +446,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f9593dcf9d23a4fbc958f524aecbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cppj: {fileID: 0}
   cargas: 0
+  posicion: 0
+  pos_anterior: 0
 --- !u!95 &8396309677856938762
 Animator:
   serializedVersion: 3
@@ -477,7 +481,7 @@ GameObject:
   - component: {fileID: 4878928757698526073}
   - component: {fileID: 4878928757698526075}
   - component: {fileID: 4878928757698526074}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,8 +537,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}

@@ -13,12 +13,12 @@ GameObject:
   - component: {fileID: 5062484965659067967}
   - component: {fileID: 5062484965659067966}
   - component: {fileID: 5062484965659067953}
-  - component: {fileID: 5062484965659067955}
   - component: {fileID: 5062484965659067962}
   - component: {fileID: 5062484965659067952}
   - component: {fileID: 8372985759701764759}
   - component: {fileID: 8999169826783517530}
-  m_Layer: 1
+  - component: {fileID: 1939049499}
+  m_Layer: 8
   m_Name: molina_car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -8044669077453804398, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -161,50 +161,6 @@ WheelJoint2D:
   m_Motor:
     m_MotorSpeed: 0
     m_MaximumMotorForce: 10000
---- !u!60 &5062484965659067955
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5062484965659067954}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.56, y: 0.2}
-    newSize: {x: 0.56, y: 0.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.21706568, y: 0.044245355}
-      - {x: 0.11576903, y: 0.04861599}
-      - {x: 0.07652104, y: 0.000604463}
-      - {x: 0.1779831, y: 0.014219703}
-      - {x: 0.2106376, y: 0.04695443}
-      - {x: 0.13441125, y: 0.04693682}
-      - {x: 0.09682811, y: 0.02758289}
-      - {x: 0.049868587, y: 0.031677082}
-      - {x: -0.027002616, y: 0.033149626}
-      - {x: -0.06561941, y: 0.027165696}
-      - {x: -0.09771432, y: 0.028221903}
-      - {x: -0.22717986, y: 0.023048706}
-      - {x: -0.23891763, y: -0.020770734}
-      - {x: -0.23022512, y: -0.07968029}
-      - {x: 0.053949855, y: -0.06906968}
-      - {x: 0.2711967, y: -0.07787169}
-      - {x: 0.27172348, y: -0.010323128}
-      - {x: 0.2506555, y: 0.011852121}
-      - {x: 0.21717973, y: 0.048917558}
 --- !u!114 &5062484965659067962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +180,8 @@ MonoBehaviour:
   rb: {fileID: 5062484965659067967}
   movement: 0
   rotation: 0
+  canJump: 0
+  item_cohete_fly: 0
 --- !u!61 &5062484965659067952
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -234,7 +192,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.000958547, y: 0.05176215}
@@ -262,7 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f9593dcf9d23a4fbc958f524aecbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cppj: {fileID: 0}
   cargas: 0
+  posicion: 0
+  pos_anterior: 0
 --- !u!95 &8999169826783517530
 Animator:
   serializedVersion: 3
@@ -282,6 +243,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!61 &1939049499
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5062484965659067954}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02247528, y: -0.049692415}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.56, y: 0.2}
+    newSize: {x: 0.56, y: 0.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.50847197, y: 0.16546537}
+  m_EdgeRadius: 0
 --- !u!1 &5062484965691814320
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +281,7 @@ GameObject:
   - component: {fileID: 5062484965691814335}
   - component: {fileID: 5062484965691814321}
   - component: {fileID: 5062484965691814334}
-  m_Layer: 1
+  m_Layer: 9
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -350,8 +337,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -395,7 +382,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5062484965691814320}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -412,7 +399,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5062484966553824633}
   - component: {fileID: 5062484966553824614}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,8 +455,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 180029469612090331, guid: d48675e0223c9d64a8b1f2f08fe362f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -494,7 +481,7 @@ GameObject:
   - component: {fileID: 5062484966920258795}
   - component: {fileID: 5062484966920258797}
   - component: {fileID: 5062484966920258794}
-  m_Layer: 1
+  m_Layer: 9
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,8 +537,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -595,7 +582,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5062484966920258796}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

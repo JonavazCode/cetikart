@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6258408682607531308}
   - component: {fileID: 6258408682607531298}
   - component: {fileID: 6258408682607531299}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 6258408682607531297}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 6258408682764957433}
   - component: {fileID: 6258408682764957439}
   - component: {fileID: 2466158292304508617}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: gussa_carE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.14067614, y: -0.32326233}
+  m_Offset: {x: 0.14067614, y: -0.5177209}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -303,7 +303,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.1186478, y: 0.5534754}
+  m_Size: {x: 3.1186478, y: 0.94239247}
   m_EdgeRadius: 0
 --- !u!61 &6258408682764957439
 BoxCollider2D:
@@ -318,7 +318,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.087922096, y: 0.13188338}
+  m_Offset: {x: 0.087922096, y: 0.36733007}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -329,7 +329,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.6262817, y: 0.4790361}
+  m_Size: {x: 2.6262817, y: 0.9499295}
   m_EdgeRadius: 0
 --- !u!114 &2466158292304508617
 MonoBehaviour:
@@ -360,7 +360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6258408683008182918}
   - component: {fileID: 6258408683008182919}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Gussa_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 6258408683106054107}
   - component: {fileID: 6258408683106054105}
   - component: {fileID: 6258408683106054106}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +544,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 6258408683106054104}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

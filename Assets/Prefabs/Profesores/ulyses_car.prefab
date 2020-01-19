@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1172356193079751390}
   - component: {fileID: 1172356193079751391}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Ulyses_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,8 +66,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5496588198333370600, guid: b7dcf5854ca09ba47b4e181807475766,
     type: 3}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 1172356193162547641}
   - component: {fileID: 8539964074723553549}
   - component: {fileID: 5650055941097085854}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: ulyses_car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -158,9 +158,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: -4240934884726797993, guid: 612cbb903185bed42a903a64874b4752,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -287,6 +287,7 @@ MonoBehaviour:
   rb: {fileID: 1172356193162547618}
   movement: 0
   rotation: 0
+  item_cohete_fly: 0
 --- !u!61 &1172356193162547641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -325,7 +326,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f9593dcf9d23a4fbc958f524aecbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cppj: {fileID: 0}
   cargas: 0
+  posicion: 0
+  pos_anterior: 0
 --- !u!95 &5650055941097085854
 Animator:
   serializedVersion: 3
@@ -357,7 +361,7 @@ GameObject:
   - component: {fileID: 1172356193482860069}
   - component: {fileID: 1172356193482860071}
   - component: {fileID: 1172356193482860068}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -413,8 +417,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -477,7 +481,7 @@ GameObject:
   - component: {fileID: 1172356194131055141}
   - component: {fileID: 1172356194131055143}
   - component: {fileID: 1172356194131055140}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,8 +537,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
