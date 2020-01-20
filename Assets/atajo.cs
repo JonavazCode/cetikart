@@ -17,7 +17,7 @@ public class atajo : MonoBehaviour
     {
         if (other.name == "Profesor Molina_Interfaz" || other.name == "Profesor_Coco_Interfaz" || other.name == "Profesor_Niño_Interfaz" || other.name == "Profesor_Ruben_Interfaz" || other.name == "Profesor_Sergio_Interfaz" || other.name == "Profesora_Areli_Interfaz" || other.name == "Profesora_Susana_Interfaz" || other.name == "Profesor_Ulyses_Interfaz")
         {
-            levelManager.Atajo();
+            //levelManager.Atajo();
         }
         Destroy(gameObject);
         

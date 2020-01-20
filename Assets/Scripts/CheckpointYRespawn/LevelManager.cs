@@ -1,16 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using cetikart.utilidades;
 public class LevelManager : MonoBehaviour
 {
-    public GameObject checkPointRandom, checkPoint5; //checkpoint actual, checkpoint elegido aleatoriamente
+    public GameObject checkPointRandom; //checkpoint actual
     public GameObject[] checkPoints; //lista de checkpoints colectados
-    private Movimiento_Profesor_Molina player; //jugador
-
     public int timeCount; // conversion a segundos
-
     public GameObject[] obj;//variable para instanciar los objetos
+
+    public CheckpointsPerPJ cppj;
 
     #region flags
 
@@ -20,19 +19,12 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        player = FindObjectOfType<Movimiento_Profesor_Molina>();
         checkPoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+        cppj = FindObjectOfType<CheckpointsPerPJ>();
         acomodar();
         StartCoroutine(GenerarItems());
-        
-
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-   
-    }
 
     private void acomodar()
     {
@@ -53,14 +45,14 @@ public class LevelManager : MonoBehaviour
     public void RespawnPlayer(string pjName, GameObject currentCheckpoint)
     {
        Debug.Log("Nombre del  personaje: " + pjName);
-        Debug.Log("nombre del checkpoint: " + currentCheckpoint.name);
-        GameObject pj = GameObject.Find(pjName);
-        pj.transform.position = currentCheckpoint.transform.position;
-        //player.transform.position = currentCheckPoint.transform.position; //posición del jugador ahora es la posición del último checkpoint que pasó
+       Debug.Log("nombre del checkpoint: " + currentCheckpoint.name);
+       GameObject pj = GameObject.Find(pjName);
+       pj.transform.position = currentCheckpoint.transform.position;
     }
 
     IEnumerator GenerarItems()
     {
+        int contador_puerta = 0;
         while (true)
         {
             if (!firstFlag)
@@ -71,11 +63,17 @@ public class LevelManager : MonoBehaviour
             else
             {
                 Debug.Log("Generar item");
-                int randomPosition = Random.Range(0, checkPoints.Length); //numero random entre 0 y el número de checkpoints de la pista
+                if (contador_puerta == 5)
+                {
+                    Debug.Log("Objeto puerta va a spawnear");
+                }
+                int randomPosition = Random.Range(cppj.checkpoint_actual_jugador(cppj.uno, checkPoints)+1, cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints)); //numero random entre 0 y el número de checkpoints de la pista
+                Debug.LogFormat("El index elegido es: {0}", randomPosition);
                 checkPointRandom = checkPoints[randomPosition]; //Instancia de checkpoint random
                 int randomRange = Random.Range(0, obj.Length); //numero random entre 0 y el numero de objetos existentes
                 Instantiate(obj[randomRange], transform.position = checkPointRandom.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
                 yield return new WaitForSeconds(5);
+                contador_puerta++;
             }
             
         }
@@ -83,11 +81,5 @@ public class LevelManager : MonoBehaviour
        
     }
 
-    public void Atajo()
-    {
-        Debug.Log("Atajo");
-        player.transform.position = checkPoint5.transform.position;
-
-    }
 
 }

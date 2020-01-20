@@ -92,5 +92,93 @@ namespace cetikart.utilidades
                 return "uno";
             }
         }
+
+
+        public static int checkpoint_actual_jugador(this CheckpointsPerPJ cppj, string nombre_jugador, GameObject[] checkpoints)
+        {
+
+            if (nombre_jugador.Contains(nameof(cppj.molina)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.molina.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+
+                }
+            }
+            else if (nombre_jugador.Contains(nameof(cppj.coco)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.coco.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+                }
+            }
+            else if (nombre_jugador.Contains(nameof(cppj.areli)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.areli.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+                }
+            }
+            else if (nombre_jugador.Contains(nameof(cppj.nino)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.nino.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+                }
+            }
+            else if (nombre_jugador.Contains(nameof(cppj.agentek)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.agentek.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+                }
+            }
+            else if (nombre_jugador.Contains(nameof(cppj.sergio)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.sergio.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+                }
+            }
+            else if (nombre_jugador.Contains(nameof(cppj.gussa)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.gussa.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+                }
+            }
+            else if (nombre_jugador.Contains(nameof(cppj.ulyses)))
+            {
+                for (int i = 0; i <= checkpoints.Length - 1; i++)
+                {
+                    if (cppj.ulyses.transform == checkpoints[i].transform)
+                    {
+                        return i;
+                    }
+                }
+            }
+            return -1;
+        }
     }
 }
