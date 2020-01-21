@@ -19,9 +19,9 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
-        checkPoints = GameObject.FindGameObjectsWithTag("Checkpoint");
+        //checkPoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         cppj = FindObjectOfType<CheckpointsPerPJ>();
-        acomodar();
+        //acomodar();
         StartCoroutine(GenerarItems());
     }
 
