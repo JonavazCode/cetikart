@@ -67,7 +67,11 @@ public class LevelManager : MonoBehaviour
                 {
                     Debug.Log("Objeto puerta va a spawnear");
                 }
-                int randomPosition = Random.Range(cppj.checkpoint_actual_jugador(cppj.uno, checkPoints)+1, cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints)); //numero random entre 0 y el número de checkpoints de la pista
+                int inicia = cppj.checkpoint_actual_jugador(cppj.uno, checkPoints);
+                int termina = cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints);
+                Debug.Log(inicia);
+                Debug.Log(termina);
+                int randomPosition = Random.Range(termina, inicia); //numero random entre 0 y el número de checkpoints de la pista
                 Debug.LogFormat("El index elegido es: {0}", randomPosition);
                 checkPointRandom = checkPoints[randomPosition]; //Instancia de checkpoint random
                 int randomRange = Random.Range(0, obj.Length); //numero random entre 0 y el numero de objetos existentes
