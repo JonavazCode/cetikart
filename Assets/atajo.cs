@@ -56,7 +56,7 @@ public class atajo : MonoBehaviour
             catch
             {
                 Debug.Log("En el catch");
-                other.transform.position = levelManager.checkPoints[checkpoint_index + 2].transform.position;
+                other.transform.position = levelManager.checkPoints[checkpoint_index + 1].transform.position;
             }
 
             
