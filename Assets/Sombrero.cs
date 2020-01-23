@@ -7,26 +7,21 @@ public class Sombrero : MonoBehaviour
 {
     public GameObject afectado;
     public GameObject trash;
-    public float x = -1;
-    public float y = -1;
-    public float z = -1;
-    public float x_2 = 1;
-    public float y_2 = 1;
-    public float z_2 = 1;
-    public EnemyPath EP;
+    public CheckpointsPerPJ cppj;
 
     // Start is called before the first frame update
     void Start()
     {
-        EP = FindObjectOfType<EnemyPath>();
+        cppj = FindObjectOfType<CheckpointsPerPJ>();
         trash = GameObject.Find("Trash");
+        StartCoroutine(DestruirObjeto());
+    }
+    IEnumerator DestruirObjeto()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void OnTriggerEnter2D(Collider2D collision) {
 
         StartCoroutine(RegresarPosicion());
@@ -35,11 +30,35 @@ public class Sombrero : MonoBehaviour
     IEnumerator RegresarPosicion()
     {
         gameObject.transform.position = trash.transform.position;
-        afectado.transform.localScale = new Vector3(x, y, z);
-        EP.speed = 500;
+
+        afectado = GameObject.Find(cppj.uno);
+        float posicion_afectado = afectado.transform.position.y;
+        afectado.transform.localScale = new Vector3((afectado.transform.localScale.x *.5f), (afectado.transform.localScale.y * .5f), (afectado.transform.localScale.z * .5f));
+        try
+        {
+            Debug.Log("Sombrero afectando a enemigo");
+            afectado.GetComponent<EnemyPath>().speed = 500;
+        }
+        catch
+        {
+            Debug.Log("Sombrero afectando a aliado");
+            afectado.GetComponent<KartController>().speed = 500;
+        }
+        
         yield return new WaitForSeconds(5);
-        afectado.transform.localScale = new Vector3(x_2, y_2, z_2);
-        EP.speed = 1000;
+        Debug.Log("se debería hacer grandote");
+        afectado.transform.localScale = new Vector3((afectado.transform.localScale.x * 2f), (afectado.transform.localScale.y * 2f), (afectado.transform.localScale.z * 2f));
+        afectado.transform.localPosition = new Vector3(afectado.transform.position.x, posicion_afectado);
+        try
+        {
+            Debug.Log("");
+            afectado.GetComponent<EnemyPath>().speed = 1000;
+        }
+        catch
+        {
+            Debug.Log("");
+            afectado.GetComponent<KartController>().speed = 1000;
+        }
         Destroy(gameObject);
 
 

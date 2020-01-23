@@ -14,8 +14,7 @@ public class CheckpointsPerPJ : MonoBehaviour
     #endregion
     public bool carreraFinalizada = false;
     private LevelManager levelManager; //instancia de LevelManager
-    public GameObject molina, coco, nino, ruben, sergio, ulyses, areli, susana, jugador;
-    public List<GameObject> profesores;
+    public GameObject molina, coco, nino, agentek, sergio, ulyses, areli, gussa, jugador;
     public string uno, dos, tres, cuatro, cinco, seis, siete, ocho;
 
     Transform molina_pos;
@@ -46,11 +45,11 @@ public class CheckpointsPerPJ : MonoBehaviour
         molina = levelManager.checkPoints[0];
         coco = levelManager.checkPoints[0];
         nino = levelManager.checkPoints[0];
-        ruben = levelManager.checkPoints[0];
+        agentek = levelManager.checkPoints[0];
         sergio = levelManager.checkPoints[0];
         ulyses = levelManager.checkPoints[0];
         areli = levelManager.checkPoints[0];
-        susana = levelManager.checkPoints[0];
+        gussa = levelManager.checkPoints[0];
     }
 
     IEnumerator GenerarPosiciones()
@@ -81,8 +80,6 @@ public class CheckpointsPerPJ : MonoBehaviour
 
     public void asociarPosiciones()
     {
-
-
         molina_pos = GameObject.Find("molina_car") ?  GameObject.Find("molina_car").transform : GameObject.Find("molina_carE").transform;
         coco_pos = GameObject.Find("coco_car") ? GameObject.Find("coco_car").transform : GameObject.Find("coco_carE").transform;
         ruben_pos = GameObject.Find("agentek_car") ? GameObject.Find("agentek_car").transform : GameObject.Find("agentek_carE").transform;
@@ -91,9 +88,6 @@ public class CheckpointsPerPJ : MonoBehaviour
         nino_pos = GameObject.Find("nino_car") ? GameObject.Find("nino_car").transform : GameObject.Find("nino_carE").transform;
         sergio_pos = GameObject.Find("sergio_car") ? GameObject.Find("sergio_car").transform : GameObject.Find("sergio_carE").transform;
         ulyses_pos = GameObject.Find("ulyses_car") ? GameObject.Find("ulyses_car").transform : GameObject.Find("ulyses_carE").transform;
-
-  
-
     }
 
     private void MetodoBurbuja(float molina, float coco, float ruben, float areli, float susana, float nino, float sergio, float ulyses)

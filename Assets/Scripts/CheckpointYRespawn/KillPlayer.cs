@@ -36,7 +36,7 @@ public class KillPlayer : MonoBehaviour
         }
         else if (other.name == "ruben_car" || other.name == "RubenE")
         {
-            levelManager.RespawnPlayer(other.name, cpp.ruben);
+            levelManager.RespawnPlayer(other.name, cpp.agentek);
         }
         else if (other.name == "sergio_car" || other.name == "SergioE")
         {
@@ -48,7 +48,7 @@ public class KillPlayer : MonoBehaviour
         }
         else if (other.name == "susana_car" || other.name == "SusanaE")
         {
-            levelManager.RespawnPlayer(other.name, cpp.susana);
+            levelManager.RespawnPlayer(other.name, cpp.gussa);
         }
         else if (other.name == "ulyses_car" || other.name == "UlysesE")
         {

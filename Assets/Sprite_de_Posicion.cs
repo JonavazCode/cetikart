@@ -7,14 +7,14 @@ public class Sprite_de_Posicion : MonoBehaviour
 {
     public CheckpointsPerPJ cppj;
     public GameObject jugador;
-    public Sprite posicion_1 = Resources.Load<Sprite>("Numeros_Posiciones_1");
-    public Sprite posicion_2 = Resources.Load<Sprite>("Numeros_Posiciones_2");
-    public Sprite posicion_3 = Resources.Load<Sprite>("Numeros_Posiciones_3");
-    public Sprite posicion_4 = Resources.Load<Sprite>("Numeros_Posiciones_4");
-    public Sprite posicion_5 = Resources.Load<Sprite>("Numeros_Posiciones_5");
-    public Sprite posicion_6 = Resources.Load<Sprite>("Numeros_Posiciones_6");
-    public Sprite posicion_7 = Resources.Load<Sprite>("Numeros_Posiciones_7");
-    public Sprite posicion_8 = Resources.Load<Sprite>("Numeros_Posiciones_8");
+    public Sprite posicion_1;
+    public Sprite posicion_2;
+    public Sprite posicion_3;
+    public Sprite posicion_4;
+    public Sprite posicion_5;
+    public Sprite posicion_6;
+    public Sprite posicion_7;
+    public Sprite posicion_8;
     // Start is called before the first frame update
     void Start()
     {

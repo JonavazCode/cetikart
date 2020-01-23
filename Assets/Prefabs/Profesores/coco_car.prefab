@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4413777396457119340}
   - component: {fileID: 4413777396457119341}
   - component: {fileID: 4413777396457119338}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 4413777397259887321}
   - component: {fileID: 4413777397259887302}
   - component: {fileID: 4413777397259887303}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,8 +188,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -257,7 +257,8 @@ GameObject:
   - component: {fileID: 4413777397568218521}
   - component: {fileID: 4413777397568218502}
   - component: {fileID: 3963746363229461575}
-  m_Layer: 1
+  - component: {fileID: 8016590427724284721}
+  m_Layer: 8
   m_Name: coco_car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -316,8 +317,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -2891724729435340530, guid: a85161802e6aec84b91986d91658e699,
     type: 3}
@@ -445,6 +446,7 @@ MonoBehaviour:
   rb: {fileID: 4413777397568218525}
   movement: 0
   rotation: 0
+  item_cohete_fly: 0
 --- !u!61 &4413777397568218502
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -487,6 +489,25 @@ MonoBehaviour:
   cargas: 0
   posicion: 0
   pos_anterior: 0
+--- !u!95 &8016590427724284721
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413777397568218503}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 73d04a3be689c2840bf265ab936d8fff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4413777397858264251
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,8 +518,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4413777397858264250}
   - component: {fileID: 4413777397858264253}
-  - component: {fileID: 1651273072418304156}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: coco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,8 +574,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 2676790079534094215, guid: a85161802e6aec84b91986d91658e699,
     type: 3}

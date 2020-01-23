@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7316372776323646434}
   - component: {fileID: 7316372776323646436}
   - component: {fileID: 7316372776323646437}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 7316372776323646439}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 7316372776885250767}
   - component: {fileID: 7316372776885250737}
   - component: {fileID: 7316372776885250766}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,7 +233,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 7316372776885250736}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 7316372777155031635}
   - component: {fileID: 2925714245455725449}
   - component: {fileID: 1488541214892614094}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: areli_carE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -409,10 +409,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.016135931, y: 0.016135812}
+  m_Offset: {x: -0.016135931, y: -0.4140057}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -423,7 +423,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.9010615, y: 1.1677284}
+  m_Size: {x: 2.9010615, y: 1.1677264}
   m_EdgeRadius: 0
 --- !u!61 &2925714245455725449
 BoxCollider2D:
@@ -480,7 +480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7316372777171103243}
   - component: {fileID: 7316372777171103240}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Areli_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

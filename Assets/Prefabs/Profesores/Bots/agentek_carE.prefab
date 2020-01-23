@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3253988618982981221}
   - component: {fileID: 3253988618982981227}
   - component: {fileID: 3253988618982981220}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_FrontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,7 +113,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 3253988618982981226}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 3253988619255630546}
   - component: {fileID: 3253988619255630544}
   - component: {fileID: 1743045335682002959}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: agentek_carE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -240,10 +240,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12249005, y: 0.056616426}
+  m_Offset: {x: 0.12249005, y: -0.11542547}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -254,7 +254,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.227041, y: 0.88676715}
+  m_Size: {x: 3.227041, y: 1.2308509}
   m_EdgeRadius: 0
 --- !u!235 &3253988619255630547
 WheelJoint2D:
@@ -359,7 +359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3253988619754243329}
   - component: {fileID: 3253988619754243330}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Agente K_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 3253988620073463679}
   - component: {fileID: 3253988620073463677}
   - component: {fileID: 3253988620073463678}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 3253988620073463676}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

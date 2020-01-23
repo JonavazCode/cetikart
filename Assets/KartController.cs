@@ -15,7 +15,7 @@ public class KartController : MonoBehaviour
     public float movement = 0f;
     public float rotation = 0f;
 
-    private bool canJump;
+    public bool canJump;
 
 
     public bool item_cohete_fly = false;
@@ -65,7 +65,7 @@ public class KartController : MonoBehaviour
         rb.AddTorque(rotation * rotationSpeed * Time.fixedDeltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "grounder")
         {

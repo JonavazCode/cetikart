@@ -12,8 +12,13 @@ public class Cohete : MonoBehaviour
     {
         trash = GameObject.Find("Trash");
         kc = FindObjectOfType<KartController>();
+        StartCoroutine(DestruirObjeto());
     }
-
+    IEnumerator DestruirObjeto()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         string nombre_profesor = collision.name;
