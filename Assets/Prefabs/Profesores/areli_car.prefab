@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5553716640972560227}
   - component: {fileID: 5553716640972560229}
   - component: {fileID: 5553716640972560228}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,8 +68,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -113,7 +113,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5553716640972560230}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 5553716641567686222}
   - component: {fileID: 5553716641567686192}
   - component: {fileID: 5553716641567686223}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -188,8 +188,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 2
   m_Sprite: {fileID: -8675931322644535322, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -233,7 +233,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5553716641567686193}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -250,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5553716641820015242}
   - component: {fileID: 5553716641820015241}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Areli_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -306,8 +306,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -428856865216730120, guid: c34ce1aee312b5e4cbaac1de170c5de4,
     type: 3}
@@ -339,7 +339,7 @@ GameObject:
   - component: {fileID: 1676941064}
   - component: {fileID: 8177715427141799363}
   - component: {fileID: 5244219368183903543}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: areli_car
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -398,8 +398,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 838907675
-  m_SortingLayer: 1
+  m_SortingLayerID: 1061865561
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: -3716689200444652236, guid: c34ce1aee312b5e4cbaac1de170c5de4,
     type: 3}
@@ -501,6 +501,7 @@ MonoBehaviour:
   rb: {fileID: 5553716641837983443}
   movement: 0
   rotation: 0
+  item_cohete_fly: 0
 --- !u!61 &5553716641837983442
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -565,7 +566,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41f9593dcf9d23a4fbc958f524aecbd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cppj: {fileID: 0}
   cargas: 0
+  posicion: 0
+  pos_anterior: 0
 --- !u!95 &5244219368183903543
 Animator:
   serializedVersion: 3

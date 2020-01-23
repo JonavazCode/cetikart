@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7956921343992608325}
   - component: {fileID: 7956921343992608347}
   - component: {fileID: 3102818255333613782}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: ulyses_carE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -169,10 +169,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13377273, y: -0.63625693}
+  m_Offset: {x: 0.13377273, y: -0.82674766}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -183,7 +183,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0319045, y: 0.67602444}
+  m_Size: {x: 3.0319045, y: 1.0570059}
   m_EdgeRadius: 0
 --- !u!61 &7956921343992608347
 BoxCollider2D:
@@ -198,7 +198,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00000011920929, y: -0.13918106}
+  m_Offset: {x: 0.14685166, y: -0.043935657}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -209,7 +209,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.3964841, y: 0.43742684}
+  m_Size: {x: 2.7969887, y: 0.62791765}
   m_EdgeRadius: 0
 --- !u!114 &3102818255333613782
 MonoBehaviour:
@@ -240,7 +240,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7956921344077501756}
   - component: {fileID: 7956921344077501757}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Ulyses_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 7956921344204964295}
   - component: {fileID: 7956921344204964293}
   - component: {fileID: 7956921344204964294}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 7956921344204964292}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -443,7 +443,7 @@ GameObject:
   - component: {fileID: 7956921345103689159}
   - component: {fileID: 7956921345103689157}
   - component: {fileID: 7956921345103689158}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -544,7 +544,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 7956921345103689156}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
