@@ -67,7 +67,7 @@ public class LevelManager : MonoBehaviour
                 inicia = cppj.checkpoint_actual_jugador(cppj.uno, checkPoints);
                 termina = cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints);
                 randomPosition = Random.Range(termina, inicia); //numero random entre 0 y el número de checkpoints de la pista
-                checkPointRandomAtajo = checkPoints[checkPoints.Length-2]; //Instancia de checkpoint random
+                checkPointRandomAtajo = checkPoints[randomPosition]; //Instancia de checkpoint random
                 Instantiate(obj[6], transform.position = checkPointRandomAtajo.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
                 yield return new WaitForSeconds(10);
 
