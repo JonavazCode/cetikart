@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; //Con esta libreria es posiible controlar el cambio entre scenas dentro del juego
 /// <summary>
 /// Esta clase es la encargada de mostrar las posiciones de los jugadores al final de la carrera.
 /// </summary>
@@ -80,5 +81,10 @@ public class Historial : MonoBehaviour
     {
 
         return nombre.Contains("_carE") ? " (BOT)" : " (TÚ)";
+    }
+
+    public void Return()
+    {
+        SceneManager.LoadScene("Seleccion_Mapa");//Esta funcion hace que la escena seleccionada se cargue
     }
 }
