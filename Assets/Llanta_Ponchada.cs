@@ -11,6 +11,12 @@ public class Llanta_Ponchada : MonoBehaviour
     {
         trash = GameObject.Find("Trash");
         cppj = FindObjectOfType<CheckpointsPerPJ>();
+        StartCoroutine(DestruirObjeto());
+    }
+    IEnumerator DestruirObjeto()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)

@@ -4,7 +4,7 @@ using UnityEngine;
 using cetikart.utilidades;
 public class LevelManager : MonoBehaviour
 {
-    public GameObject checkPointRandom; //checkpoint actual
+    public GameObject checkPointRandom, checkPointRandomAtajo; //checkpoint actual
     public GameObject[] checkPoints; //lista de checkpoints colectados
     public int timeCount; // conversion a segundos
     public GameObject[] obj;//variable para instanciar los objetos
@@ -14,18 +14,18 @@ public class LevelManager : MonoBehaviour
     #region flags
 
     private bool firstFlag = false; //bandera de espera para los items
+    private bool firstFlagAtajo = false; //bandera de espera para los atajos
 
     #endregion
 
     void Start()
     {
-        //checkPoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         cppj = FindObjectOfType<CheckpointsPerPJ>();
-        //acomodar();
         StartCoroutine(GenerarItems());
+        StartCoroutine(GenerarAtajo());
     }
 
-
+    /*
     private void acomodar()
     {
         GameObject[] cps = new GameObject[checkPoints.Length];
@@ -41,7 +41,7 @@ public class LevelManager : MonoBehaviour
 
         checkPoints = cps;
     }
-
+    */
     public void RespawnPlayer(string pjName, GameObject currentCheckpoint)
     {
        Debug.Log("Nombre del  personaje: " + pjName);
@@ -50,9 +50,38 @@ public class LevelManager : MonoBehaviour
        pj.transform.position = currentCheckpoint.transform.position;
     }
 
+    IEnumerator GenerarAtajo()
+    {
+        int inicia;
+        int termina;
+        int randomPosition;
+        while (true)
+        {
+            if (!firstFlagAtajo)
+            {
+                firstFlagAtajo = true;
+                yield return new WaitForSeconds(10);
+            }
+            else
+            {
+                inicia = cppj.checkpoint_actual_jugador(cppj.uno, checkPoints);
+                termina = cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints);
+                randomPosition = Random.Range(termina, inicia); //numero random entre 0 y el número de checkpoints de la pista
+                checkPointRandomAtajo = checkPoints[checkPoints.Length-2]; //Instancia de checkpoint random
+                Instantiate(obj[6], transform.position = checkPointRandomAtajo.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
+                yield return new WaitForSeconds(10);
+
+            }
+
+        }
+
+    }
     IEnumerator GenerarItems()
     {
-        int contador_puerta = 0;
+        int inicia;
+        int termina;
+        int randomPosition;
+
         while (true)
         {
             if (!firstFlag)
@@ -62,27 +91,22 @@ public class LevelManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("Generar item");
-                if (contador_puerta == 5)
-                {
-                    Debug.Log("Objeto puerta va a spawnear");
-                }
-                int inicia = cppj.checkpoint_actual_jugador(cppj.uno, checkPoints);
-                int termina = cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints);
-                Debug.Log(termina);
-                Debug.Log(inicia);
-                int randomPosition = Random.Range(termina, inicia); //numero random entre 0 y el número de checkpoints de la pista
-                checkPointRandom = checkPoints[randomPosition]; //Instancia de checkpoint random
-                int randomRange = Random.Range(0, obj.Length); //numero random entre 0 y el numero de objetos existentes
-                Instantiate(obj[randomRange], transform.position = checkPointRandom.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
-                yield return new WaitForSeconds(5);
-                contador_puerta++;
+                    inicia = cppj.checkpoint_actual_jugador(cppj.uno, checkPoints);
+                    termina = cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints);
+                    randomPosition = Random.Range(termina, inicia); //numero random entre 0 y el número de checkpoints de la pista
+                    checkPointRandom = checkPoints[randomPosition]; //Instancia de checkpoint random
+                    int randomRange = Random.Range(0, obj.Length-1); //numero random entre 0 y el numero de objetos existentes
+                    Debug.LogFormat("item numero: {0} de la lista", randomRange);
+                    Instantiate(obj[randomRange], transform.position = checkPointRandom.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
+                    yield return new WaitForSeconds(5);
+               
             }
             
         }
        
        
     }
+
 
 
 }

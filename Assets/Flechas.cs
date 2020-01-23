@@ -9,8 +9,13 @@ public class Flechas : MonoBehaviour
     void Start()
     {
         cppj = FindObjectOfType<CheckpointsPerPJ>();
+        StartCoroutine(DestruirObjeto());
     }
-
+    IEnumerator DestruirObjeto()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject atacante = GameObject.Find(collision.name);

@@ -13,9 +13,14 @@ public class Llanta_Potenciada : MonoBehaviour
     void Start()
     {
         trash = GameObject.Find("Trash");
+        StartCoroutine(DestruirObjeto());
         
     }
-
+    IEnumerator DestruirObjeto()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
+    }
     public void OnTriggerEnter2D(Collider2D collision)
     {
 

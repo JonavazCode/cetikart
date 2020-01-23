@@ -14,6 +14,12 @@ public class Sombrero : MonoBehaviour
     {
         cppj = FindObjectOfType<CheckpointsPerPJ>();
         trash = GameObject.Find("Trash");
+        StartCoroutine(DestruirObjeto());
+    }
+    IEnumerator DestruirObjeto()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
 
     public void OnTriggerEnter2D(Collider2D collision) {
@@ -26,8 +32,8 @@ public class Sombrero : MonoBehaviour
         gameObject.transform.position = trash.transform.position;
 
         afectado = GameObject.Find(cppj.uno);
-        var trans_afectado = afectado.transform.localScale;
-        afectado.transform.localScale = new Vector3((trans_afectado.x *.5f), (trans_afectado.y * .5f), (trans_afectado.z * .5f));
+        float posicion_afectado = afectado.transform.position.y;
+        afectado.transform.localScale = new Vector3((afectado.transform.localScale.x *.5f), (afectado.transform.localScale.y * .5f), (afectado.transform.localScale.z * .5f));
         try
         {
             Debug.Log("Sombrero afectando a enemigo");
@@ -40,9 +46,9 @@ public class Sombrero : MonoBehaviour
         }
         
         yield return new WaitForSeconds(5);
-        //afectado.transform.localScale = new Vector3(x_2, y_2, z_2);
         Debug.Log("se debería hacer grandote");
-        afectado.transform.localScale = trans_afectado;
+        afectado.transform.localScale = new Vector3((afectado.transform.localScale.x * 2f), (afectado.transform.localScale.y * 2f), (afectado.transform.localScale.z * 2f));
+        afectado.transform.localPosition = new Vector3(afectado.transform.position.x, posicion_afectado);
         try
         {
             Debug.Log("");

@@ -9,6 +9,12 @@ public class Item : MonoBehaviour
     void Start()
     {
         cargasDeJugador = FindObjectOfType<Propiedades>();
+        StartCoroutine(DestruirObjeto());
+    }
+    IEnumerator DestruirObjeto()
+    {
+        yield return new WaitForSeconds(5);
+        Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
