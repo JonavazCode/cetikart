@@ -1776,7 +1776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 542920077}
   - component: {fileID: 542920078}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Torso
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1857,7 +1857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 549235404}
   - component: {fileID: 549235405}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Carro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2596,7 +2596,7 @@ GameObject:
   m_Component:
   - component: {fileID: 848018086}
   - component: {fileID: 848018087}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Pies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3209,7 +3209,7 @@ GameObject:
   - component: {fileID: 1251770292}
   - component: {fileID: 1251770294}
   - component: {fileID: 1251770293}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: custom_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3595,7 +3595,7 @@ GameObject:
   - component: {fileID: 1291546696}
   - component: {fileID: 1291546694}
   - component: {fileID: 1291546695}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: custom_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4308,7 +4308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1370328560}
   - component: {fileID: 1370328561}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Cabeza
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4520,7 +4520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1427785180}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Jugador
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5414,7 +5414,7 @@ GameObject:
   - component: {fileID: 1567172668}
   - component: {fileID: 1567172667}
   - component: {fileID: 1567172666}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Personaje_Custom
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -5530,7 +5530,10 @@ MonoBehaviour:
   backWheel: {fileID: 1567172670}
   frontWheel: {fileID: 1567172669}
   rb: {fileID: 1567172671}
+  movement: 0
   rotation: 0
+  canJump: 0
+  item_cohete_fly: 0
 --- !u!235 &1567172669
 WheelJoint2D:
   m_ObjectHideFlags: 0
@@ -5980,7 +5983,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1835311963}
   - component: {fileID: 1835311964}
-  m_Layer: 1
+  m_Layer: 8
   m_Name: Piernas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
