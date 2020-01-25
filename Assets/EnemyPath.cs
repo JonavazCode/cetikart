@@ -31,7 +31,7 @@ public class EnemyPath : MonoBehaviour
     private void Update()
     {
         //"Run"
-        // movement = -1 * speed;
+         movement = -1 * speed;
 
         //  movement = 0;
 

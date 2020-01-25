@@ -7,7 +7,7 @@ public class Crash : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.transform.tag == "Player")
+        if (col.transform.tag == "Player"|| col.transform.tag == "Enemy")
         {
             col.transform.rotation = Quaternion.Euler(0, 0, 0);
         }

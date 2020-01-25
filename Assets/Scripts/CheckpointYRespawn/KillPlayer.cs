@@ -22,35 +22,35 @@ public class KillPlayer : MonoBehaviour
         }
         */
 
-        if (other.name == "molina_car" || other.name == "MolinaE")
+        if (other.name.Contains("molina"))
         {
             levelManager.RespawnPlayer(other.name, cpp.molina);
         }
-        else if (other.name == "coco_car" || other.name == "CocoE")
+        else if (other.name.Contains("coco"))
         {
             levelManager.RespawnPlayer(other.name, cpp.coco);
         }
-        else if (other.name == "niño_car" || other.name == "NinoE")
+        else if (other.name.Contains("nino"))
         {
             levelManager.RespawnPlayer(other.name, cpp.nino);
         }
-        else if (other.name == "ruben_car" || other.name == "RubenE")
+        else if (other.name.Contains("agentek"))
         {
             levelManager.RespawnPlayer(other.name, cpp.agentek);
         }
-        else if (other.name == "sergio_car" || other.name == "SergioE")
+        else if (other.name.Contains("sergio"))
         {
             levelManager.RespawnPlayer(other.name, cpp.sergio);
         }
-        else if (other.name == "areli_car" || other.name == "AreliE")
+        else if (other.name.Contains("areli"))
         {
             levelManager.RespawnPlayer(other.name, cpp.areli);
         }
-        else if (other.name == "susana_car" || other.name == "SusanaE")
+        else if (other.name.Contains("gussa"))
         {
             levelManager.RespawnPlayer(other.name, cpp.gussa);
         }
-        else if (other.name == "ulyses_car" || other.name == "UlysesE")
+        else if (other.name.Contains("ulyses"))
         {
             levelManager.RespawnPlayer(other.name, cpp.ulyses);
         }

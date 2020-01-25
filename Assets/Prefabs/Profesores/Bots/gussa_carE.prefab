@@ -289,7 +289,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.14067614, y: -0.5177209}
@@ -315,7 +315,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.087922096, y: 0.36733007}
@@ -350,6 +350,7 @@ MonoBehaviour:
   frontWheel: {fileID: 6258408682764957434}
   rb: {fileID: 6258408682764957412}
   rotation: 0
+  canJump: 0
 --- !u!1 &6258408683008182917
 GameObject:
   m_ObjectHideFlags: 0

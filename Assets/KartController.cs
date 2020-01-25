@@ -20,6 +20,14 @@ public class KartController : MonoBehaviour
 
     public bool item_cohete_fly = false;
 
+    private LevelManager levelManager; //instancia de LevelManager
+    private CheckpointsPerPJ cpp;
+
+    public void Start()
+    {
+        levelManager = FindObjectOfType<LevelManager>(); //encuentra el objeto LevelManager
+        cpp = FindObjectOfType<CheckpointsPerPJ>();
+    }
     private void Update()
     {
         if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
@@ -42,6 +50,43 @@ public class KartController : MonoBehaviour
         {
             StartCoroutine(esperar_milisegundos(.15f));
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 300f));
+        }
+
+        if (CrossPlatformInputManager.GetButton("PuntoControl") || Input.GetKeyDown(KeyCode.K))
+        {
+            if (this.name.Contains("molina"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.molina);
+            }
+            else if (this.name.Contains("coco"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.coco);
+            }
+            else if (this.name.Contains("nino"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.nino);
+            }
+            else if (this.name.Contains("agentek"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.agentek);
+            }
+            else if (this.name.Contains("sergio"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.sergio);
+            }
+            else if (this.name.Contains("areli"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.areli);
+            }
+            else if (this.name.Contains("gussa"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.gussa);
+            }
+            else if (this.name.Contains("ulyses"))
+            {
+                levelManager.RespawnPlayer(this.name, cpp.ulyses);
+            }
+
         }
     }
 
