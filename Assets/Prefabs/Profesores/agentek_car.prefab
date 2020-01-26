@@ -406,7 +406,10 @@ MonoBehaviour:
   rb: {fileID: 7752389867935127149}
   movement: 0
   rotation: 0
+  canJump: 0
   item_cohete_fly: 0
+  niv_dif: {fileID: 0}
+  speedPERdif: 0
 --- !u!61 &7752389867935127152
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -449,6 +452,8 @@ MonoBehaviour:
   cargas: 0
   posicion: 0
   pos_anterior: 0
+  cargasPERdificultad: 0
+  niv_dif: {fileID: 0}
 --- !u!95 &5017169426319358000
 Animator:
   serializedVersion: 3
@@ -459,7 +464,7 @@ Animator:
   m_GameObject: {fileID: 7752389867935127159}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1cf70043312f49f4ab1415b12d450fef, type: 2}
+  m_Controller: {fileID: 9100000, guid: dfc2aefbc68e81b46b791d0d2125d3b7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

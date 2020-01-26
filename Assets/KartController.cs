@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 public class KartController : MonoBehaviour
 {
-    public float speed = 1500f;
+    public float speed;
     public float rotationSpeed = 12f;
 
     public WheelJoint2D backWheel;
@@ -23,29 +23,42 @@ public class KartController : MonoBehaviour
     private LevelManager levelManager; //instancia de LevelManager
     private CheckpointsPerPJ cpp;
     public Dificultad niv_dif;
+    public float speedPERdif;
+
+    
+    
 
     public void Start()
     {
+        
         levelManager = FindObjectOfType<LevelManager>(); //encuentra el objeto LevelManager
         cpp = FindObjectOfType<CheckpointsPerPJ>();
         niv_dif = FindObjectOfType<Dificultad>();
-    }
-    private void Update()
-    {
+
         if (niv_dif.nivel_dificultad == 1)
         {
+            speedPERdif = 700f;
             speed = 700f;
         }
 
         if (niv_dif.nivel_dificultad == 2)
         {
+            speedPERdif = 1000f;
             speed = 1000f;
         }
 
         if (niv_dif.nivel_dificultad == 3)
         {
+            speedPERdif = 1200f;
             speed = 1200f;
         }
+
+
+    }
+    private void Update()
+    {
+
+       
 
         if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
             movement = -1 * speed;
@@ -139,5 +152,6 @@ public class KartController : MonoBehaviour
     {
         yield return new WaitForSeconds(seg);
     }
+
 
 }

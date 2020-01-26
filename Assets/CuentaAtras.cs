@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class CuentaAtras : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class CuentaAtras : MonoBehaviour
 
     //public GameObject movimiento_camaraGO;
     public GameObject mobileStickGO;
+    public KartController velocidad;
   
 
     // Use this for initialization
     void Start()
     {
         InicioComponentes();
+        velocidad = FindObjectOfType<KartController>();
     }
 
     void InicioComponentes()
@@ -48,6 +51,10 @@ public class CuentaAtras : MonoBehaviour
         this.gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1);
 
+        /*if (CrossPlatformInputManager.GetButton("Run"))
+        {
+            velocidad.speed = 2000f;
+        }*/
         contadorNumerosComp.sprite = numeros[2];
         this.gameObject.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1);
