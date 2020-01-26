@@ -22,16 +22,33 @@ public class EnemyPath : MonoBehaviour
 
 
     private int checkpointIndex = 0;
+
+    public Dificultad niv_dif;
     private void Start()
     {
         checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         acomodar();
+        niv_dif = FindObjectOfType<Dificultad>();
 
     }
     private void Update()
     {
+        if(niv_dif.nivel_dificultad == 1)
+        {
+            speed = 500f;
+        }
+
+        if (niv_dif.nivel_dificultad == 2)
+        {
+            speed = 1000f;
+        }
+
+        if (niv_dif.nivel_dificultad == 3)
+        {
+            speed = 1200f;
+        }
         //"Run"
-         movement = -1 * speed;
+        //movement = -1 * speed;
 
         //  movement = 0;
 

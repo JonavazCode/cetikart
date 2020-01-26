@@ -10,6 +10,8 @@ public class LevelManager : MonoBehaviour
     public GameObject[] obj;//variable para instanciar los objetos
 
     public CheckpointsPerPJ cppj;
+    public int timePERdificultad = 0;
+    public Dificultad niv_dif;
 
     #region flags
 
@@ -23,6 +25,22 @@ public class LevelManager : MonoBehaviour
         cppj = FindObjectOfType<CheckpointsPerPJ>();
         StartCoroutine(GenerarItems());
         StartCoroutine(GenerarAtajo());
+        niv_dif = FindObjectOfType<Dificultad>();
+
+        if (niv_dif.nivel_dificultad == 1)
+        {
+            timePERdificultad = 5;
+        }
+
+        if (niv_dif.nivel_dificultad == 2)
+        {
+            timePERdificultad = 10;
+        }
+
+        if (niv_dif.nivel_dificultad == 3)
+        {
+            timePERdificultad = 20;
+        }
     }
 
     /*
@@ -60,7 +78,7 @@ public class LevelManager : MonoBehaviour
             if (!firstFlagAtajo)
             {
                 firstFlagAtajo = true;
-                yield return new WaitForSeconds(10);
+                yield return new WaitForSeconds(30);
             }
             else
             {
@@ -69,7 +87,7 @@ public class LevelManager : MonoBehaviour
                 randomPosition = Random.Range(termina, inicia); //numero random entre 0 y el número de checkpoints de la pista
                 checkPointRandomAtajo = checkPoints[randomPosition]; //Instancia de checkpoint random
                 Instantiate(obj[6], transform.position = checkPointRandomAtajo.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
-                yield return new WaitForSeconds(10);
+                yield return new WaitForSeconds(30);
 
             }
 
@@ -98,7 +116,7 @@ public class LevelManager : MonoBehaviour
                     int randomRange = Random.Range(0, obj.Length-1); //numero random entre 0 y el numero de objetos existentes
                     Debug.LogFormat("item numero: {0} de la lista", randomRange);
                     Instantiate(obj[randomRange], transform.position = checkPointRandom.transform.position, Quaternion.identity); //posicionar el item en el checkpoint random
-                    yield return new WaitForSeconds(5);
+                    yield return new WaitForSeconds(timePERdificultad);
                
             }
             

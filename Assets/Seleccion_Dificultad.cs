@@ -7,17 +7,24 @@ using UnityEngine.UI;
 
 public class Seleccion_Dificultad : MonoBehaviour
 {
-
+    public Dificultad dificultad;
+    public void Start()
+    {
+        dificultad = FindObjectOfType<Dificultad>();
+    }
     public void SeleccionFacil()
     {
+        dificultad.nivel_dificultad = 1;
         SceneManager.LoadScene("Seleccion_Personaje");
     }
     public void SeleccionMedio()
     {
+        dificultad.nivel_dificultad = 2;
         SceneManager.LoadScene("Seleccion_Personaje");
     }
     public void SeleccionDificil()
     {
+        dificultad.nivel_dificultad = 3;
         SceneManager.LoadScene("Seleccion_Personaje");
     }
     public void SeleccionBack()

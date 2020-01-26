@@ -8,16 +8,35 @@ public class Propiedades : MonoBehaviour
     public int cargas = 0;
     public int posicion;
     public int pos_anterior = 0;
+    public int cargasPERdificultad = 0;
+    public Dificultad niv_dif;
     // Start is called before the first frame update
     void Start()
     {
-        cppj = FindObjectOfType<CheckpointsPerPJ>();
         
+        niv_dif = FindObjectOfType<Dificultad>();
+
+        if (niv_dif.nivel_dificultad == 1)
+        {
+            cargasPERdificultad = 2;
+        }
+
+        if (niv_dif.nivel_dificultad == 2)
+        {
+            cargasPERdificultad = 3;
+        }
+
+        if (niv_dif.nivel_dificultad == 3)
+        {
+            cargasPERdificultad = 4;
+        }
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        cppj = FindObjectOfType<CheckpointsPerPJ>();
         posicion = posicion_carrera(gameObject.name);
         si_rebasa();
         posicion = posicion_carrera(gameObject.name);
@@ -35,8 +54,8 @@ public class Propiedades : MonoBehaviour
     }
     int limite_cargas(int carga)
     {
-        if (carga > 3)
-            return 3;
+        if (carga > cargasPERdificultad)
+            return cargasPERdificultad;
         else
             return carga;
     }

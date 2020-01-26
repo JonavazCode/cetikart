@@ -66,9 +66,13 @@ public class Historial : MonoBehaviour
         {
             return "Profesora Areli";
         }
-        else
+        else if (nombre.Contains("ulyses"))
         {
             return "Profesor Ulyses";
+        }
+        else
+        {
+            return "Personaje Custom";
         }
 
     }
