@@ -8,11 +8,6 @@ using UnityEngine.SceneManagement; //Con esta libreria es posiible controlar el 
 public class Inicio_Menu_Principal : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static bool flagMultijugador = false;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -21,9 +16,6 @@ public class Inicio_Menu_Principal : MonoBehaviour
         {
 
             SceneManager.LoadScene("Menu_Principal");//Esta funcion hace que la escena seleccionada se cargue
-
-
         }
-
     }
 }

@@ -34,7 +34,7 @@ public class Login : MonoBehaviour
         form.AddField("loginNickname", nameField.text);
         form.AddField("loginPassword", passwordField.text);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/UserController.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://cetikart.000webhostapp.com/UserController.php", form))
         {
             
             yield return www.SendWebRequest();
@@ -54,12 +54,14 @@ public class Login : MonoBehaviour
                 }
                 if (comprobarLogin)
                 {
-                    SceneManager.LoadScene("Menu_Principal");
-    
-
-                    //SceneManager.LoadScene("Seleccion_Dificultad");           
+                    if (!DBManager.LoggedIn)
+                    {
+                        DBManager.nickname = nameField.text;
+                        Debug.Log("El nickname: " + DBManager.nickname + " se guardó correctamente");
+                        SceneManager.LoadScene("LobbyScene");
+                    }        
                 }
-                //SceneManager.LoadScene("Seleccion_Dificultad");
+
             }
         }
     }
