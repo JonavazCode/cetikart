@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 651889234485509680}
   - component: {fileID: 651889234485509679}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: molina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -66,8 +66,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 838907675
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 180029469612090331, guid: d48675e0223c9d64a8b1f2f08fe362f2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 651889234651862946}
   - component: {fileID: 651889234651862948}
   - component: {fileID: 651889234651862947}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: molina_backTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -193,7 +193,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 651889234651862949}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 651889235360097014}
   - component: {fileID: 651889235360097016}
   - component: {fileID: 651889235360097015}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: molina_frontTyre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 651889235360097017}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -337,7 +337,7 @@ GameObject:
   - component: {fileID: 651889235393484153}
   - component: {fileID: 917436597}
   - component: {fileID: 2892513943493149347}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: molina_carE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -401,8 +401,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 838907675
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: -8044669077453804398, guid: d48675e0223c9d64a8b1f2f08fe362f2,
     type: 3}
@@ -574,6 +574,8 @@ MonoBehaviour:
   frontWheel: {fileID: 651889235393484152}
   rb: {fileID: 651889235393484150}
   rotation: 0
+  canJump: 0
+  niv_dif: {fileID: 0}
 --- !u!222 &2892513943493149347
 CanvasRenderer:
   m_ObjectHideFlags: 0

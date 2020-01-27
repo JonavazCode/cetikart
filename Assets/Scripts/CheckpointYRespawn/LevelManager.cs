@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     public GameObject[] checkPoints; //lista de checkpoints colectados
     public int timeCount; // conversion a segundos
     public GameObject[] obj;//variable para instanciar los objetos
+    
 
     public CheckpointsPerPJ cppj;
     public int timePERdificultad = 0;
@@ -124,6 +125,7 @@ public class LevelManager : MonoBehaviour
        
        
     }
+ 
 
 
 

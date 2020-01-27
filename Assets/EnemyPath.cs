@@ -22,6 +22,7 @@ public class EnemyPath : MonoBehaviour
 
 
     private int checkpointIndex = 0;
+    public float speedPERdif;
 
     public Dificultad niv_dif;
     private void Start()
@@ -29,26 +30,29 @@ public class EnemyPath : MonoBehaviour
         checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         acomodar();
         niv_dif = FindObjectOfType<Dificultad>();
-
-    }
-    private void Update()
-    {
-        if(niv_dif.nivel_dificultad == 1)
+        if (niv_dif.nivel_dificultad == 1)
         {
-            speed = 500f;
+            speedPERdif = 900f;
+            speed = 900f;
         }
 
         if (niv_dif.nivel_dificultad == 2)
         {
-            speed = 1000f;
+            speedPERdif = 1100f;
+            speed = 1100f;
         }
 
         if (niv_dif.nivel_dificultad == 3)
         {
+            speedPERdif = 1200f;
             speed = 1200f;
         }
+    }
+    private void Update()
+    {
+       
         //"Run"
-        //movement = -1 * speed;
+        movement = -1 * speed;
 
         //  movement = 0;
 

@@ -113,7 +113,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5278235553334833248}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -243,10 +243,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.07638937}
+  m_Offset: {x: 0.0201931, y: -0.28817302}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -257,7 +257,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.8, y: 0.94722116}
+  m_Size: {x: 3.4663668, y: 1.3707885}
   m_EdgeRadius: 0
 --- !u!235 &5278235553354087972
 WheelJoint2D:
@@ -352,7 +352,14 @@ MonoBehaviour:
   rb: {fileID: 5278235553354087974}
   movement: 0
   rotation: 0
+  canJump: 0
   item_cohete_fly: 0
+  levelManager: {fileID: 0}
+  cpp: {fileID: 0}
+  niv_dif: {fileID: 0}
+  speedPERdif: 0
+  animacion: {fileID: 0}
+  nombre: 
 --- !u!114 &7011873294591325644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -369,6 +376,8 @@ MonoBehaviour:
   cargas: 0
   posicion: 0
   pos_anterior: 0
+  cargasPERdificultad: 0
+  niv_dif: {fileID: 0}
 --- !u!95 &8255134052486702839
 Animator:
   serializedVersion: 3
@@ -379,7 +388,7 @@ Animator:
   m_GameObject: {fileID: 5278235553354087968}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 84ffb7a03225955498daf04f11579e15, type: 2}
+  m_Controller: {fileID: 9100000, guid: 31a5e593772b18246a4bbdc290a2ebd4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -501,7 +510,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 5278235553440559567}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

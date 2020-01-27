@@ -252,10 +252,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.13377273, y: -0.63625693}
+  m_Offset: {x: 0.13377273, y: -0.83331615}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -266,7 +266,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.0319045, y: 0.67602444}
+  m_Size: {x: 3.0319045, y: 1.0701429}
   m_EdgeRadius: 0
 --- !u!114 &1172356193162547622
 MonoBehaviour:
@@ -287,7 +287,14 @@ MonoBehaviour:
   rb: {fileID: 1172356193162547618}
   movement: 0
   rotation: 0
+  canJump: 0
   item_cohete_fly: 0
+  levelManager: {fileID: 0}
+  cpp: {fileID: 0}
+  niv_dif: {fileID: 0}
+  speedPERdif: 0
+  animacion: {fileID: 0}
+  nombre: 
 --- !u!61 &1172356193162547641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -298,7 +305,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.00000011920929, y: -0.13918106}
@@ -330,6 +337,8 @@ MonoBehaviour:
   cargas: 0
   posicion: 0
   pos_anterior: 0
+  cargasPERdificultad: 0
+  niv_dif: {fileID: 0}
 --- !u!95 &5650055941097085854
 Animator:
   serializedVersion: 3
@@ -340,7 +349,7 @@ Animator:
   m_GameObject: {fileID: 1172356193162547640}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: dac0fd327d14d45468da4fee7e0c6ff2, type: 2}
+  m_Controller: {fileID: 9100000, guid: c26b9b5f0d263984fb4c4552638bf4a5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -462,7 +471,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1172356193482860070}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -582,7 +591,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 1172356194131055142}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 30d911bf2bfd60b4b85f835b0ba1fac2, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

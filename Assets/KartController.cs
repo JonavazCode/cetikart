@@ -20,31 +20,36 @@ public class KartController : MonoBehaviour
 
     public bool item_cohete_fly = false;
 
-    private LevelManager levelManager; //instancia de LevelManager
-    private CheckpointsPerPJ cpp;
+    public LevelManager levelManager; //instancia de LevelManager
+    public CheckpointsPerPJ cpp;
     public Dificultad niv_dif;
     public float speedPERdif;
+    public Animator animacion;
+    public string nombre;
+    public GameObject PanelAreli;
 
-    
-    
+
+
 
     public void Start()
     {
-        
-        levelManager = FindObjectOfType<LevelManager>(); //encuentra el objeto LevelManager
-        cpp = FindObjectOfType<CheckpointsPerPJ>();
+        PanelAreli.SetActive(false);
+        nombre = this.name;
+
+        animacion = GetComponentInChildren<Animator>();
+       
         niv_dif = FindObjectOfType<Dificultad>();
 
         if (niv_dif.nivel_dificultad == 1)
         {
-            speedPERdif = 700f;
-            speed = 700f;
+            speedPERdif = 1000f;
+            speed = 1000f;
         }
 
         if (niv_dif.nivel_dificultad == 2)
         {
-            speedPERdif = 1000f;
-            speed = 1000f;
+            speedPERdif = 1100f;
+            speed = 1100f;
         }
 
         if (niv_dif.nivel_dificultad == 3)
@@ -58,7 +63,8 @@ public class KartController : MonoBehaviour
     private void Update()
     {
 
-       
+        levelManager = FindObjectOfType<LevelManager>(); //encuentra el objeto LevelManager
+        cpp = FindObjectOfType<CheckpointsPerPJ>();
 
         if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
             movement = -1 * speed;
@@ -153,5 +159,6 @@ public class KartController : MonoBehaviour
         yield return new WaitForSeconds(seg);
     }
 
+   
 
 }
