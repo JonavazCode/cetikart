@@ -4,40 +4,41 @@ using UnityEngine;
 
 public class PanelManager : MonoBehaviour
 {
-    public KartController KC;
+    public GameObject PanelAreli;
+    
     private void Start()
     {
-        KC = FindObjectOfType<KartController>();
+        PanelAreli.SetActive(false);
     }
 
     public void Sombrero()
     {
-        KC.PanelAreli.SetActive(false);
+        PanelAreli.SetActive(false);
     }
 
     public void Ceti()
     {
-        KC.PanelAreli.SetActive(false);
+        PanelAreli.SetActive(false);
     }
 
     public void Flechas()
     {
-        KC.PanelAreli.SetActive(false);
+        PanelAreli.SetActive(false);
     }
 
     public void LlantaPonchada()
     {
-        KC.PanelAreli.SetActive(false);
+        PanelAreli.SetActive(false);
     }
 
     public void LlantaBust()
     {
-        KC.PanelAreli.SetActive(false);
+        PanelAreli.SetActive(false);
     }
 
     public void Cohete()
     {
-        KC.PanelAreli.SetActive(false);
+        PanelAreli.SetActive(false);
     }
 
 

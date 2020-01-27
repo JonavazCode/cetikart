@@ -28,12 +28,13 @@ public class Barra_PowerUp : MonoBehaviour
     //Activar animación de PowerUp
     public KartController KC;
     public EnemyPath EP;
-    
+    public PanelManager panel;
    
 
     // Start is called before the first frame update
     void Start()
     {
+        panel = FindObjectOfType<PanelManager>();
         KC = FindObjectOfType<KartController>();
         cargasDeJugador = FindObjectOfType<Propiedades>();
         nivl_dif = FindObjectOfType<Dificultad>();
@@ -65,8 +66,8 @@ public class Barra_PowerUp : MonoBehaviour
             {
                 KC.animacion.SetTrigger("PowerUp");
                 StartCoroutine(PowerUpIsamel());
-                StartCoroutine(PowerUpSergio());
-                StartCoroutine(PowerUpUlyses());
+                //StartCoroutine(PowerUpSergio());
+                //StartCoroutine(PowerUpUlyses());
                 StartCoroutine(PowerUpAreli());
                 cargasDeJugador.cargas = 0;
             }
@@ -98,8 +99,8 @@ public class Barra_PowerUp : MonoBehaviour
             {
                 KC.animacion.SetTrigger("PowerUp");
                 StartCoroutine(PowerUpIsamel());
-                StartCoroutine(PowerUpSergio());
-                StartCoroutine(PowerUpUlyses());
+                //StartCoroutine(PowerUpSergio());
+                //StartCoroutine(PowerUpUlyses());
                 StartCoroutine(PowerUpAreli());
                 cargasDeJugador.cargas = 0;
             }
@@ -136,8 +137,8 @@ public class Barra_PowerUp : MonoBehaviour
             {
                 KC.animacion.SetTrigger("PowerUp");
                 StartCoroutine(PowerUpIsamel());
-                StartCoroutine(PowerUpSergio());
-                StartCoroutine(PowerUpUlyses());
+                //StartCoroutine(PowerUpSergio());
+                //StartCoroutine(PowerUpUlyses());
                 StartCoroutine(PowerUpAreli());
                 cargasDeJugador.cargas = 0;
             }
@@ -183,7 +184,7 @@ public class Barra_PowerUp : MonoBehaviour
 
         if (KC.nombre.Contains("areli"))
         {
-            KC.PanelAreli.SetActive(true);
+            panel.PanelAreli.SetActive(true);
             yield return new WaitForSeconds(5);
             
 

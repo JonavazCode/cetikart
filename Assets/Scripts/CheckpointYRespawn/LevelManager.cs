@@ -8,7 +8,8 @@ public class LevelManager : MonoBehaviour
     public GameObject[] checkPoints; //lista de checkpoints colectados
     public int timeCount; // conversion a segundos
     public GameObject[] obj;//variable para instanciar los objetos
-    
+    public GameObject[] profesores;
+    public GameObject[] bots;
 
     public CheckpointsPerPJ cppj;
     public int timePERdificultad = 0;
@@ -23,6 +24,7 @@ public class LevelManager : MonoBehaviour
 
     void Start()
     {
+        
         cppj = FindObjectOfType<CheckpointsPerPJ>();
         StartCoroutine(GenerarItems());
         StartCoroutine(GenerarAtajo());
@@ -125,7 +127,24 @@ public class LevelManager : MonoBehaviour
        
        
     }
- 
+    public void GenerarProfesores(int num_prof)
+    {
+        for (int x = 0; x <= bots.Length - 1; x++)
+        {
+            if (x != num_prof)
+            {
+                Instantiate(bots[x], transform.position = checkPoints[0].transform.position, Quaternion.identity);
+            }
+          
+        }
+
+        Instantiate(profesores[num_prof], transform.position = checkPoints[0].transform.position, Quaternion.identity);
+
+    }
+    private void Awake()
+    {
+        GenerarProfesores(SelecProf.PersonajeSeleccionado);
+    }
 
 
 

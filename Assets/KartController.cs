@@ -26,20 +26,27 @@ public class KartController : MonoBehaviour
     public float speedPERdif;
     public Animator animacion;
     public string nombre;
-    public GameObject PanelAreli;
+    public char[] clone;
+
+    public void Awake()
+    {
+        clone = new char[]{ '(','C','l','o','n','e',')'};
+        this.name = this.name.TrimEnd(clone);
+    }
 
 
 
 
     public void Start()
     {
-        PanelAreli.SetActive(false);
+     
+        
+        
         nombre = this.name;
 
         animacion = GetComponentInChildren<Animator>();
        
         niv_dif = FindObjectOfType<Dificultad>();
-
         if (niv_dif.nivel_dificultad == 1)
         {
             speedPERdif = 1000f;
@@ -59,9 +66,12 @@ public class KartController : MonoBehaviour
         }
 
 
+
     }
     private void Update()
     {
+
+       
 
         levelManager = FindObjectOfType<LevelManager>(); //encuentra el objeto LevelManager
         cpp = FindObjectOfType<CheckpointsPerPJ>();

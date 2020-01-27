@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d394585d0e2d1b4d8acba79976bd0a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KC: {fileID: 0}
+  PanelAreli: {fileID: 8295040002454340013}
 --- !u!1 &3241258019058375972
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000024796, y: -13}
+  m_AnchoredPosition: {x: 0, y: -13}
   m_SizeDelta: {x: -975.2, y: -685.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8489196405487539530
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   speedPERdif: 0
   animacion: {fileID: 0}
   nombre: 
-  PanelAreli: {fileID: 8295040002454340013}
+  clone: 
 --- !u!61 &5553716641837983442
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -25,8 +25,18 @@ public class EnemyPath : MonoBehaviour
     public float speedPERdif;
 
     public Dificultad niv_dif;
+    public char[] clone;
+
+    public void Awake()
+    {
+        clone = new char[] { '(', 'C', 'l', 'o', 'n', 'e', ')' };
+        this.name = this.name.TrimEnd(clone);
+    }
+
     private void Start()
     {
+
+        
         checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         acomodar();
         niv_dif = FindObjectOfType<Dificultad>();
@@ -131,6 +141,5 @@ public class EnemyPath : MonoBehaviour
 
         checkpoints = cps;
     }
-
-
+ 
 }
