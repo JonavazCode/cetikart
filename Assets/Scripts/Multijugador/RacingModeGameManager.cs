@@ -9,6 +9,10 @@ public class RacingModeGameManager : MonoBehaviour
     public GameObject InitialPositionCheckpoint;
 
     public Text timeUIText;
+    public GameObject[] FinishedOrderUIGameObjects;
+
+
+    public List<GameObject> Checkpoints = new List<GameObject>();
 
     //Implementando un Singleton
     public static RacingModeGameManager instance = null;
@@ -39,7 +43,12 @@ public class RacingModeGameManager : MonoBehaviour
                 PhotonNetwork.Instantiate(PlayerPrefabs[(int)playerSelectionNumber].name, initialPosition, Quaternion.identity);
             }
         }
-        //PhotonNetwork.Instantiate()
+
+        foreach (GameObject gm in FinishedOrderUIGameObjects)
+        {
+            gm.SetActive(false);
+        }
+
     }
 
     // Update is called once per frame

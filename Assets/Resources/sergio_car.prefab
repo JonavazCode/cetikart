@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: -196405892992484705}
   - component: {fileID: 3710199316249562767}
   - component: {fileID: 8054154907164759933}
+  - component: {fileID: 3852333465783521061}
   m_Layer: 8
   m_Name: sergio_car
   m_TagString: Player
@@ -273,6 +274,7 @@ MonoBehaviour:
   backWheel: {fileID: 270252706945677173}
   frontWheel: {fileID: 270252706945677170}
   rb: {fileID: 270252706945677175}
+  controlsEnabled: 0
   canJump: 0
 --- !u!114 &-196405892992484705
 MonoBehaviour:
@@ -311,6 +313,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1f94dfb04987904f8fc48c184319fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3852333465783521061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270252706945677169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99e58da10576ed3479b1451c1bd7775b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &270252706974169393

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: -977768771786829379}
   - component: {fileID: 3091381313477709830}
   - component: {fileID: 6805996703459782021}
+  - component: {fileID: 53979720964819657}
   m_Layer: 8
   m_Name: gussa_car
   m_TagString: Player
@@ -273,6 +274,7 @@ MonoBehaviour:
   backWheel: {fileID: 8418285336143866711}
   frontWheel: {fileID: 8418285336143866710}
   rb: {fileID: 8418285336143866696}
+  controlsEnabled: 0
   canJump: 0
 --- !u!114 &-977768771786829379
 MonoBehaviour:
@@ -313,6 +315,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f94dfb04987904f8fc48c184319fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &53979720964819657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8418285336143866706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99e58da10576ed3479b1451c1bd7775b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Checkpoints: []
+  NumeroCheckpointActual: 0
 --- !u!1 &8418285336296818829
 GameObject:
   m_ObjectHideFlags: 0

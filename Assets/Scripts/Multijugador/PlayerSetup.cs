@@ -10,10 +10,12 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
         if (photonView.IsMine)
         {
             GetComponent<CarMovement>().enabled = true;
+            GetComponent<LapController>().enabled = true;
         }
         else
         {
             GetComponent<CarMovement>().enabled = false;
+            GetComponent<LapController>().enabled = true;
         }
     }
 
