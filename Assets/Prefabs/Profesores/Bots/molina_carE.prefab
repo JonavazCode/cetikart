@@ -495,7 +495,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -523,9 +523,9 @@ PolygonCollider2D:
       - {x: -0.09771432, y: 0.028221903}
       - {x: -0.22717986, y: 0.023048706}
       - {x: -0.23891763, y: -0.020770734}
-      - {x: -0.23022512, y: -0.07968029}
-      - {x: 0.053949855, y: -0.06906968}
-      - {x: 0.2711967, y: -0.07787169}
+      - {x: -0.23244403, y: -0.1350863}
+      - {x: 0.038412165, y: -0.13776897}
+      - {x: 0.27674195, y: -0.13881461}
       - {x: 0.27172348, y: -0.010323128}
       - {x: 0.2506555, y: 0.011852121}
       - {x: 0.21717973, y: 0.048917558}
@@ -539,7 +539,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.000958547, y: 0.05176215}
@@ -575,7 +575,9 @@ MonoBehaviour:
   rb: {fileID: 651889235393484150}
   rotation: 0
   canJump: 0
+  speedPERdif: 0
   niv_dif: {fileID: 0}
+  clone: 
 --- !u!222 &2892513943493149347
 CanvasRenderer:
   m_ObjectHideFlags: 0

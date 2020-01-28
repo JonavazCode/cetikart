@@ -169,6 +169,5 @@ public class KartController : MonoBehaviour
         yield return new WaitForSeconds(seg);
     }
 
-   
-
+  
 }

@@ -41,5 +41,9 @@ public class PanelManager : MonoBehaviour
         PanelAreli.SetActive(false);
     }
 
+    public void AbrirPanel()
+    {
+        PanelAreli.SetActive(true);
+    }
 
 }

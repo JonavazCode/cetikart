@@ -29,11 +29,17 @@ public class Barra_PowerUp : MonoBehaviour
     public KartController KC;
     public EnemyPath EP;
     public PanelManager panel;
+    //POWER UPS
+    public CheckpointsPerPJ cppj;
    
+
+
 
     // Start is called before the first frame update
     void Start()
     {
+        
+        cppj = FindObjectOfType<CheckpointsPerPJ>();
         panel = FindObjectOfType<PanelManager>();
         KC = FindObjectOfType<KartController>();
         cargasDeJugador = FindObjectOfType<Propiedades>();
@@ -65,10 +71,14 @@ public class Barra_PowerUp : MonoBehaviour
             if (CrossPlatformInputManager.GetButton("PowerUp") && cargasDeJugador.cargas == 2)
             {
                 KC.animacion.SetTrigger("PowerUp");
+                StartCoroutine(PowerUpMolina());
                 StartCoroutine(PowerUpIsamel());
-                //StartCoroutine(PowerUpSergio());
-                //StartCoroutine(PowerUpUlyses());
-                StartCoroutine(PowerUpAreli());
+                StartCoroutine(PowerUpSergio());
+                StartCoroutine(PowerUpUlyses());
+                PowerUpAreli();
+                StartCoroutine(PowerUpRene());
+                StartCoroutine(PowerUpSusana());
+                StartCoroutine(PowerUpNino());
                 cargasDeJugador.cargas = 0;
             }
 
@@ -99,9 +109,13 @@ public class Barra_PowerUp : MonoBehaviour
             {
                 KC.animacion.SetTrigger("PowerUp");
                 StartCoroutine(PowerUpIsamel());
-                //StartCoroutine(PowerUpSergio());
-                //StartCoroutine(PowerUpUlyses());
-                StartCoroutine(PowerUpAreli());
+                StartCoroutine(PowerUpSergio());
+                StartCoroutine(PowerUpUlyses());
+                PowerUpAreli();
+                StartCoroutine(PowerUpMolina());
+                StartCoroutine(PowerUpRene());
+                StartCoroutine(PowerUpSusana());
+                StartCoroutine(PowerUpNino());
                 cargasDeJugador.cargas = 0;
             }
         }
@@ -137,9 +151,13 @@ public class Barra_PowerUp : MonoBehaviour
             {
                 KC.animacion.SetTrigger("PowerUp");
                 StartCoroutine(PowerUpIsamel());
-                //StartCoroutine(PowerUpSergio());
-                //StartCoroutine(PowerUpUlyses());
-                StartCoroutine(PowerUpAreli());
+                StartCoroutine(PowerUpSergio());
+                StartCoroutine(PowerUpUlyses());
+                PowerUpAreli();
+                StartCoroutine(PowerUpMolina());
+                StartCoroutine(PowerUpRene());
+                StartCoroutine(PowerUpSusana());
+                StartCoroutine(PowerUpNino());
                 cargasDeJugador.cargas = 0;
             }
 
@@ -173,24 +191,85 @@ public class Barra_PowerUp : MonoBehaviour
         
         if (KC.nombre.Contains("ulyses"))
         {
-            EP.speed = 200f;
+            var TodoslosBots = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach(GameObject bot in TodoslosBots)
+            {
+                bot.GetComponent<EnemyPath>().speed = 200f; 
+            }
             yield return new WaitForSeconds(3);
-            EP.speed = EP.speedPERdif;
+            foreach (GameObject bot in TodoslosBots)
+            {
+                bot.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+            
         }
     }
 
-    public IEnumerator PowerUpAreli()
+    public void PowerUpAreli()
     {
 
         if (KC.nombre.Contains("areli"))
         {
-            panel.PanelAreli.SetActive(true);
-            yield return new WaitForSeconds(5);
-            
+            panel.AbrirPanel(); 
 
         }
     }
+    public IEnumerator PowerUpMolina()
+    {
+        if (KC.nombre.Contains("molina"))
+        {
+            var TodoslosBots = GameObject.FindGameObjectsWithTag("Enemy");
+            foreach (GameObject bot in TodoslosBots)
+            {
+                bot.GetComponent<EnemyPath>().speed = 200f;
+            }
+            var Molina = GameObject.FindGameObjectWithTag("Player");
+            Molina.transform.localScale = new Vector3(Molina.transform.localScale.x * 2f, Molina.transform.localScale.y * 2f, Molina.transform.localScale.z * 2f);
+            yield return new WaitForSeconds(5);
+            Molina.transform.localScale = new Vector3(Molina.transform.localScale.x / 2f, Molina.transform.localScale.y / 2f, Molina.transform.localScale.z / 2f);
+            foreach (GameObject bot in TodoslosBots)
+            {
+                bot.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+        }
+    }
 
+    public IEnumerator PowerUpRene()
+    {
+        if (KC.nombre.Contains("agentek"))
+        {
+            var afectado = GameObject.Find(cppj.uno);
+            Debug.LogFormat("afectado por rene: {0}", afectado.name);
+            afectado.GetComponent<EnemyPath>().speed = 0f;
+            yield return new WaitForSeconds(2);
+            afectado.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+        }
+    }
 
+    public IEnumerator PowerUpSusana()
+    {
+        if (KC.nombre.Contains("gussa"))
+        {
+            KC.name = "SUSANA";
+            //KC.nombre.Replace("gussa_car", "SUSANA");
+            KC.speed = 2000f;
+            yield return new WaitForSeconds(5);
+            KC.speed = KC.speedPERdif;
+            //KC.nombre.Replace("SUSANA", "gussa_car");
+            KC.name = "gussa_car";
+        }
+    }
 
+    public IEnumerator PowerUpNino()
+    {
+        
+        if (KC.nombre.Contains("nino"))
+        {
+            if(cppj.ocho.Contains("nino"))
+            {
+                Debug.Log("NIÑO VA EN OCTAVO");
+            }
+            yield return new WaitForSeconds(2);
+        }
+    }
 }

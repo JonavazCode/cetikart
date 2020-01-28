@@ -6,9 +6,13 @@ public class Llanta_Ponchada : MonoBehaviour
 {
     public GameObject trash;
     public CheckpointsPerPJ cppj;
+    public KartController KC;
+    public EnemyPath EP;
 
     void Start()
     {
+        KC = FindObjectOfType<KartController>();
+        EP = FindObjectOfType<EnemyPath>();
         trash = GameObject.Find("Trash");
         cppj = FindObjectOfType<CheckpointsPerPJ>();
         StartCoroutine(DestruirObjeto());
@@ -39,11 +43,11 @@ public class Llanta_Ponchada : MonoBehaviour
             var sig_jugador = GameObject.Find(nombre_sig_jugador);
             try
             {
-                sig_jugador.GetComponent<EnemyPath>().speed = 1000;
+                sig_jugador.GetComponent<EnemyPath>().speed = EP.speedPERdif;
             }
             catch
             {
-                sig_jugador.GetComponent<KartController>().speed = 1000;
+                sig_jugador.GetComponent<KartController>().speed = KC.speedPERdif;
             }
         }
 
