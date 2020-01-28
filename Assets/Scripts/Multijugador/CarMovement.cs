@@ -13,6 +13,9 @@ public class CarMovement : MonoBehaviour
     public WheelJoint2D frontWheel;
     public Rigidbody2D rb;
 
+    public bool controlsEnabled;
+
+
     private float movement = 0f;
     private float rotation = 0f;
 
@@ -20,25 +23,29 @@ public class CarMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        controlsEnabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
-            movement = -1 * speed;
-        else
-            movement = 0;
-
-        if (CrossPlatformInputManager.GetButton("Freno") || Input.GetKey(KeyCode.A))
-            movement = 1 * speed;
-
-        if ((CrossPlatformInputManager.GetButton("Jump") || Input.GetKeyDown(KeyCode.Space)) && canJump)
+        if (controlsEnabled)
         {
-            canJump = false;
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1000f));
+            if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
+                movement = -1 * speed;
+            else
+                movement = 0;
+
+            if (CrossPlatformInputManager.GetButton("Freno") || Input.GetKey(KeyCode.A))
+                movement = 1 * speed;
+
+            if ((CrossPlatformInputManager.GetButton("Jump") || Input.GetKeyDown(KeyCode.Space)) && canJump)
+            {
+                canJump = false;
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1000f));
+            }
         }
+        
     }
 
     private void FixedUpdate()

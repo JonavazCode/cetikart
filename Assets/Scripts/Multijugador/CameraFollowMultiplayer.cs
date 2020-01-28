@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CameraFollowMultiplayer : MonoBehaviour
 {
+    
     private Transform playerTransform;
     private bool findPlayer = false;
 
@@ -30,9 +31,10 @@ public class CameraFollowMultiplayer : MonoBehaviour
     }
     void LateUpdate()
     {
-
         Vector3 target = new Vector3(playerTransform.position.x, playerTransform.position.y, -10f);
         transform.position = Vector3.SmoothDamp(transform.position, target, ref Velocity, smoothness);
 
     }
+    
+
 }

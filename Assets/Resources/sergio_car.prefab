@@ -18,6 +18,9 @@ GameObject:
   - component: {fileID: 4039744861956943782}
   - component: {fileID: -3841914733749921349}
   - component: {fileID: 1846741993699291340}
+  - component: {fileID: -196405892992484705}
+  - component: {fileID: 3710199316249562767}
+  - component: {fileID: 8054154907164759933}
   m_Layer: 8
   m_Name: sergio_car
   m_TagString: Player
@@ -247,10 +250,10 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   Group: 0
   prefixField: -1
-  Synchronization: 0
+  Synchronization: 3
   OwnershipTransfer: 0
   ObservedComponents:
-  - {fileID: 0}
+  - {fileID: 3710199316249562767}
   viewIdField: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -271,6 +274,45 @@ MonoBehaviour:
   frontWheel: {fileID: 270252706945677170}
   rb: {fileID: 270252706945677175}
   canJump: 0
+--- !u!114 &-196405892992484705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270252706945677169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 574087fc584495d4dac352ed084f4db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3710199316249562767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270252706945677169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+--- !u!114 &8054154907164759933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270252706945677169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1f94dfb04987904f8fc48c184319fc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &270252706974169393
 GameObject:
   m_ObjectHideFlags: 0

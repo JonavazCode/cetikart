@@ -2,11 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-
+using UnityEngine.UI;
 public class RacingModeGameManager : MonoBehaviour
 {
     public GameObject[] PlayerPrefabs;
     public GameObject InitialPositionCheckpoint;
+
+    public Text timeUIText;
+
+    //Implementando un Singleton
+    public static RacingModeGameManager instance = null;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else if (instance != this)
+        {
+            Destroy(gameObject);
+        }
+
+        DontDestroyOnLoad(gameObject);
+    }
 
     // Start is called before the first frame update
     void Start()
