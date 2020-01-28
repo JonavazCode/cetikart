@@ -47,6 +47,10 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public GameObject PlayerListPrefab;
     public GameObject PlayerListContent;
     public GameObject StartGameButton;
+    public Text GameMapText;
+    public Image PanelBackground;
+    public Sprite GimnasioBackground;
+    public Sprite BaniosBackground;
 
 
     [Header("Join Random Room Panel")]
@@ -71,6 +75,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         }
         MapCounter = 1;
         ActivatePanel(LoginUIPanel.name);
+
+        PhotonNetwork.AutomaticallySyncScene = true;
     }
 
     // Update is called once per frame
@@ -169,6 +175,23 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         PhotonNetwork.LeaveRoom();
     }
 
+    public void OnStartGameButtonClicked()
+    {
+        if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey("m"))
+        {
+            if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("1"))
+            {
+                //gimnasio
+                PhotonNetwork.LoadLevel("Gimnasio 1");
+
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("2"))
+            {
+                //banio
+                PhotonNetwork.LoadLevel("Baños 1");
+            }
+        }
+    }
     #endregion
 
     #region Photon Callbacks
@@ -202,6 +225,19 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
             RoomInfoText.text = "Número de sala: " + PhotonNetwork.CurrentRoom.Name +
                 "  Players/Max.Players: " + PhotonNetwork.CurrentRoom.PlayerCount + "/" + PhotonNetwork.CurrentRoom.MaxPlayers;
+
+            if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("1"))
+            {
+                //mapa gimnasio
+                GameMapText.text = "Gimnasio!";
+                PanelBackground.sprite = GimnasioBackground;
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("2"))
+            {
+                GameMapText.text = "Baños!";
+                PanelBackground.sprite = BaniosBackground;
+            }
+
 
             if (playerListGameObjects == null)
                 playerListGameObjects = new Dictionary<int, GameObject>();
@@ -351,6 +387,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     {
         GameMode = _gameMode;
     }
+
+
     #endregion
 
     #region Private Methods
