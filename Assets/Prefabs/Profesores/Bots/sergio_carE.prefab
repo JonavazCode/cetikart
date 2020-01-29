@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1728052980119824757}
   - component: {fileID: 1728052980119824756}
   - component: {fileID: 8596413596644669814}
+  - component: {fileID: 4289140798547053192}
   m_Layer: 8
   m_Name: sergio_carE
   m_TagString: Enemy
@@ -77,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 838907675
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 3076512280576705038, guid: 31d6176f54e8b3c4096d89c84931003d,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -231,6 +232,29 @@ MonoBehaviour:
   rb: {fileID: 1728052980119824752}
   rotation: 0
   canJump: 0
+  animacion: {fileID: 0}
+  speedPERdif: 0
+  niv_dif: {fileID: 0}
+  clone: 
+--- !u!95 &4289140798547053192
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1728052980119824758}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aa6a59e459f0523449364a31f94eaa42, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1728052980147889974
 GameObject:
   m_ObjectHideFlags: 0

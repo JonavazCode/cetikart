@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7956921343992608325}
   - component: {fileID: 7956921343992608347}
   - component: {fileID: 3102818255333613782}
+  - component: {fileID: 3463926944897712455}
   m_Layer: 8
   m_Name: ulyses_carE
   m_TagString: Enemy
@@ -231,6 +232,29 @@ MonoBehaviour:
   rb: {fileID: 7956921343992608320}
   rotation: 0
   canJump: 0
+  animacion: {fileID: 0}
+  speedPERdif: 0
+  niv_dif: {fileID: 0}
+  clone: 
+--- !u!95 &3463926944897712455
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956921343992608346}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2cfb161f31d31104e9a9bde592764563, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7956921344077501747
 GameObject:
   m_ObjectHideFlags: 0

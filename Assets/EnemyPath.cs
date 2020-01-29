@@ -26,6 +26,7 @@ public class EnemyPath : MonoBehaviour
 
     public Dificultad niv_dif;
     public char[] clone;
+    public string nombre;
 
     public void Awake()
     {
@@ -36,7 +37,7 @@ public class EnemyPath : MonoBehaviour
     private void Start()
     {
 
-        
+        nombre = this.name;
         checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         acomodar();
         niv_dif = FindObjectOfType<Dificultad>();

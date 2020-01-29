@@ -61,5 +61,16 @@ public class Propiedades_Bots : MonoBehaviour
             }
 
         }
+
+        IEnumerator PowerUpIsamel()
+        {
+
+            if (EP.nombre.Contains("coco"))
+            {
+                KC.speed = 1800f;
+                yield return new WaitForSeconds(2);
+                KC.speed = KC.speedPERdif;
+            }
+        }
     }
 }

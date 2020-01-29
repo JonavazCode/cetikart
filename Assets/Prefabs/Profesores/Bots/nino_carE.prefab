@@ -217,6 +217,7 @@ GameObject:
   - component: {fileID: 5911948606317699040}
   - component: {fileID: 5911948606317699042}
   - component: {fileID: 3912379406822060027}
+  - component: {fileID: 1972017217099678568}
   m_Layer: 8
   m_Name: nino_carE
   m_TagString: Enemy
@@ -432,6 +433,29 @@ MonoBehaviour:
   rb: {fileID: 5911948606317699045}
   rotation: 0
   canJump: 0
+  animacion: {fileID: 0}
+  speedPERdif: 0
+  niv_dif: {fileID: 0}
+  clone: 
+--- !u!95 &1972017217099678568
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5911948606317699043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d9544ae6dc48bdc47ae908eba316353b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5911948607247838972
 GameObject:
   m_ObjectHideFlags: 0
