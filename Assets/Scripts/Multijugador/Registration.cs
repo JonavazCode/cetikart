@@ -33,7 +33,7 @@ public class Registration : MonoBehaviour
         form.AddField("registroEmail", nameField.text);
         form.AddField("registroPassword", passwordField.text);
         form.AddField("registroNickname", nickField.text);
-        using (UnityWebRequest www = UnityWebRequest.Post("http://localhost/UserController.php", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://cetikart.000webhostapp.com/UserController.php", form))
         {
             yield return www.SendWebRequest();
 
@@ -54,21 +54,15 @@ public class Registration : MonoBehaviour
                 }
                 if (www.downloadHandler.text == "se registro correctamente")
                 {
-                    SceneManager.LoadScene("Login_Multijugador");
+                    if (!DBManager.LoggedIn)
+                    {
+                        DBManager.nickname = nickField.text;
+                        Debug.Log("El nickname: " + DBManager.nickname + " se guardó correctamente");
+                        SceneManager.LoadScene("LobbyScene");
+                    }
                 }
-                //SceneManager.LoadScene("Seleccion_Dificultad");
             }
         }
-        //if (www.text == "0")
-        //{
-        //    Debug.Log("User created succcesfully.");
-        //    SceneManager.LoadScene("Menu_Principal");
-        //}
-        //else
-        //{
-        //    Debug.Log("User creation failed. Error #" + www.text);
-        //}
-
         //(control + k) + (control + c) = comentar
         //(control + k) + (control + u) = descomentar
     }
@@ -78,9 +72,6 @@ public class Registration : MonoBehaviour
 
         submitButton.interactable = true;
     }
-
-
-
 
     public bool CorrectEmail()
     {
