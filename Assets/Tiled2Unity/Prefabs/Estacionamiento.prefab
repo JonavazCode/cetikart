@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8528441628078769481}
   - component: {fileID: 1704724129174772380}
   - component: {fileID: 1290758339025215207}
+  - component: {fileID: 1047216091}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,6 +80,18 @@ PolygonCollider2D:
       - {x: 6.925944, y: 0.03703706}
       - {x: 6.962945, y: -5.740722}
       - {x: 0, y: -5.814833}
+--- !u!114 &1047216091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564674334945085995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &651871102679331579
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3451158016430604513}
   - component: {fileID: 504863828743181323}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Colisiones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -171,9 +184,10 @@ GameObject:
   - component: {fileID: 1828126782531952145}
   - component: {fileID: 1373574665731760257}
   - component: {fileID: 7505219934333267847}
+  - component: {fileID: 1047216073}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -239,6 +253,18 @@ PolygonCollider2D:
       - {x: 7.037055, y: -0.03703706}
       - {x: 7, y: -2.407406}
       - {x: -0.07407389, y: -2.370372}
+--- !u!114 &1047216073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922466842851289448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1229216357044303297
 GameObject:
   m_ObjectHideFlags: 0
@@ -251,7 +277,7 @@ GameObject:
   - component: {fileID: 2478825713850196202}
   - component: {fileID: 1257283180532844752}
   - component: {fileID: 4304741831507236366}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Tilset mapas (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,9 +367,10 @@ GameObject:
   - component: {fileID: 2898106713127773941}
   - component: {fileID: 2719738176663143500}
   - component: {fileID: 6334280446975518406}
+  - component: {fileID: 1047216070}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -409,6 +436,18 @@ PolygonCollider2D:
       - {x: 7, y: 0.03703706}
       - {x: 6.962945, y: -2.296294}
       - {x: 0.03703706, y: -2.259261}
+--- !u!114 &1047216070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376545023878677768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1485908418825148335
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,9 +459,10 @@ GameObject:
   - component: {fileID: 1201151309353881710}
   - component: {fileID: 1690441279481275021}
   - component: {fileID: 7134918081615279583}
+  - component: {fileID: 1047216097}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -488,6 +528,18 @@ PolygonCollider2D:
       - {x: 7.111111, y: -0.07407389}
       - {x: 7.037055, y: -6.925944}
       - {x: 0.1111111, y: -6.962945}
+--- !u!114 &1047216097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485908418825148335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1620951703253109924
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,9 +551,11 @@ GameObject:
   - component: {fileID: 27764479603400280}
   - component: {fileID: 5191283153767318351}
   - component: {fileID: 121515799164091146}
-  m_Layer: 0
+  - component: {fileID: 1047216106}
+  - component: {fileID: 1047216104}
+  m_Layer: 1
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -571,6 +625,44 @@ PolygonCollider2D:
       - {x: 1.222222, y: -1.259261}
       - {x: 0.2592594, y: -0.9259278}
       - {x: -0.07407389, y: -0.4814817}
+--- !u!61 &1047216106
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620951703253109924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8.74527, y: -4.164383}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.58197, y: 7.2799835}
+  m_EdgeRadius: 0
+--- !u!114 &1047216104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620951703253109924}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1774727000634324984
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,9 +674,10 @@ GameObject:
   - component: {fileID: 5679033803464074050}
   - component: {fileID: 6493748256738538670}
   - component: {fileID: 7354848492149487439}
+  - component: {fileID: 1047216077}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -650,6 +743,18 @@ PolygonCollider2D:
       - {x: 7, y: 0}
       - {x: 7, y: -3.444444}
       - {x: -0.1481483, y: -3.444444}
+--- !u!114 &1047216077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774727000634324984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1802587857625137747
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,9 +766,10 @@ GameObject:
   - component: {fileID: 1507737786596316021}
   - component: {fileID: 7574124052020713880}
   - component: {fileID: 6165421314473169338}
+  - component: {fileID: 1047216092}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -729,6 +835,18 @@ PolygonCollider2D:
       - {x: 7.074056, y: -0.1111111}
       - {x: 7.074056, y: -5.703722}
       - {x: 0.1481483, y: -5.814833}
+--- !u!114 &1047216092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1802587857625137747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2073491607283818799
 GameObject:
   m_ObjectHideFlags: 0
@@ -740,9 +858,10 @@ GameObject:
   - component: {fileID: 9136615842824374291}
   - component: {fileID: 2919386060861131905}
   - component: {fileID: 4579165310858993956}
+  - component: {fileID: 1047216074}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -813,9 +932,22 @@ PolygonCollider2D:
       - {x: 50.37039, y: 3.444444}
       - {x: 49.07405, y: 3.518517}
       - {x: 49, y: -1.074072}
-      - {x: 1.14815, y: -1.185183}
-      - {x: 0.2592594, y: -0.9259278}
-      - {x: -0.1111111, y: -0.5185183}
+      - {x: 48.944466, y: -7.374604}
+      - {x: 4.0280533, y: -8.207826}
+      - {x: 1.1494141, y: -7.825368}
+      - {x: -0.37291718, y: -8.157182}
+--- !u!114 &1047216074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2073491607283818799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2208614845491558759
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,9 +959,10 @@ GameObject:
   - component: {fileID: 2876723330684311278}
   - component: {fileID: 1771297486897454425}
   - component: {fileID: 4350239297458943444}
+  - component: {fileID: 1047216071}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -905,19 +1038,31 @@ PolygonCollider2D:
       - {x: 33.62961, y: 4.111111}
       - {x: 33.40739, y: 3.777778}
       - {x: 33.07405, y: 3.592595}
-      - {x: 32.77778, y: 3.481483}
-      - {x: 19.81483, y: 3.518517}
-      - {x: 19.77778, y: 2.481483}
-      - {x: 18.55556, y: 2.407406}
-      - {x: 18.55556, y: 1.259261}
-      - {x: 16.25928, y: 1.259261}
-      - {x: 16.25928, y: 0.1111111}
-      - {x: 13.85183, y: 0.03703706}
-      - {x: 13.92595, y: -1.037039}
-      - {x: 1.111111, y: -1.074072}
-      - {x: 0.3703705, y: -0.8888889}
-      - {x: 0.07407389, y: -0.4814817}
+      - {x: 33.301376, y: 1.0790005}
+      - {x: 31.910416, y: 1.7320571}
+      - {x: 23.809647, y: 2.1118708}
+      - {x: 25.100784, y: 1.1137619}
+      - {x: 23.8441, y: 0.39683247}
+      - {x: 21.861984, y: -0.28079224}
+      - {x: 20.395859, y: -0.99772644}
+      - {x: 18.983292, y: -1.5646181}
+      - {x: 15.549164, y: -2.2074785}
+      - {x: 13.311401, y: -4.6469955}
+      - {x: 2.5695648, y: -5.2010374}
+      - {x: 0.12644958, y: -5.1632423}
       - {x: -0.2222222, y: -0.2962961}
+--- !u!114 &1047216071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2208614845491558759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2345205070076896159
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,9 +1074,10 @@ GameObject:
   - component: {fileID: 4838108968347813995}
   - component: {fileID: 6181619165582194908}
   - component: {fileID: 5031129569226973934}
+  - component: {fileID: 1047216088}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -997,6 +1143,18 @@ PolygonCollider2D:
       - {x: 7.037055, y: -0.03703706}
       - {x: 7, y: -4.444445}
       - {x: 0, y: -4.703706}
+--- !u!114 &1047216088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2345205070076896159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2685549657579068614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,9 +1257,11 @@ GameObject:
   - component: {fileID: 3340833386882199488}
   - component: {fileID: 881456268197216175}
   - component: {fileID: 55949953936242456}
+  - component: {fileID: 1047216111}
+  - component: {fileID: 1047216093}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1173,6 +1333,44 @@ PolygonCollider2D:
       - {x: 0.5555556, y: -1.111111}
       - {x: 0.2222222, y: -0.85185}
       - {x: 0.07407389, y: -0.5925944}
+--- !u!61 &1047216111
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2710305724904564553}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 5.3298626, y: -6.3150344}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.445805, y: 11.755637}
+  m_EdgeRadius: 0
+--- !u!114 &1047216093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2710305724904564553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3223287934602369467
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,7 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7774171913541556121}
   - component: {fileID: 8529938572841806214}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Circuito Esta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1229,9 +1427,10 @@ GameObject:
   - component: {fileID: 498494209122158340}
   - component: {fileID: 2455293181938209379}
   - component: {fileID: 3920052619818125881}
+  - component: {fileID: 1047216098}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1297,6 +1496,18 @@ PolygonCollider2D:
       - {x: 7, y: -0.07407389}
       - {x: 6.962945, y: -7.037055}
       - {x: -0.07407389, y: -6.925944}
+--- !u!114 &1047216098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365236058705518581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3457674271694267444
 GameObject:
   m_ObjectHideFlags: 0
@@ -1308,9 +1519,10 @@ GameObject:
   - component: {fileID: 8680542806392478328}
   - component: {fileID: 3362264045450744112}
   - component: {fileID: 1531675489942276404}
+  - component: {fileID: 1047216082}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1377,8 +1589,20 @@ PolygonCollider2D:
       - {x: 11.77778, y: 4.592595}
       - {x: 16.29628, y: -0.1481483}
       - {x: 23.29628, y: -0.07407389}
-      - {x: 23.33333, y: -1.185183}
-      - {x: -0.07407389, y: -1.222222}
+      - {x: 23.280945, y: -5.9901485}
+      - {x: 0.13537598, y: -5.1647577}
+--- !u!114 &1047216082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3457674271694267444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3474507240455750221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,9 +1614,10 @@ GameObject:
   - component: {fileID: 6716783800197617237}
   - component: {fileID: 8374237081352831392}
   - component: {fileID: 3014916197557361439}
+  - component: {fileID: 1047216078}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1457,12 +1682,24 @@ PolygonCollider2D:
     - - {x: 0, y: 0}
       - {x: 17.55556, y: -0.1481483}
       - {x: 17.59261, y: -0.4074072}
-      - {x: 17.11111, y: -0.9259278}
-      - {x: 16.74072, y: -1.037039}
-      - {x: 16.5185, y: -1.185183}
-      - {x: 0.9629611, y: -1.111111}
-      - {x: 0.2962961, y: -0.7777778}
+      - {x: 17.610237, y: -1.4152689}
+      - {x: 17.905357, y: -6.126197}
+      - {x: 16.227348, y: -6.2743406}
+      - {x: 3.0426636, y: -6.3960056}
+      - {x: 0.0051345825, y: -6.6498833}
       - {x: 0.1111111, y: -0.3703705}
+--- !u!114 &1047216078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3474507240455750221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3573117122721282620
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,9 +1711,11 @@ GameObject:
   - component: {fileID: 2499247438711332908}
   - component: {fileID: 5565547568124437639}
   - component: {fileID: 5192527143644198400}
+  - component: {fileID: 1047216109}
+  - component: {fileID: 1047216089}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1546,6 +1785,44 @@ PolygonCollider2D:
       - {x: 0.8888889, y: -1.185183}
       - {x: 0.2222222, y: -0.9629611}
       - {x: -0.03703706, y: -0.5925944}
+--- !u!61 &1047216109
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3573117122721282620}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.038513, y: -6.6930485}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 13.887573, y: 12.131557}
+  m_EdgeRadius: 0
+--- !u!114 &1047216089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3573117122721282620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3758504156604822718
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,9 +1834,11 @@ GameObject:
   - component: {fileID: 2988503981410644199}
   - component: {fileID: 9121300846692540963}
   - component: {fileID: 8929011593025497710}
+  - component: {fileID: 1047216110}
+  - component: {fileID: 1047216090}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1632,6 +1911,44 @@ PolygonCollider2D:
       - {x: 0.1111111, y: -1}
       - {x: -0.03703706, y: -0.7407389}
       - {x: -0.03703706, y: -0.5925944}
+--- !u!61 &1047216110
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758504156604822718}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.036667, y: -5.7348533}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 13.935272, y: 10.238246}
+  m_EdgeRadius: 0
+--- !u!114 &1047216090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3758504156604822718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3824742074944284134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,9 +1960,10 @@ GameObject:
   - component: {fileID: 255136515372244890}
   - component: {fileID: 237550364539880214}
   - component: {fileID: 1628894150268903775}
+  - component: {fileID: 1047216083}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1711,15 +2029,28 @@ PolygonCollider2D:
       - {x: 14.07406, y: -0.1111111}
       - {x: 18.74072, y: 4.666667}
       - {x: 45.59261, y: 4.481483}
-      - {x: 53.88889, y: -3.629628}
-      - {x: 43.11111, y: -3.629628}
-      - {x: 43.18517, y: 2.259261}
-      - {x: 21.07406, y: 2.259261}
-      - {x: 21.07406, y: -1.111111}
-      - {x: 1.037039, y: -1.296294}
-      - {x: 0.3333333, y: -1.037039}
-      - {x: 0.1481483, y: -0.7777778}
+      - {x: 53.679443, y: -3.6296282}
+      - {x: 53.725647, y: -7.501318}
+      - {x: 43.52997, y: -7.695369}
+      - {x: 40.46234, y: -5.564208}
+      - {x: 25.996033, y: -2.2376947}
+      - {x: 23.587402, y: -9.981815}
+      - {x: 10.8810425, y: -9.181366}
+      - {x: 2.8466797, y: -9.907745}
+      - {x: -0.061340332, y: -9.894894}
       - {x: 0.07407389, y: -0.5925944}
+--- !u!114 &1047216083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3824742074944284134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4068970297889671157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1731,9 +2062,10 @@ GameObject:
   - component: {fileID: 872073318101070587}
   - component: {fileID: 8098956937348762746}
   - component: {fileID: 8704420744613535748}
+  - component: {fileID: 1047216101}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1799,6 +2131,18 @@ PolygonCollider2D:
       - {x: 7.037055, y: 0.03703706}
       - {x: 6.962945, y: -8}
       - {x: 0, y: -7.962944}
+--- !u!114 &1047216101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4068970297889671157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4171134731162504026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1810,9 +2154,11 @@ GameObject:
   - component: {fileID: 2173177862158125904}
   - component: {fileID: 4947199301368024792}
   - component: {fileID: 4938186366794531485}
+  - component: {fileID: 1047216105}
+  - component: {fileID: 1047216102}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1884,6 +2230,44 @@ PolygonCollider2D:
       - {x: 0.5555556, y: -1.111111}
       - {x: 0.3333333, y: -0.9259278}
       - {x: 0.07407389, y: -0.6296278}
+--- !u!61 &1047216105
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171134731162504026}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 8.8545685, y: -5.7060714}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 17.53543, y: 10.300288}
+  m_EdgeRadius: 0
+--- !u!114 &1047216102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4171134731162504026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4487035563659281914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,9 +2370,11 @@ GameObject:
   - component: {fileID: 2424784517305647003}
   - component: {fileID: 1768656548191022093}
   - component: {fileID: 1238164429302632484}
+  - component: {fileID: 1047216116}
+  - component: {fileID: 1047216100}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2061,6 +2447,44 @@ PolygonCollider2D:
       - {x: 0.5185183, y: -1.111111}
       - {x: 0.3333333, y: -0.8888889}
       - {x: 0, y: -0.4814817}
+--- !u!61 &1047216116
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627240851233636201}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.1153564, y: -5.234219}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 13.905457, y: 9.538087}
+  m_EdgeRadius: 0
+--- !u!114 &1047216100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627240851233636201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4757193944539352710
 GameObject:
   m_ObjectHideFlags: 0
@@ -2072,9 +2496,10 @@ GameObject:
   - component: {fileID: 2993633267809976256}
   - component: {fileID: 9146264871965811284}
   - component: {fileID: 6806352929761363228}
+  - component: {fileID: 1047216075}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2142,7 +2567,20 @@ PolygonCollider2D:
       - {x: 16.37039, y: 0}
       - {x: 23.37039, y: 0.185185}
       - {x: 23.33333, y: -1.074072}
-      - {x: 0.1111111, y: -1.111111}
+      - {x: 23.406555, y: -4.878421}
+      - {x: -0.09832764, y: -5.6080647}
+--- !u!114 &1047216075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4757193944539352710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4785834033887516342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2154,9 +2592,11 @@ GameObject:
   - component: {fileID: 6927003030690831902}
   - component: {fileID: 3245200608966514035}
   - component: {fileID: 9213303187341822692}
+  - component: {fileID: 1047216115}
+  - component: {fileID: 1047216099}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2228,6 +2668,44 @@ PolygonCollider2D:
       - {x: 1.037039, y: -1.222222}
       - {x: 0.2592594, y: -0.9629611}
       - {x: 0.03703706, y: -0.6296278}
+--- !u!61 &1047216115
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785834033887516342}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.0611267, y: -6.382286}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 13.813416, y: 11.657406}
+  m_EdgeRadius: 0
+--- !u!114 &1047216099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4785834033887516342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4919237357466829669
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,9 +2717,10 @@ GameObject:
   - component: {fileID: 149629094903256096}
   - component: {fileID: 1748198665465765482}
   - component: {fileID: 2152102345384410785}
+  - component: {fileID: 1047216080}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2307,11 +2786,23 @@ PolygonCollider2D:
       - {x: 15.29628, y: 0.1481483}
       - {x: 15.29628, y: -0.4444444}
       - {x: 15.07406, y: -0.7777778}
-      - {x: 14.14817, y: -1.185183}
-      - {x: 10.07406, y: -1.185183}
-      - {x: 1.074072, y: -1.296294}
-      - {x: 0.3703705, y: -0.85185}
-      - {x: 0, y: -0.5555556}
+      - {x: 15.247772, y: -6.236557}
+      - {x: 12.849243, y: -6.4829664}
+      - {x: 9.1901245, y: -7.2100973}
+      - {x: 1.9412231, y: -7.3816757}
+      - {x: -0.15707397, y: -7.94781}
+--- !u!114 &1047216080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4919237357466829669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4974686382937092715
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,9 +2814,10 @@ GameObject:
   - component: {fileID: 6039907252943412949}
   - component: {fileID: 5181861001360354012}
   - component: {fileID: 496569065764603152}
+  - component: {fileID: 1047216103}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2391,6 +2883,18 @@ PolygonCollider2D:
       - {x: 7.074056, y: -0.07407389}
       - {x: 7.074056, y: -8.259278}
       - {x: 0.07407389, y: -8.259278}
+--- !u!114 &1047216103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4974686382937092715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5110186351702918288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,9 +2906,10 @@ GameObject:
   - component: {fileID: 436364462555822204}
   - component: {fileID: 3562614199584971207}
   - component: {fileID: 6540770624630162054}
+  - component: {fileID: 1047216079}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2471,8 +2976,20 @@ PolygonCollider2D:
       - {x: 11.66667, y: 4.592595}
       - {x: 16.22222, y: 0.2222222}
       - {x: 23.29628, y: -0.03703706}
-      - {x: 23.40739, y: -1.259261}
-      - {x: 0.07407389, y: -1.111111}
+      - {x: 23.197998, y: -6.3106337}
+      - {x: -0.13531494, y: -6.7169037}
+--- !u!114 &1047216079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5110186351702918288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5287163527396300856
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,9 +3001,11 @@ GameObject:
   - component: {fileID: 5817410418334647640}
   - component: {fileID: 3364012172421499018}
   - component: {fileID: 5858673911317785365}
+  - component: {fileID: 1047216113}
+  - component: {fileID: 1047216095}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2556,6 +3075,44 @@ PolygonCollider2D:
       - {x: 0.8888889, y: -1.296294}
       - {x: 0.3333333, y: -0.9629611}
       - {x: -0.07407389, y: -0.5925944}
+--- !u!61 &1047216113
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5287163527396300856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.643814, y: -5.348927}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.055878, y: 9.652047}
+  m_EdgeRadius: 0
+--- !u!114 &1047216095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5287163527396300856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5472687072039386954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2568,7 +3125,7 @@ GameObject:
   - component: {fileID: 511873428259948653}
   - component: {fileID: 7858795460533040688}
   - component: {fileID: 4079877231509742567}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Tilset mapas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2658,9 +3215,10 @@ GameObject:
   - component: {fileID: 4713361978591979410}
   - component: {fileID: 4096982370607351275}
   - component: {fileID: 7762707085137175589}
+  - component: {fileID: 1047216076}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2727,8 +3285,21 @@ PolygonCollider2D:
       - {x: 11.59261, y: 4.740739}
       - {x: 16.07406, y: 0.2592594}
       - {x: 23.37039, y: 0.07407389}
-      - {x: 23.29628, y: -0.9629611}
+      - {x: 23.13916, y: -5.336712}
+      - {x: -0.052368164, y: -5.1152487}
       - {x: 0, y: -1.111111}
+--- !u!114 &1047216076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672624013051837185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5761391764846974314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2739,7 +3310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4383136176224043715}
   - component: {fileID: 5402696017587391639}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Fondo Esta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2787,9 +3358,11 @@ GameObject:
   - component: {fileID: 8395649566434598081}
   - component: {fileID: 6556261063694279058}
   - component: {fileID: 208273817757545062}
+  - component: {fileID: 1047216107}
+  - component: {fileID: 1047216084}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2860,6 +3433,44 @@ PolygonCollider2D:
       - {x: 0.4444444, y: -1.222222}
       - {x: 0.185185, y: -0.7407389}
       - {x: 0.03703706, y: -0.4444444}
+--- !u!61 &1047216107
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917491263100521698}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.6638336, y: -5.7499475}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.120331, y: 10.58547}
+  m_EdgeRadius: 0
+--- !u!114 &1047216084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5917491263100521698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6245065266999007089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2871,9 +3482,10 @@ GameObject:
   - component: {fileID: 6851929374786364553}
   - component: {fileID: 2013591510830750303}
   - component: {fileID: 7870839495444477715}
+  - component: {fileID: 1047216081}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2940,10 +3552,23 @@ PolygonCollider2D:
       - {x: 19.70372, y: 4.592595}
       - {x: 24.44444, y: -0.03703706}
       - {x: 31.44444, y: -0.1481483}
-      - {x: 31.44444, y: -1.185183}
-      - {x: 1.111111, y: -1.185183}
-      - {x: 0.1481483, y: -0.8148167}
+      - {x: 31.706238, y: -8.207828}
+      - {x: 30.397217, y: -6.9757853}
+      - {x: 3.1532288, y: -6.7909756}
+      - {x: -0.061279297, y: -7.159835}
       - {x: -0.1481483, y: -0.4814817}
+--- !u!114 &1047216081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245065266999007089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6583789620399132613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,9 +3580,10 @@ GameObject:
   - component: {fileID: 1715952100194338557}
   - component: {fileID: 6832780526726820055}
   - component: {fileID: 7984112523131255683}
+  - component: {fileID: 1047216069}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3027,6 +3653,18 @@ PolygonCollider2D:
       - {x: 26.74072, y: 5.777778}
       - {x: 26.77778, y: -0.07407389}
       - {x: 0, y: 0}
+--- !u!114 &1047216069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6583789620399132613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7140016399792522988
 GameObject:
   m_ObjectHideFlags: 0
@@ -3037,7 +3675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5147048776912810962}
   - component: {fileID: 8449200076361302358}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: Adornos Esta
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3083,9 +3721,11 @@ GameObject:
   - component: {fileID: 1519186047623428761}
   - component: {fileID: 589458016295072912}
   - component: {fileID: 7760412041712450687}
+  - component: {fileID: 1047216114}
+  - component: {fileID: 1047216096}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3158,6 +3798,44 @@ PolygonCollider2D:
       - {x: 0.7037056, y: -0.8148167}
       - {x: 0.3703705, y: -0.7777778}
       - {x: 0.1481483, y: -0.5185183}
+--- !u!61 &1047216114
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405131123522629338}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 10.517788, y: -5.803204}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20.975655, y: 10.975751}
+  m_EdgeRadius: 0
+--- !u!114 &1047216096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7405131123522629338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7958720166435248847
 GameObject:
   m_ObjectHideFlags: 0
@@ -3169,9 +3847,11 @@ GameObject:
   - component: {fileID: 2591165679997109597}
   - component: {fileID: 6954349292671286059}
   - component: {fileID: 1119591359348894057}
+  - component: {fileID: 1047216112}
+  - component: {fileID: 1047216094}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3243,6 +3923,44 @@ PolygonCollider2D:
       - {x: 0.5555556, y: -1.185183}
       - {x: 0.2222222, y: -0.8888889}
       - {x: -0.03703706, y: -0.5555556}
+--- !u!61 &1047216112
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7958720166435248847}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 7.5840454, y: -5.9275255}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.24884, y: 10.775217}
+  m_EdgeRadius: 0
+--- !u!114 &1047216094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7958720166435248847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8197559116483920233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3254,9 +3972,10 @@ GameObject:
   - component: {fileID: 3423229389471874162}
   - component: {fileID: 5561844244714725978}
   - component: {fileID: 5179729306056374974}
+  - component: {fileID: 1047216087}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3322,6 +4041,18 @@ PolygonCollider2D:
       - {x: 7.111111, y: -0.03703706}
       - {x: 7.074056, y: -4.666667}
       - {x: 0.1111111, y: -4.777778}
+--- !u!114 &1047216087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197559116483920233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8314580180601633908
 GameObject:
   m_ObjectHideFlags: 0
@@ -3348,7 +4079,7 @@ Transform:
   m_GameObject: {fileID: 8314580180601633908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.85, z: 1}
   m_Children:
   - {fileID: 4383136176224043715}
   - {fileID: 5147048776912810962}
@@ -3393,9 +4124,10 @@ GameObject:
   - component: {fileID: 1085543262201439742}
   - component: {fileID: 2020227288143196704}
   - component: {fileID: 6392536195667078448}
+  - component: {fileID: 1047216085}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3461,6 +4193,18 @@ PolygonCollider2D:
       - {x: 6.962945, y: -0.1481483}
       - {x: 6.962945, y: -3.629628}
       - {x: 0.03703706, y: -3.666667}
+--- !u!114 &1047216085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8566754779162861212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8651009795117379018
 GameObject:
   m_ObjectHideFlags: 0
@@ -3473,7 +4217,7 @@ GameObject:
   - component: {fileID: 1809239386615808118}
   - component: {fileID: 7985236990966348967}
   - component: {fileID: 1272729907066004840}
-  m_Layer: 0
+  m_Layer: 1
   m_Name: sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3563,9 +4307,11 @@ GameObject:
   - component: {fileID: 7224105650562438572}
   - component: {fileID: 6874561796239105818}
   - component: {fileID: 3895338862367335062}
+  - component: {fileID: 1047216108}
+  - component: {fileID: 1047216086}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3637,6 +4383,44 @@ PolygonCollider2D:
       - {x: 0.5925944, y: -0.85185}
       - {x: 0.1481483, y: -0.7037056}
       - {x: 0.07407389, y: -0.4814817}
+--- !u!61 &1047216108
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658972099038606098}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.098196, y: -5.4063716}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 8.111576, y: 9.898356}
+  m_EdgeRadius: 0
+--- !u!114 &1047216086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658972099038606098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9199121101808422523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3648,9 +4432,10 @@ GameObject:
   - component: {fileID: 8703636841780260433}
   - component: {fileID: 3600442441704321920}
   - component: {fileID: 1172912683656156064}
+  - component: {fileID: 1047216072}
   m_Layer: 0
   m_Name: PolygonObject
-  m_TagString: Untagged
+  m_TagString: grounder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3712,9 +4497,22 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -6.333333, y: -0.03703706}
-      - {x: -6.666667, y: 0.3703705}
+    - - {x: -0.11694336, y: -2.7843733}
+      - {x: -3.6628418, y: -3.240346}
+      - {x: -6.719055, y: -3.5105639}
       - {x: -7.037055, y: 0.6296278}
       - {x: -6.925944, y: 1.111111}
       - {x: 0.07407389, y: 1.074072}
       - {x: 0, y: 0}
+--- !u!114 &1047216072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9199121101808422523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f975be07a7d64b74d9afb72aa7c8d749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
