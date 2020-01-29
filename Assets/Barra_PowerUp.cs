@@ -262,14 +262,74 @@ public class Barra_PowerUp : MonoBehaviour
 
     public IEnumerator PowerUpNino()
     {
-        
+        var afectado7 = GameObject.Find(cppj.siete);
+        var afectado6 = GameObject.Find(cppj.seis);
+        var afectado5 = GameObject.Find(cppj.cinco);
+        var afectado4 = GameObject.Find(cppj.cuatro);
+        var afectado3 = GameObject.Find(cppj.tres);
+        var afectado2 = GameObject.Find(cppj.dos);
+        var afectado1 = GameObject.Find(cppj.uno);
+
         if (KC.nombre.Contains("nino"))
         {
+            
             if(cppj.ocho.Contains("nino"))
             {
-                Debug.Log("NIÑO VA EN OCTAVO");
+                Debug.LogFormat("afectado por NIÑO: {0}", afectado7.name);
+                afectado7.GetComponent<EnemyPath>().speed = 0f;
+                yield return new WaitForSeconds(2);
+                afectado7.GetComponent<EnemyPath>().speed = EP.speedPERdif;
             }
-            yield return new WaitForSeconds(2);
+
+            if (cppj.siete.Contains("nino"))
+            {
+                Debug.LogFormat("afectado por NIÑO: {0}", afectado6.name);
+                afectado6.GetComponent<EnemyPath>().speed = 0f;
+                yield return new WaitForSeconds(2);
+                afectado6.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+
+            if (cppj.seis.Contains("nino"))
+            {
+                Debug.LogFormat("afectado por NIÑO: {0}", afectado5.name);
+                afectado5.GetComponent<EnemyPath>().speed = 0f;
+                yield return new WaitForSeconds(2);
+                afectado5.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+
+            if (cppj.cinco.Contains("nino"))
+            {
+                Debug.LogFormat("afectado por NIÑO: {0}", afectado4.name);
+                afectado4.GetComponent<EnemyPath>().speed = 0f;
+                yield return new WaitForSeconds(2);
+                afectado4.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+
+            if (cppj.cuatro.Contains("nino"))
+            {
+                Debug.LogFormat("afectado por NIÑO: {0}", afectado3.name);
+                afectado3.GetComponent<EnemyPath>().speed = 0f;
+                yield return new WaitForSeconds(2);
+                afectado3.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+
+            if (cppj.tres.Contains("nino"))
+            {
+                Debug.LogFormat("afectado por NIÑO: {0}", afectado2.name);
+                afectado2.GetComponent<EnemyPath>().speed = 0f;
+                yield return new WaitForSeconds(2);
+                afectado2.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+
+            if (cppj.dos.Contains("nino"))
+            {
+                Debug.LogFormat("afectado por NIÑO: {0}", afectado1.name);
+                afectado1.GetComponent<EnemyPath>().speed = 0f;
+                yield return new WaitForSeconds(2);
+                afectado1.GetComponent<EnemyPath>().speed = EP.speedPERdif;
+            }
+
+
         }
     }
 }
