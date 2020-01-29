@@ -37,7 +37,7 @@ public class Selector_de_mapa : MonoBehaviour
     }
     public void Plantel()
     {
-        SceneManager.LoadScene("Mapa_Pruebas");//Esta funcion hace que la escena seleccionada se cargue
+        SceneManager.LoadScene("Plantel Colomos");//Esta funcion hace que la escena seleccionada se cargue
     }
     public void Back()
     {
