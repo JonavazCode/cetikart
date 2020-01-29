@@ -19,7 +19,7 @@ public class EnemyPath : MonoBehaviour
     public float rotation = 0f;
 
     public bool canJump;
-
+    public Animator animacion;
 
     private int checkpointIndex = 0;
     public float speedPERdif;
