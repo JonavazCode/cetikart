@@ -22,6 +22,10 @@ public class LevelManager : MonoBehaviour
 
     #endregion
 
+    private void Awake()
+    {
+        GenerarProfesores(SelecProf.PersonajeSeleccionado);
+    }
     void Start()
     {
         
@@ -114,7 +118,9 @@ public class LevelManager : MonoBehaviour
             {
                     inicia = cppj.checkpoint_actual_jugador(cppj.uno, checkPoints);
                     termina = cppj.checkpoint_actual_jugador(cppj.ocho, checkPoints);
+                    Debug.Log("Generación de item, inicia en: " + inicia + "Termina en:" + termina);
                     randomPosition = Random.Range(termina, inicia); //numero random entre 0 y el número de checkpoints de la pista
+
                     checkPointRandom = checkPoints[randomPosition]; //Instancia de checkpoint random
                     int randomRange = Random.Range(0, obj.Length-1); //numero random entre 0 y el numero de objetos existentes
                     Debug.LogFormat("item numero: {0} de la lista", randomRange);
@@ -131,21 +137,28 @@ public class LevelManager : MonoBehaviour
     {
         for (int x = 0; x <= bots.Length - 1; x++)
         {
-            if (x != num_prof)
+            if (x == 1 && num_prof == 8)
             {
-                Instantiate(bots[x], transform.position = checkPoints[0].transform.position, Quaternion.identity);
+                //si x == 1 o sea la posicion de coquito, y el numero de profe es 7 entonces que no instancíe a coco
             }
-          
+            else
+            {
+                if (x != num_prof)
+                {
+                    Instantiate(bots[x], transform.position = checkPoints[0].transform.position, Quaternion.identity);
+                }
+            }
         }
 
-        Instantiate(profesores[num_prof], transform.position = checkPoints[0].transform.position, Quaternion.identity);
+        if (num_prof != 8)
+            Instantiate(profesores[num_prof], transform.position = checkPoints[0].transform.position, Quaternion.identity);
 
+
+        if (GameObject.Find("Personaje_Custom"))
+        {
+            GameObject pc = GameObject.Find("Personaje_Custom");
+            pc.name = "coco_car";
+        }
     }
-    private void Awake()
-    {
-        GenerarProfesores(SelecProf.PersonajeSeleccionado);
-    }
-
-
 
 }

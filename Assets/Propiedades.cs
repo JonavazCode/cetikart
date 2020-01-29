@@ -42,7 +42,6 @@ public class Propiedades : MonoBehaviour
         posicion = posicion_carrera(gameObject.name);
         pos_anterior = posicion;
         cargas = limite_cargas(cargas);
-
     }
 
     void si_rebasa()
