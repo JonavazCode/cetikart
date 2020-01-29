@@ -256,6 +256,7 @@ GameObject:
   - component: {fileID: 7316372777155031635}
   - component: {fileID: 2925714245455725449}
   - component: {fileID: 1488541214892614094}
+  - component: {fileID: 944381734418566518}
   m_Layer: 8
   m_Name: areli_carE
   m_TagString: Enemy
@@ -471,6 +472,30 @@ MonoBehaviour:
   rb: {fileID: 7316372777155031634}
   rotation: 0
   canJump: 0
+  animacion: {fileID: 0}
+  speedPERdif: 0
+  niv_dif: {fileID: 0}
+  clone: 
+  nombre: 
+--- !u!114 &944381734418566518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7316372777155031639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e002506d1a8e3c940a939c62f9488be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CargasBots: 0
+  cargasPERdificultad: 0
+  niv_dif: {fileID: 0}
+  EP: {fileID: 0}
+  KC: {fileID: 0}
+  cppj: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!1 &7316372777171103242
 GameObject:
   m_ObjectHideFlags: 0
