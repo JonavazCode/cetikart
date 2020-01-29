@@ -178,7 +178,7 @@ namespace cetikart.utilidades
                     }
                 }
             }
-            return -1;
+            return 0;
         }
     }
 }

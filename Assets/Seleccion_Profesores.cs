@@ -60,6 +60,7 @@ public class Seleccion_Profesores : MonoBehaviour
     }
     public void SelecCustom()
     {
+        SelecProf.PersonajeSeleccionado = 8;
         SceneManager.LoadScene("Custom");//Esta funcion hace que la escena seleccionada se cargue
     }
 
