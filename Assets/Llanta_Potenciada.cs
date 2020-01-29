@@ -33,6 +33,7 @@ public class Llanta_Potenciada : MonoBehaviour
         int vel = 1000;
         gameObject.transform.position = trash.transform.position;
         var profesor = GameObject.Find(nombre_profesor);
+        Debug.LogFormat("Llanta ponchada profesor encontrado: {0}", profesor.name);
         try
         {
             Debug.LogFormat("Velocidad jugador: {0}", boost);
