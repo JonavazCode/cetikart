@@ -8,6 +8,7 @@ public class Llanta_Ponchada : MonoBehaviour
     public CheckpointsPerPJ cppj;
     public KartController KC;
     public EnemyPath EP;
+    public bool ItemTomado = false;
 
     void Start()
     {
@@ -20,12 +21,13 @@ public class Llanta_Ponchada : MonoBehaviour
     IEnumerator DestruirObjeto()
     {
         yield return new WaitForSeconds(5);
-        Destroy(gameObject);
+        if (!ItemTomado)
+            Destroy(gameObject);
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        ItemTomado = true;
         StartCoroutine(RegresarPosicion(collision.name));
 
     }

@@ -210,7 +210,7 @@ public class Barra_PowerUp : MonoBehaviour
 
         if (KC.nombre.Contains("areli"))
         {
-            panel.AbrirPanel(); 
+            panel.PanelAreli.SetActive(true); 
 
         }
     }

@@ -6,6 +6,7 @@ public class Llanta_Potenciada : MonoBehaviour
 {
     public GameObject trash;
     public KartController KC;
+    public bool ItemTomado = false;
 
 
 
@@ -19,11 +20,12 @@ public class Llanta_Potenciada : MonoBehaviour
     IEnumerator DestruirObjeto()
     {
         yield return new WaitForSeconds(5);
-        Destroy(gameObject);
+        if (!ItemTomado)
+            Destroy(gameObject);
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-
+        ItemTomado = true;
         StartCoroutine(RegresarPosicion(collision.name));
 
     }

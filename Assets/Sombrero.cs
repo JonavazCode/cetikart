@@ -8,6 +8,7 @@ public class Sombrero : MonoBehaviour
     public GameObject afectado;
     public GameObject trash;
     public CheckpointsPerPJ cppj;
+    public bool ItemTomado = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,11 +20,13 @@ public class Sombrero : MonoBehaviour
     IEnumerator DestruirObjeto()
     {
         yield return new WaitForSeconds(5);
-        Destroy(gameObject);
+        if (!ItemTomado)
+            Destroy(gameObject);
     }
 
-    public void OnTriggerEnter2D(Collider2D collision) {
-
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        ItemTomado = true;
         StartCoroutine(RegresarPosicion());
 
     }

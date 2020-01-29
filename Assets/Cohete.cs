@@ -7,7 +7,7 @@ public class Cohete : MonoBehaviour
 {
     public KartController kc;
     public GameObject trash;
-
+    public bool ItemTomado = false;
     void Start()
     {
         trash = GameObject.Find("Trash");
@@ -17,10 +17,12 @@ public class Cohete : MonoBehaviour
     IEnumerator DestruirObjeto()
     {
         yield return new WaitForSeconds(5);
-        Destroy(gameObject);
+        if(!ItemTomado)
+            Destroy(gameObject);
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        ItemTomado = true;
         string nombre_profesor = collision.name;
         var rb2d_profesor = GameObject.Find(nombre_profesor).GetComponent<Rigidbody2D>();
         StartCoroutine(RegresarPosicion(rb2d_profesor));
