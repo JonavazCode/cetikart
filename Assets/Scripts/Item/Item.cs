@@ -21,12 +21,13 @@ public class Item : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         string tag = collision.tag;
-        if(tag == "Player" || tag == "Enemy")
+        if(tag == "Player")
         {
             cargasDeJugador.cargas++;
-            cargasDeBot.CargasBots++;
-
+            
         }
+        if(tag == "Enemy")
+            cargasDeBot.CargasBots++;
         Destroy(gameObject);   
     }
 }

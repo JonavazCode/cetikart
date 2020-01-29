@@ -38,6 +38,7 @@ public class EnemyPath : MonoBehaviour
     {
 
         nombre = this.name;
+        animacion = GetComponentInChildren<Animator>();
         checkpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
         acomodar();
         niv_dif = FindObjectOfType<Dificultad>();
