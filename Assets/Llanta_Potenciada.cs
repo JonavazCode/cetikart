@@ -41,8 +41,14 @@ public class Llanta_Potenciada : MonoBehaviour
         }
         catch
         {
-            Debug.Log("Afectando a enemigo");
-            profesor.GetComponent<EnemyPath>().speed = boost;
+            try
+            {
+                Debug.Log("Afectando a enemigo");
+                profesor.GetComponent<EnemyPath>().speed = boost;
+            }
+            catch {
+                Debug.Log("No se encuentra referencia a jugador o bot");
+            }
         }
         yield return new WaitForSeconds(5);
         try

@@ -53,14 +53,14 @@ public class LapController : MonoBehaviourPun
             if (viewID == photonView.ViewID)
             {
                 //el jugador actual soy yo
-                orderUITextGameObject.GetComponent<Text>().text = finishOrder + ", " + nickNameOfFinishedPlayer + " (TÚ)";
+                orderUITextGameObject.GetComponent<Text>().text = finishOrder + ", " + nickNameOfFinishedPlayer;
                 orderUITextGameObject.GetComponent<Text>().color = Color.red;
 
 
             }
             else
             {
-                orderUITextGameObject.GetComponent<Text>().text = finishOrder + ", " + nickNameOfFinishedPlayer;
+                orderUITextGameObject.GetComponent<Text>().text = finishOrder + ", " + nickNameOfFinishedPlayer + " (TÚ)";
             }
 
             
@@ -73,7 +73,7 @@ public class LapController : MonoBehaviourPun
         {
             int indexOfTrigger = Checkpoints.IndexOf(collision.gameObject);
             NumeroCheckpointActual = indexOfTrigger;
-            Checkpoints[indexOfTrigger].SetActive(false);
+            //Checkpoints[indexOfTrigger].SetActive(false);
             if (collision.name.Contains("FinishTrigger"))
             {
                 Debug.Log("si entro al script que lo termina");
