@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 6258408682764957439}
   - component: {fileID: 2466158292304508617}
   - component: {fileID: 8337406439774410430}
+  - component: {fileID: 8282934864382157755}
   m_Layer: 8
   m_Name: gussa_carE
   m_TagString: Enemy
@@ -356,6 +357,7 @@ MonoBehaviour:
   speedPERdif: 0
   niv_dif: {fileID: 0}
   clone: 
+  nombre: 
 --- !u!95 &8337406439774410430
 Animator:
   serializedVersion: 3
@@ -375,6 +377,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8282934864382157755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6258408682764957438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e002506d1a8e3c940a939c62f9488be5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CargasBots: 0
+  cargasPERdificultad: 0
+  niv_dif: {fileID: 0}
+  EP: {fileID: 0}
+  KC: {fileID: 0}
+  cppj: {fileID: 0}
+  obj: {fileID: 0}
 --- !u!1 &6258408683008182917
 GameObject:
   m_ObjectHideFlags: 0
