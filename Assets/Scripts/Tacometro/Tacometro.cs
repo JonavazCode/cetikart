@@ -30,6 +30,7 @@ public class Tacometro : MonoBehaviour
         AnguloEulerInicial = punteroEjeZ.transform.localEulerAngles;
         
     }
+    
     private void Update()
     {
         velocidadJugador = _rigidbody.velocity.magnitude * 3.6f;

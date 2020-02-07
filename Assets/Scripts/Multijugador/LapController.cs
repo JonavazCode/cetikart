@@ -68,7 +68,7 @@ public class LapController : MonoBehaviourPun
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.LogFormat("choco con algo: {0}", collision.name);
+        //Debug.LogFormat("choco con algo: {0}", collision.name);
         if (Checkpoints.Contains(collision.gameObject))
         {
             int indexOfTrigger = Checkpoints.IndexOf(collision.gameObject);

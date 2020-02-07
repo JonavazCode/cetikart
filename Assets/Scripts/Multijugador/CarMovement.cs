@@ -6,7 +6,7 @@ using UnityStandardAssets.CrossPlatformInput;
 public class CarMovement : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 1200f;
+    private float speed = 1000f;
     private float rotationSpeed = 12f;
 
     public WheelJoint2D backWheel;
