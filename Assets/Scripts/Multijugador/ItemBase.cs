@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-public class ItemBase : MonoBehaviour
+public class ItemBase : MonoBehaviourPun
 {
     public int tiempoItems = 5;
     public int tiempoAtajo = 30;
@@ -33,18 +33,26 @@ public class ItemBase : MonoBehaviour
             Destroy(gameObject);
     }
 
-    [PunRPC]
-    public void ItemFlechas(GameObject _atacante) 
+    public void ItemFlechas(string _atacante) 
     {
-        // Debug.LogFormat("Se ha utilizado el objeto Flechas. Atacante: {0}, Atacado: {1}", _atacante.name, _atacado.name);
-        Atacante = _atacante;
+        Atacante = GameObject.Find(_atacante);
         posicionAtacante = Atacante.PositionInCareer();
         Vector3 pos_temp_Atacante = new Vector3(Atacante.transform.position.x, Atacante.transform.position.y);
+
         if (posicionAtacante != 1)
         {
-            Afectado = GameObject.Find(RacingModeGameManager.instance.PosicionCarrera[posicionAtacante-1]);      
-            Atacante.transform.position = new Vector3(Afectado.transform.position.x, Afectado.transform.position.y);
-            Afectado.transform.position = new Vector3(pos_temp_Atacante.x, pos_temp_Atacante.y);
+            //Encontrar al jugador que va a ser afectado
+            Afectado = GameObject.Find(RacingModeGameManager.instance.PosicionCarrera[posicionAtacante-1]);
+            //guardar la posición del afectado
+            Vector3 pos_temp_Afectado = new Vector3(Afectado.transform.position.x, Afectado.transform.position.y);
+            //mover al atacante a la posicion del afectado en ese momento
+            Atacante.GetComponent<PhotonView>().RPC("moverPj", RpcTarget.All, pos_temp_Afectado);
+            
+            //Mover al afectado a la posicion que tenía el atacante cuando tocó el item flechas
+            Afectado.GetComponent<PhotonView>().RPC("moverPj", RpcTarget.All, pos_temp_Atacante);
+            //Atacante.transform.position = new Vector3(Afectado.transform.position.x, Afectado.transform.position.y);
+            //Afectado.transform.position = new Vector3(pos_temp_Atacante.x, pos_temp_Atacante.y);
+
             Debug.LogFormat("La posicion de {0} es: {1}. Se atacó a: {2}", Atacante.name, posicionAtacante, Afectado.name);
         }
         else

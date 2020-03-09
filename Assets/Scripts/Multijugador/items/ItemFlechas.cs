@@ -1,7 +1,7 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 
 public class ItemFlechas : ItemBase
 {
@@ -15,8 +15,8 @@ public class ItemFlechas : ItemBase
         Debug.Log("Item Flechas");
         if (collision.tag == "Player")
         {
-            //TomarItem();
-            RPC("ItemFlechas", RpcTarget.AllBuffered, collision.gameObject);
+            TomarItem();
+            ItemFlechas(collision.name);
             Destroy(gameObject);
         }
     }
