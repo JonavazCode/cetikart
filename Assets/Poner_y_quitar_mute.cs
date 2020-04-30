@@ -14,19 +14,25 @@ public class Poner_y_quitar_mute : MonoBehaviour
         animacion_mute = GetComponent<Animator>(); //Asociamos la variable con el componente que contiene el objeto del proyecto, en este caso la animacion 
         mute = false; //Cuando la variable "mute" este en true esta mostrara la animacion de que no hay sonido, de lo contrario sonara la pista, por esto se inicializa en "false"
         Cancion_Interfaz = GetComponent<AudioSource>(); //Asociamos la variable con el componente que contiene el objeto del proyecto, en este caso la pista de audio 
+        animacion_mute.SetBool("mute", mute);
     }
 
     
     void Update()
     {
-        animacion_mute.SetBool("mute", mute); //En esta parte se toma el parametro dentro del Animator para validarlo con la variable dentro del script y comprovar el estado del booleando en este caso, el mute
-        if (CrossPlatformInputManager.GetButton("mute")) //Con esta condicion se dice que si el boton de "mute" se presiona, hace que la pista de audio se silencie y hace que el parametro de la animacion sea diferente cada que se presione 
-        {
+        //animacion_mute.SetBool("mute", mute); //En esta parte se toma el parametro dentro del Animator para validarlo con la variable dentro del script y comprovar el estado del booleando en este caso, el mute
+        //if (CrossPlatformInputManager.GetButton("mute")) //Con esta condicion se dice que si el boton de "mute" se presiona, hace que la pista de audio se silencie y hace que el parametro de la animacion sea diferente cada que se presione 
+        //{
+        //    Cancion_Interfaz.mute = !Cancion_Interfaz.mute;
+        //    mute = !mute;
+        //}
+        
+    }
 
-            Cancion_Interfaz.mute = !Cancion_Interfaz.mute;
-            mute = !mute;
-        
-        }
-        
+    public void BotonMutePresionado()
+    {
+        Cancion_Interfaz.mute = !Cancion_Interfaz.mute;
+        mute = !mute;
+        animacion_mute.SetBool("mute", mute);
     }
 }

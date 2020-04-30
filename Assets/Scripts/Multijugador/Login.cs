@@ -59,8 +59,14 @@ public class Login : MonoBehaviour
                         DBManager.nickname = nameField.text;
                         Debug.Log("El nickname: " + DBManager.nickname + " se guardó correctamente");
                         SceneManager.LoadScene("LobbyScene");
-                    }        
+                    }
                 }
+                else
+                {
+                    Prompt.text = "Los datos son erróneos";
+                    Debug.Log("datos erroneos");
+                }
+                    
 
             }
         }
@@ -76,7 +82,7 @@ public class Login : MonoBehaviour
     {
         if (nameField.text.Length >= 1)
         {
-            HelpName.text = "Nick correcto";
+            HelpName.text = " ";
             return true;
         }
         else
@@ -90,7 +96,7 @@ public class Login : MonoBehaviour
     {
         if (passwordField.text.Length >= 6 && passwordField.text.Length <= 20 && VerifyUpper())
         {
-            HelpPassword.text = "Contraseña correcta";
+            HelpPassword.text = " ";
             return true;
         }
         else
@@ -106,7 +112,7 @@ public class Login : MonoBehaviour
                 if (!VerifyUpper())
                     HelpPassword.text += "\nFalta 1 mayúscula";
                 else
-                    HelpPassword.text += "\n correcta";
+                    HelpPassword.text = " ";
                 return false;
             }
 
