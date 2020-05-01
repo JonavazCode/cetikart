@@ -75,4 +75,13 @@ public class CarMovement : MonoBehaviour
             canJump = true;
         }
     }
+
+    public void SetSpeed(float NewSpeed)
+    {
+        speed = NewSpeed;
+    }
+    public float GetSpeed()
+    {
+        return speed;
+    }
 }

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 3710199316249562767}
   - component: {fileID: 8054154907164759933}
   - component: {fileID: 3852333465783521061}
+  - component: {fileID: -5741743175044532165}
   m_Layer: 8
   m_Name: sergio_car
   m_TagString: Player
@@ -332,6 +333,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Checkpoints: []
   NumeroCheckpointActual: 0
+--- !u!114 &-5741743175044532165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270252706945677169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd304966da850b45a246f886d79b86c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &270252706974169393
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,6 +678,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerNameUI
       objectReference: {fileID: 0}
+    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
+        type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4278190080
+      objectReference: {fileID: 0}
+    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
+        type: 3}
+      propertyPath: m_fontSizeMax
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6261808794223567525, guid: c775bbfd6eac40644925c55c5f244ab9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -719,36 +762,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
-        type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4278190080
-      objectReference: {fileID: 0}
-    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
-        type: 3}
-      propertyPath: m_fontColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
-        type: 3}
-      propertyPath: m_fontColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
-        type: 3}
-      propertyPath: m_fontColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 342664072806065602, guid: c775bbfd6eac40644925c55c5f244ab9,
-        type: 3}
-      propertyPath: m_fontSizeMax
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8909546208776749235, guid: c775bbfd6eac40644925c55c5f244ab9,
         type: 3}

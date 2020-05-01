@@ -77,7 +77,7 @@ public class Registration : MonoBehaviour
     {
         if (nameField.text.Length >= 6)
         {
-            HelpEmail.text = "Email correcto";
+            HelpEmail.text = "";
             return true;
         }
         else
@@ -91,7 +91,7 @@ public class Registration : MonoBehaviour
     {
         if (nickField.text.Length >= 1)
         {
-            HelpNick.text = "Nick correcto";
+            HelpNick.text = "";
             return true;
         }
         else
@@ -105,7 +105,7 @@ public class Registration : MonoBehaviour
     {
         if (passwordField.text.Length >= 6 && passwordField.text.Length <= 20 && VerifyUpper())
         {
-            HelpPassword.text = "Contraseña correcta";
+            HelpPassword.text = "";
             return true;
         }
         else
@@ -121,7 +121,7 @@ public class Registration : MonoBehaviour
                 if (!VerifyUpper())
                     HelpPassword.text += "\nFalta 1 mayúscula";
                 else
-                    HelpPassword.text += "\n correcta";
+                    HelpPassword.text += "";
                 return false;
             }
 
@@ -139,7 +139,7 @@ public class Registration : MonoBehaviour
 
         if (passwordFieldConfirmation.text.Equals(passwordField.text))
         {
-            HelpPasswordConfirmation.text = "Contraseñas coinciden";
+            HelpPasswordConfirmation.text = "";
             return true;
 
         }

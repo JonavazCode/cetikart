@@ -8,11 +8,12 @@ namespace cetikart.controlescenas
     public class ControlDeEscenas : MonoBehaviour
     {
 
-        public void EscenaAnterior(int index = 1)
+        public void EscenaAnterior(int index)
         {
+            if (index == 0) index = 1;
             var EscenaActual = SceneManager.GetActiveScene();
             Debug.Log("Index: Escena Actual" + EscenaActual.buildIndex);
-            SceneManager.LoadScene(EscenaActual.buildIndex - 1);
+            SceneManager.LoadScene(EscenaActual.buildIndex - index);
         }
 
         public void EscenaMenuPrincipal()
