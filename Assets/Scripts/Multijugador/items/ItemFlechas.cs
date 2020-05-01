@@ -3,11 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemFlechas : ItemBase
+public class ItemFlechas : ItemBase, IItemActions
 {
     public override void Start()
     {
-        tiempoDeDesaparicion = tiempoItems;
+        PonerTiempoDesaparicion();
         base.Start();
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -15,12 +15,12 @@ public class ItemFlechas : ItemBase
         Debug.Log("Item Flechas");
         if (collision.tag == "Player")
         {
-            TomarItem();
-            Flechas(collision.name);
-            Destroy(gameObject);
+            TomarElItem();
+            Action(collision.name);
+            Destruir();
         }
     }
-    public void Flechas(string _atacante)
+    public void Action(string _atacante)
     {
         Atacante = GameObject.Find(_atacante);
         posicionAtacante = Atacante.PositionInCareer();
@@ -46,4 +46,17 @@ public class ItemFlechas : ItemBase
             Debug.Log("Lo tomó la primera posicion, no afectando a nada");
     }
 
+    public void PonerTiempoDesaparicion()
+    {
+        tiempoDeDesaparicion = tiempoItems;
+    }
+
+    public void Destruir()
+    {
+        Destroy(gameObject);
+    }
+    public void TomarElItem()
+    {
+        TomarItem();
+    }
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -30,6 +31,7 @@ namespace cetikart.controlescenas
                 case 2: SceneManager.LoadScene("Custom"); break;
                 case 3: Application.Quit(); break;
                 case 4: SceneManager.LoadScene("Seleccion_Dificultad"); break;
+                default: Debug.Log("No se puede ir a la escena " + index); break;
             }
         }
     }

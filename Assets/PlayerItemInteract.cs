@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class PlayerItemInteract : MonoBehaviourPun
+public class PlayerItemInteract : MonoBehaviourPun, IInteraction
 {
-    int cargas;
-    float velocidad;
-
+    [SerializeField] private bool inmune = false;
+    [SerializeField] private int cargas;
+    [SerializeField] private float velocidad;
 
     #region Métodos PunRPC
     [PunRPC]
@@ -21,15 +21,29 @@ public class PlayerItemInteract : MonoBehaviourPun
     {
         gameObject.GetComponent<CarMovement>().SetSpeed(velocidad);
     }
+
+    [PunRPC]
+    public void CambiarInmune()
+    {
+        inmune = !inmune;
+    }
+
+    [PunRPC]
+    public void AumentarCargas()
+    {
+        Debug.Log("Aumentar cargas");
+        if(!LimiteDeCargas())
+            cargas++;
+        Debug.Log("Cargas: " + cargas);
+    }
     #endregion
 
-    //#region Métodos de la clase
+    #region Métodos de la clase
 
-    //public void ObtenerVelocidad()
-    //{ 
-    //    velocidad = gameObject.GetComponent<CarMovement>().GetSpeed();
-    //}
-
-    //#endregion
+    private bool LimiteDeCargas()
+    {
+        return cargas >= 3 ? true : false;
+    }
+    #endregion
 
 }

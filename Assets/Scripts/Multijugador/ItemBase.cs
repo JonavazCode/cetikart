@@ -17,7 +17,6 @@ public class ItemBase : MonoBehaviourPun
 
     public virtual void Start()
     {
-        Debug.Log("Soy el start de item base");
         StartCoroutine(DestruirObjeto());
     }
 
