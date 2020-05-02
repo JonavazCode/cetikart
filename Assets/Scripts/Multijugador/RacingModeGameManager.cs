@@ -5,7 +5,9 @@ using Photon.Pun;
 using UnityEngine.UI;
 using System.Linq;
 using Photon.Realtime;
-public class RacingModeGameManager : MonoBehaviour
+using UnityEngine.SceneManagement;
+
+public class RacingModeGameManager : MonoBehaviourPunCallbacks
 {
     public GameObject[] PlayerPrefabs;
     public GameObject InitialPositionCheckpoint;
@@ -117,5 +119,16 @@ public class RacingModeGameManager : MonoBehaviour
             yield return new WaitForSeconds(0.2f);
         }
         
+    }
+
+    public void PresionarBotonSalir()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+
+    public override void OnLeftRoom()
+    {
+        SceneManager.LoadScene("LobbyScene");
+        Destroy(gameObject);
     }
 }
