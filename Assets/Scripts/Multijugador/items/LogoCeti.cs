@@ -40,4 +40,8 @@ public class LogoCeti : ItemBase, IItemActions
     {
         TomarItem();
     }
+    public void MoverPosicionObjeto()
+    {
+        gameObject.transform.position = new Vector3(1000, 1000);
+    }
 }

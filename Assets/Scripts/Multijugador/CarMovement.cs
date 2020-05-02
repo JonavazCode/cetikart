@@ -1,12 +1,13 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class CarMovement : MonoBehaviour
+public class CarMovement : MonoBehaviourPun
 {
     [SerializeField]
-    private float speed = 1000f;
+    public float speed = 1000f;
     private float rotationSpeed = 12f;
 
     public WheelJoint2D backWheel;
@@ -76,12 +77,10 @@ public class CarMovement : MonoBehaviour
         }
     }
 
-    public void SetSpeed(float NewSpeed)
+    [PunRPC]
+    public void ActualizarVelocidad(float velocidad)
     {
-        speed = NewSpeed;
+        speed = velocidad;
     }
-    public float GetSpeed()
-    {
-        return speed;
-    }
+
 }

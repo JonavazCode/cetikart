@@ -17,12 +17,6 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
     }
 
     [PunRPC]
-    public void ActualizarVelocidad(int velocidad)
-    {
-        gameObject.GetComponent<CarMovement>().SetSpeed(velocidad);
-    }
-
-    [PunRPC]
     public void CambiarInmune()
     {
         inmune = !inmune;
@@ -36,6 +30,8 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
             cargas++;
         Debug.Log("Cargas: " + cargas);
     }
+
+
     #endregion
 
     #region Métodos de la clase

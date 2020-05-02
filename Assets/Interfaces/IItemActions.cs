@@ -7,4 +7,6 @@ public interface IItemActions
     void Destruir();
 
     void TomarElItem();
+
+    void MoverPosicionObjeto();
 }

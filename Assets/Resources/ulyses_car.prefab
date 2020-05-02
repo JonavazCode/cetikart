@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1a961361b3f9d74497f1df770ceb2af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1200
+  speed: 1000
   backWheel: {fileID: 1172356193162547621}
   frontWheel: {fileID: 1172356193162547620}
   rb: {fileID: 1172356193162547618}
@@ -426,6 +426,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fd304966da850b45a246f886d79b86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inmune: 0
+  cargas: 0
+  velocidad: 0
 --- !u!1 &1172356193482860070
 GameObject:
   m_ObjectHideFlags: 0
