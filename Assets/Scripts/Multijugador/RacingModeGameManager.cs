@@ -79,7 +79,7 @@ public class RacingModeGameManager : MonoBehaviourPunCallbacks
 
             int Cp_random = Random.Range(checkpoint_jugador.Min() + 1, checkpoint_jugador.Max() );
             int Obj_random_index = Random.Range(0, obj.Length);
-            Debug.Log("Objeto: " + Obj_random_index);
+            //Debug.Log("Objeto: " + Obj_random_index);
             PhotonNetwork.Instantiate(NombreObjetoRandom(Obj_random_index), transform.position = Checkpoints[Cp_random].transform.position, Quaternion.identity);
             yield return new WaitForSeconds(5);
         }
@@ -113,10 +113,10 @@ public class RacingModeGameManager : MonoBehaviourPunCallbacks
                     PosicionCarrera.Remove(cont);
                 }
                 PosicionCarrera.Add(cont, Jugadorx.Key);
-                Debug.LogFormat("El jugador {0} va en la posición {1}", Jugadorx.Key, cont);
+                //Debug.LogFormat("El jugador {0} va en la posición {1}", Jugadorx.Key, cont);
                 cont++;
             }
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(0.5f);
         }
         
     }

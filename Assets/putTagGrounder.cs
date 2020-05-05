@@ -12,6 +12,7 @@ public class putTagGrounder : MonoBehaviour
         for (int i = 0; i <= gameObject.transform.childCount-1; i++)
         {
             gameObject.transform.GetChild(i).gameObject.tag = "grounder";
+            //gameObject.AddComponent<PlatformEffector2D>();
         }
     }
 

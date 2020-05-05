@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ItemLlantaPonchada : ItemBase, IItemActions
+public class ItemSombrero : ItemBase, IItemActions
 {
     public override void Start()
     {
@@ -12,7 +12,7 @@ public class ItemLlantaPonchada : ItemBase, IItemActions
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Item Llanta Ponchada");
+        Debug.Log("Item Sombrero");
         if (collision.tag == "Player")
         {
             TomarElItem();
@@ -27,9 +27,9 @@ public class ItemLlantaPonchada : ItemBase, IItemActions
 
         if (posicionAtacante != 1)
         {
-            //Encontrar al jugador que va a ser afectado
-            Afectado = GameObject.Find(RacingModeGameManager.instance.PosicionCarrera[posicionAtacante - 1]);
-            Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 0f);
+            Afectado = GameObject.Find(RacingModeGameManager.instance.PosicionCarrera[1]);
+            Afectado.GetComponent<PhotonView>().RPC("AumentarEscala", RpcTarget.All, 0.5f);
+            Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 600f);
             StartCoroutine(Esperar5segundos());
         }
         else
@@ -39,7 +39,7 @@ public class ItemLlantaPonchada : ItemBase, IItemActions
     public IEnumerator Esperar5segundos()
     {
         yield return new WaitForSeconds(5);
-        //Debug.Log("Velocidad normal");
+        Afectado.GetComponent<PhotonView>().RPC("AumentarEscala", RpcTarget.All, 2f);
         Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 1000f);
         Destruir();
     }

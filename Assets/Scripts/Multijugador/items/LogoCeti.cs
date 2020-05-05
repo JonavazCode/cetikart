@@ -17,6 +17,7 @@ public class LogoCeti : ItemBase, IItemActions
         if (collision.tag == "Player")
         {
             TomarElItem();
+            MoverPosicionObjeto();
             Action(collision.gameObject);
             Destruir();
 

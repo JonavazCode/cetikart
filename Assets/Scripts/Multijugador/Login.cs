@@ -51,6 +51,7 @@ public class Login : MonoBehaviour
                 if (texto == "error")
                 {
                     Prompt.text = "Los datos son erróneos";
+                    Prompt.color = Color.red;
                 }
                 if (comprobarLogin)
                 {
@@ -101,16 +102,16 @@ public class Login : MonoBehaviour
         }
         else
         {
-            HelpPassword.text = "Contraseña: ";
+            HelpPassword.text = "";
             if (passwordField.text.Length == 0)
             {
-                HelpPassword.text += "\nDebe llenar este campo";
+                HelpPassword.text += "Debe llenar este campo ";
                 return false;
             }
             else
             {
                 if (!VerifyUpper())
-                    HelpPassword.text += "\nFalta 1 mayúscula";
+                    HelpPassword.text += "Falta 1 mayúscula ";
                 else
                     HelpPassword.text = " ";
                 return false;

@@ -31,7 +31,11 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
         Debug.Log("Cargas: " + cargas);
     }
 
-
+    [PunRPC]
+    public void AumentarEscala(float escala)
+    {
+        gameObject.transform.localScale = new Vector3((gameObject.transform.localScale.x * escala), (gameObject.transform.localScale.y * escala), (gameObject.transform.localScale.z * escala));
+    }
     #endregion
 
     #region Métodos de la clase

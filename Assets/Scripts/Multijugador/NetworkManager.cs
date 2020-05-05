@@ -354,7 +354,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
         }
         if (returnCode == 32760 && SegundoMapa)
         {
-            JoinWarningText.text = "Partida no encontrada!";
+            JoinWarningText.text = "";
         }
     }
     public override void OnDisconnected(DisconnectCause cause)
