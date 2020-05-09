@@ -5,6 +5,7 @@ using Photon.Pun;
 using TMPro;
 public class PlayerSetup : MonoBehaviourPunCallbacks
 {
+    [SerializeField] int id;
     private Posiciones_Multijugador PosicionesMultijugador;
     public TacometroMultijugador Tacometro;
     public TextMeshProUGUI PlayerNameText;
