@@ -25,6 +25,9 @@ public class RacingModeGameManager : MonoBehaviourPunCallbacks
 
     //Implementando un Singleton
     public static RacingModeGameManager instance = null;
+
+
+    private bool bandera1 = false;
     private void Awake()
     {
         if (instance == null)
@@ -76,12 +79,15 @@ public class RacingModeGameManager : MonoBehaviourPunCallbacks
                 checkpoint_jugador.Add(jugador.GetComponent<LapController>().NumeroCheckpointActual);
             }
 
-
-            int Cp_random = Random.Range(checkpoint_jugador.Min() + 1, checkpoint_jugador.Max() );
-            int Obj_random_index = Random.Range(0, obj.Length);
-            //Debug.Log("Objeto: " + Obj_random_index);
-            PhotonNetwork.Instantiate(NombreObjetoRandom(Obj_random_index), transform.position = Checkpoints[Cp_random].transform.position, Quaternion.identity);
+            if (bandera1)
+            {
+                int Cp_random = Random.Range(checkpoint_jugador.Min() + 1, checkpoint_jugador.Max());
+                int Obj_random_index = Random.Range(0, obj.Length);
+                //Debug.Log("Objeto: " + Obj_random_index);
+                PhotonNetwork.Instantiate(NombreObjetoRandom(Obj_random_index), transform.position = Checkpoints[Cp_random].transform.position, Quaternion.identity);
+            } 
             yield return new WaitForSeconds(5);
+            bandera1 = true;
         }
     }
 

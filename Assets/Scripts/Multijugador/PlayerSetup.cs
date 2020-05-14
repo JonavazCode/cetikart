@@ -5,23 +5,36 @@ using Photon.Pun;
 using TMPro;
 public class PlayerSetup : MonoBehaviourPunCallbacks
 {
-    [SerializeField] int id;
+    public string id;
     private Posiciones_Multijugador PosicionesMultijugador;
+    private ActivarPoderEspecial PoderEspecial;
     public TacometroMultijugador Tacometro;
     public TextMeshProUGUI PlayerNameText;
+    
     // Start is called before the first frame update
     void Start()
     {
         if (photonView.IsMine)
         {
-            PosicionesMultijugador = FindObjectOfType<Posiciones_Multijugador>();
-            gameObject.name = photonView.ViewID.ToString();
-            Tacometro = FindObjectOfType<TacometroMultijugador>();
-            Tacometro._rigidbody = gameObject.GetComponent<Rigidbody2D>();
-            GetComponent<CarMovement>().enabled = true;
-            GetComponent<LapController>().enabled = true;
-            PosicionesMultijugador.jugador = gameObject;
-            
+            //cargar los datos del tipo de poder y exactamente quien es el objeto del server
+            try
+            {
+                PosicionesMultijugador = FindObjectOfType<Posiciones_Multijugador>();
+                PoderEspecial = FindObjectOfType<ActivarPoderEspecial>();
+                gameObject.name = photonView.ViewID.ToString();
+                Tacometro = FindObjectOfType<TacometroMultijugador>();
+                Tacometro._rigidbody = gameObject.GetComponent<Rigidbody2D>();
+                GetComponent<CarMovement>().enabled = true;
+                GetComponent<LapController>().enabled = true;
+                PosicionesMultijugador.jugador = gameObject;
+                PoderEspecial.Jugador = gameObject;
+            }
+            catch {
+                Debug.Log("No se encuentran cosas");
+            }
+
+            //Evento.AsignarDatos(gameObject.name, id);
+
         }
         else
         {

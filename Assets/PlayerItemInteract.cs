@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using UnityEngine.UI;
 
 public class PlayerItemInteract : MonoBehaviourPun, IInteraction
 {
@@ -21,14 +22,24 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
     {
         inmune = !inmune;
     }
-
+    [PunRPC]
+    public void QuitarCargas()
+    {
+        cargas = 0;
+    }
     [PunRPC]
     public void AumentarCargas()
     {
-        Debug.Log("Aumentar cargas");
-        if(!LimiteDeCargas())
+        //Debug.Log("Aumentar cargas");
+        if (!LimiteDeCargas())
+        {
             cargas++;
-        Debug.Log("Cargas: " + cargas);
+            if(cargas == 3 && photonView.IsMine)
+            {
+                var boton = GameObject.Find("BotonPoderEspecial");
+                boton.GetComponent<ActivarPoderEspecial>().InteractableState();
+            }
+        }     
     }
 
     [PunRPC]
