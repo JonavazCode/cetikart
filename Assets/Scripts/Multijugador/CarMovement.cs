@@ -80,7 +80,7 @@ public class CarMovement : MonoBehaviourPun
     [PunRPC]
     public void ActualizarVelocidad(float velocidad)
     {
-        speed = velocidad;
+        speed += velocidad;
     }
 
 }

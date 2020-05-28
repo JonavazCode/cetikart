@@ -9,7 +9,18 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
     [SerializeField] private bool inmune = false;
     [SerializeField] private int cargas;
     [SerializeField] private float velocidad;
+    [SerializeField] public int posicion;
+    [SerializeField] public int posicionAnterior = 0;
 
+    #region MetodosUnity
+    public void Update()
+    {
+        posicion = gameObject.PositionInCareer();
+        si_rebasa();
+        posicion = gameObject.PositionInCareer();
+        posicionAnterior = posicion;
+    }
+    #endregion
     #region Métodos PunRPC
     [PunRPC]
     public void moverPj(Vector3 pos)
@@ -54,6 +65,20 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
     private bool LimiteDeCargas()
     {
         return cargas >= 3 ? true : false;
+    }
+
+    void si_rebasa()
+    {
+        if (ComprobarPosicionAnterior())
+        {
+            Debug.Log("Se entró");
+            gameObject.GetComponent<PhotonView>().RPC("AumentarCargas", RpcTarget.All);
+        }
+    }
+    public bool ComprobarPosicionAnterior()
+    {
+        bool resultado = (posicionAnterior != 0) && (posicionAnterior > posicion);
+        return resultado;
     }
     #endregion
 

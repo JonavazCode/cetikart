@@ -122,7 +122,7 @@ public class RacingModeGameManager : MonoBehaviourPunCallbacks
                 //Debug.LogFormat("El jugador {0} va en la posición {1}", Jugadorx.Key, cont);
                 cont++;
             }
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(1f);
         }
         
     }

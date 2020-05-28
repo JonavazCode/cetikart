@@ -29,7 +29,7 @@ public class ItemLlantaPonchada : ItemBase, IItemActions
         {
             //Encontrar al jugador que va a ser afectado
             Afectado = GameObject.Find(RacingModeGameManager.instance.PosicionCarrera[posicionAtacante - 1]);
-            Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 0f);
+            Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, -1000f);
             StartCoroutine(Esperar5segundos());
         }
         else
