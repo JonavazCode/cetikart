@@ -352,6 +352,7 @@ MonoBehaviour:
   velocidad: 0
   posicion: 0
   posicionAnterior: 0
+  arrebasoAAlguien: 0
 --- !u!114 &1322127322351773988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,7 +365,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba9c91086c1aad9488ff52a98f3182fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PoderEspecialActivo: 0
+  isMolina: 0
+  Afectados: []
+  pii: {fileID: 0}
+  Afectado: {fileID: 0}
+  VelocidadAfectado: 0
 --- !u!1 &270252706974169393
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
     private ActivarPoderEspecial PoderEspecial;
     public TacometroMultijugador Tacometro;
     public TextMeshProUGUI PlayerNameText;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,9 +32,6 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
             catch {
                 Debug.Log("No se encuentran cosas");
             }
-
-            //Evento.AsignarDatos(gameObject.name, id);
-
         }
         else
         {

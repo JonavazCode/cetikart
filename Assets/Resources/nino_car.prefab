@@ -224,6 +224,7 @@ GameObject:
   - component: {fileID: 5703067501648516624}
   - component: {fileID: -8906922933150534924}
   - component: {fileID: 944650040673220485}
+  - component: {fileID: -400942271483227865}
   m_Layer: 8
   m_Name: nino_car
   m_TagString: Player
@@ -550,6 +551,26 @@ MonoBehaviour:
   inmune: 0
   cargas: 0
   velocidad: 0
+  posicion: 0
+  posicionAnterior: 0
+  arrebasoAAlguien: 0
+--- !u!114 &-400942271483227865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4878928756770540139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9c91086c1aad9488ff52a98f3182fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMolina: 0
+  Afectados: []
+  pii: {fileID: 0}
+  Afectado: {fileID: 0}
+  VelocidadAfectado: 0
 --- !u!1 &4878928757698526068
 GameObject:
   m_ObjectHideFlags: 0

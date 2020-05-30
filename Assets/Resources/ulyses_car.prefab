@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 7040366920632031982}
   - component: {fileID: -2121726420708805179}
   - component: {fileID: -6872244099259523698}
+  - component: {fileID: -1229197001414497017}
   m_Layer: 8
   m_Name: ulyses_car
   m_TagString: Player
@@ -430,6 +431,26 @@ MonoBehaviour:
   inmune: 0
   cargas: 0
   velocidad: 0
+  posicion: 0
+  posicionAnterior: 0
+  arrebasoAAlguien: 0
+--- !u!114 &-1229197001414497017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172356193162547640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9c91086c1aad9488ff52a98f3182fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isMolina: 0
+  Afectados: []
+  pii: {fileID: 0}
+  Afectado: {fileID: 0}
+  VelocidadAfectado: 0
 --- !u!1 &1172356193482860070
 GameObject:
   m_ObjectHideFlags: 0

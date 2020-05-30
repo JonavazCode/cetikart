@@ -24,10 +24,10 @@ public class ItemLlantaBoost : ItemBase, IItemActions
 
     public void Action(string _atacante)
     {
-        float boostVel = 1200f;
-        Atacante = GameObject.Find(_atacante);
+        float boostVel = 200f;
+        setAtacante(_atacante);
         Debug.Log("Velocidad boosteada.");
-        Atacante.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, boostVel);
+        updateVelocidadAtacante(Atacante, boostVel);
         StartCoroutine(Esperar5segundos());
 
     }
@@ -35,7 +35,7 @@ public class ItemLlantaBoost : ItemBase, IItemActions
     {
         yield return new WaitForSeconds(5);
         Debug.Log("Velocidad normal");
-        Atacante.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 1000f);
+        Atacante.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, -200f);
         Destruir();
     }
 
@@ -58,4 +58,16 @@ public class ItemLlantaBoost : ItemBase, IItemActions
         base.Start();
     }
 
+
+
+
+    public void setAtacante(string NombreAtacante)
+    {
+        Atacante = GameObject.Find(NombreAtacante);
+    }
+
+    public void updateVelocidadAtacante(GameObject Atacante, float velocidad)
+    { 
+        Atacante.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, velocidad);
+    }
 }

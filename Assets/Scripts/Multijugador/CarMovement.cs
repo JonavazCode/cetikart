@@ -43,7 +43,7 @@ public class CarMovement : MonoBehaviourPun
             if ((CrossPlatformInputManager.GetButton("Jump") || Input.GetKeyDown(KeyCode.Space)) && canJump)
             {
                 canJump = false;
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1000f));
+                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(250f, 1000f));
             }
         }
         

@@ -6,15 +6,18 @@ using UnityEngine.UI;
 
 public class PlayerItemInteract : MonoBehaviourPun, IInteraction
 {
-    [SerializeField] private bool inmune = false;
+    [SerializeField] public bool inmune = false;
     [SerializeField] private int cargas;
     [SerializeField] private float velocidad;
     [SerializeField] public int posicion;
     [SerializeField] public int posicionAnterior = 0;
+    public bool arrebasoAAlguien;
 
     #region MetodosUnity
     public void Update()
     {
+        if (posicion == posicionAnterior)
+            arrebasoAAlguien = false;
         posicion = gameObject.PositionInCareer();
         si_rebasa();
         posicion = gameObject.PositionInCareer();
@@ -29,9 +32,9 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
     }
 
     [PunRPC]
-    public void CambiarInmune()
+    public void CambiarInmune(bool estado)
     {
-        inmune = !inmune;
+        inmune = estado;
     }
     [PunRPC]
     public void QuitarCargas()
@@ -72,6 +75,7 @@ public class PlayerItemInteract : MonoBehaviourPun, IInteraction
         if (ComprobarPosicionAnterior())
         {
             Debug.Log("Se entró");
+            arrebasoAAlguien = true;
             gameObject.GetComponent<PhotonView>().RPC("AumentarCargas", RpcTarget.All);
         }
     }

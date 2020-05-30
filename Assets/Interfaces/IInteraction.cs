@@ -5,7 +5,7 @@ public interface IInteraction
 {
     void moverPj(Vector3 pos);
 
-    void CambiarInmune();
+    void CambiarInmune(bool estado);
 
     void AumentarCargas();
 }
