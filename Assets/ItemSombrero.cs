@@ -29,7 +29,7 @@ public class ItemSombrero : ItemBase, IItemActions
         {
             Afectado = GameObject.Find(RacingModeGameManager.instance.PosicionCarrera[1]);
             Afectado.GetComponent<PhotonView>().RPC("AumentarEscala", RpcTarget.All, 0.5f);
-            Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 600f);
+            Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, -400f);
             StartCoroutine(Esperar5segundos());
         }
         else
@@ -40,7 +40,7 @@ public class ItemSombrero : ItemBase, IItemActions
     {
         yield return new WaitForSeconds(5);
         Afectado.GetComponent<PhotonView>().RPC("AumentarEscala", RpcTarget.All, 2f);
-        Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 1000f);
+        Afectado.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, 400f);
         Destruir();
     }
 
@@ -60,5 +60,10 @@ public class ItemSombrero : ItemBase, IItemActions
     public void MoverPosicionObjeto()
     {
         gameObject.transform.position = new Vector3(1000, 1000);
+    }
+
+    public void CambiarEscala(GameObject jugador, float multiplicador)
+    {
+        jugador.GetComponent<PhotonView>().RPC("AumentarEscala", RpcTarget.All, multiplicador);
     }
 }

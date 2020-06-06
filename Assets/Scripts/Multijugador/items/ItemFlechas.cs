@@ -63,4 +63,8 @@ public class ItemFlechas : ItemBase, IItemActions
     {
         gameObject.transform.position = new Vector3(1000, 1000);
     }
+    public void MoverPj(GameObject jugador, Vector3 pos_destino)
+    {
+        jugador.GetComponent<PhotonView>().RPC("moverPj", RpcTarget.All, pos_destino);
+    }
 }

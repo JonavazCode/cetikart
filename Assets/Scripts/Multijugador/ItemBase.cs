@@ -26,9 +26,23 @@ public class ItemBase : MonoBehaviourPun
     }
 
     public IEnumerator DestruirObjeto()
-    {        
+    {
         yield return new WaitForSeconds(tiempoDeDesaparicion);
         if (!ItemTomado)
             Destroy(gameObject);
+    }
+
+    public void setAtacante(string NombreAtacante)
+    {
+        Atacante = GameObject.Find(NombreAtacante);
+    }
+
+    public void setAfectado(string NombreAfectado)
+    {
+        Afectado = GameObject.Find(NombreAfectado);
+    }
+    public void updateVelocidadAtacante(GameObject Atacante, float velocidad)
+    {
+        Atacante.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, velocidad);
     }
 }

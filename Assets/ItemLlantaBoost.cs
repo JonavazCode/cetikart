@@ -8,7 +8,7 @@ public class ItemLlantaBoost : ItemBase, IItemActions
 
     public void MoverPosicionObjeto()
     {
-        gameObject.transform.position = new Vector3(1000,1000);
+        gameObject.transform.position = new Vector3(1000, 1000);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -35,7 +35,7 @@ public class ItemLlantaBoost : ItemBase, IItemActions
     {
         yield return new WaitForSeconds(5);
         Debug.Log("Velocidad normal");
-        Atacante.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, -200f);
+        updateVelocidadAtacante(Atacante, -200f);
         Destruir();
     }
 
@@ -58,16 +58,4 @@ public class ItemLlantaBoost : ItemBase, IItemActions
         base.Start();
     }
 
-
-
-
-    public void setAtacante(string NombreAtacante)
-    {
-        Atacante = GameObject.Find(NombreAtacante);
-    }
-
-    public void updateVelocidadAtacante(GameObject Atacante, float velocidad)
-    { 
-        Atacante.GetComponent<PhotonView>().RPC("ActualizarVelocidad", RpcTarget.All, velocidad);
-    }
 }
