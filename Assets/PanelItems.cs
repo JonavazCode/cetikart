@@ -6,6 +6,8 @@ public class PanelItems : MonoBehaviour
 {
     public GameObject canvas;
     ItemLlantaBoost LlantaBoost;
+    ItemLlantaPonchada LlantaPonchada;
+    LogoCeti LogoCeti;
 
     private void Start()
     {
@@ -31,7 +33,27 @@ public class PanelItems : MonoBehaviour
         DesactivarObjeto();
     }
 
+    public void OnLLantaPonchadaClicked()
+    {
+        LlantaPonchada = new ItemLlantaPonchada();
+        LlantaPonchada.setAtacante(gameObject.name);
+        LlantaPonchada.posicionAtacante = LlantaPonchada.Atacante.PositionInCareer();
 
+        if(LlantaPonchada.posicionAtacante != 1)
+        {
+            LlantaPonchada.setAfectado(RacingModeGameManager.instance.PosicionCarrera[LlantaPonchada.posicionAtacante - 1]);
+            LlantaPonchada.updateVelocidadAtacante(LlantaPonchada.Afectado, -1000f);
+            StartCoroutine(EsperarSegundos(5f, 2));
+        }
+        else
+            return;
+    }
+
+    public void OnLogoCetiClicked()
+    {
+        LogoCeti = new LogoCeti();
+        LogoCeti.Action(gameObject);
+    }
     public IEnumerator EsperarSegundos(float seg, int id)
     {
         yield return new WaitForSeconds(seg);
@@ -39,6 +61,9 @@ public class PanelItems : MonoBehaviour
         {
             case 1:
                 LlantaBoost.updateVelocidadAtacante(gameObject, -200f);
+                break;
+            case 2:
+                LlantaPonchada.updateVelocidadAtacante(LlantaPonchada.Afectado, 1000f);
                 break;
         }
     }

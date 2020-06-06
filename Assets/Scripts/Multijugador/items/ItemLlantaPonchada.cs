@@ -22,7 +22,7 @@ public class ItemLlantaPonchada : ItemBase, IItemActions
     }
     public void Action(string _atacante)
     {
-        Atacante = GameObject.Find(_atacante);
+        setAtacante(_atacante);
         posicionAtacante = Atacante.PositionInCareer();
 
         if (posicionAtacante != 1)
