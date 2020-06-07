@@ -68,7 +68,7 @@ public class PanelItems : MonoBehaviour
         if (ItemFlechas.posicionAtacante != 1)
         {
             ItemFlechas.setAfectado(RacingModeGameManager.instance.PosicionCarrera[ItemFlechas.posicionAtacante - 1]);
-            pos_temp_Afectado = new Vector3(ItemFlechas.Afectado.transform.position.x, ItemFlechas.transform.position.y);
+            pos_temp_Afectado = new Vector3(ItemFlechas.Afectado.transform.position.x, ItemFlechas.Afectado.transform.position.y);
             ItemFlechas.MoverPj(ItemFlechas.Atacante, pos_temp_Afectado);
             ItemFlechas.MoverPj(ItemFlechas.Afectado, pos_temp_Atacante);
         }
