@@ -1001,6 +1001,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 68108096, guid: f7ff6cc9e36c5e341bd13320c6e212ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1326237651}
+    - target: {fileID: 68108096, guid: f7ff6cc9e36c5e341bd13320c6e212ef, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PresionarBotonSalir
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ff6cc9e36c5e341bd13320c6e212ef, type: 3}
 --- !u!1 &498515499 stripped
@@ -2696,6 +2704,18 @@ PrefabInstance:
       objectReference: {fileID: 498515502}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c35c553bf48740e4193e5f083f67444e, type: 3}
+--- !u!114 &1326237651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3457811892399386549, guid: c35c553bf48740e4193e5f083f67444e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1326237650}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8803ee3d63b62134bbea208af93edde0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1408789594
 PrefabInstance:
   m_ObjectHideFlags: 0
