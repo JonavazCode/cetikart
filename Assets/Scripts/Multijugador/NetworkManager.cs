@@ -51,6 +51,12 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Image PanelBackground;
     public Sprite GimnasioBackground;
     public Sprite BaniosBackground;
+    public Sprite ColomosBackground;
+    public Sprite EdificioLbackground;
+    public Sprite EdificioFbackground;
+    public Sprite EdificioBbackground;
+    public Sprite Estacionamientobackground;
+    public Sprite PlantelBackground;
 
 
     [Header("Join Random Room Panel")]
@@ -111,13 +117,13 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public void OnCreateRoomButtonClicked()
     {
-        if (string.IsNullOrEmpty(RoomNameInputField.text) || string.IsNullOrEmpty(MaxPlayersInputField.text) || string.IsNullOrEmpty(PasswordInputField.text) || (GameMode != "1" && GameMode != "2"))
+        if (string.IsNullOrEmpty(RoomNameInputField.text) || string.IsNullOrEmpty(MaxPlayersInputField.text) || string.IsNullOrEmpty(PasswordInputField.text) || (GameMode != "1" && GameMode != "2" && GameMode != "3" && GameMode != "4" && GameMode != "5" && GameMode != "6" && GameMode != "7" && GameMode != "8"))
         {
             
             RoomNameText.text = string.IsNullOrEmpty(RoomNameInputField.text)? "Rellenar ->": "Numero sala";
             PlayNameText.text = string.IsNullOrEmpty(MaxPlayersInputField.text) ? "Rellenar ->" : "Num de jug (max. 8)";
             PassNameText.text = string.IsNullOrEmpty(PasswordInputField.text) ? "Rellenar ->" : "Password";
-            GameModeText.text = (GameMode != "1" && GameMode != "2") ? "Rellenar ->" : "Mapa";
+            GameModeText.text = (GameMode != "1" && GameMode != "2" && GameMode != "3" && GameMode != "4" && GameMode != "5" && GameMode != "6" && GameMode != "7" && GameMode != "8") ? "Rellenar ->" : "Mapa";
         }
         else
         {
@@ -190,6 +196,36 @@ public class NetworkManager : MonoBehaviourPunCallbacks
                 //banio
                 PhotonNetwork.LoadLevel("Baños 1");
             }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("3"))
+            {
+                //banio
+                PhotonNetwork.LoadLevel("Colomos 1");
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("4"))
+            {
+                //banio
+                PhotonNetwork.LoadLevel("Edificio L 1");
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("5"))
+            {
+                //banio
+                PhotonNetwork.LoadLevel("Edificio F 1");
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("6"))
+            {
+                //banio
+                PhotonNetwork.LoadLevel("Edicifio B 1");
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("7"))
+            {
+                //banio
+                PhotonNetwork.LoadLevel("Estacionamiento 1");
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("8"))
+            {
+                //banio
+                PhotonNetwork.LoadLevel("Plantel Colomos 1");
+            }
         }
     }
     #endregion
@@ -236,6 +272,36 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             {
                 GameMapText.text = "Baños!";
                 PanelBackground.sprite = BaniosBackground;
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("3"))
+            {
+                GameMapText.text = "Colomos!";
+                PanelBackground.sprite = ColomosBackground;
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("4"))
+            {
+                GameMapText.text = "Edificio L!";
+                PanelBackground.sprite = EdificioLbackground;
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("5"))
+            {
+                GameMapText.text = "Edificio F!";
+                PanelBackground.sprite = EdificioFbackground;
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("6"))
+            {
+                GameMapText.text = "Edificio B!";
+                PanelBackground.sprite = EdificioBbackground;
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("7"))
+            {
+                GameMapText.text = "Estacionamiento!";
+                PanelBackground.sprite = Estacionamientobackground;
+            }
+            else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("8"))
+            {
+                GameMapText.text = "Plantel Colomos!";
+                PanelBackground.sprite = PlantelBackground;
             }
 
 
