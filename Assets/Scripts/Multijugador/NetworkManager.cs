@@ -214,7 +214,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("6"))
             {
                 //banio
-                PhotonNetwork.LoadLevel("Edicifio B 1");
+                PhotonNetwork.LoadLevel("Edificio B 1");
             }
             else if (PhotonNetwork.CurrentRoom.CustomProperties.ContainsValue("7"))
             {
