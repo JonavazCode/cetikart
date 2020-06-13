@@ -32,21 +32,27 @@ public class PoderEspecial : MonoBehaviourPun
                 break;
             case "sergio":
                 PoderSergio();
+                gameObject.GetComponent<Animator>().SetTrigger("PowerUp");
                 break;
             case "ulyses":
                 PoderUlyses();
+                gameObject.GetComponent<Animator>().SetTrigger("PowerUp");
                 break;
             case "gussa":
                 PoderSusana();
+                gameObject.GetComponent<Animator>().SetTrigger("PowerUp");
                 break;
             case "agentek":
                 PoderAgentek();
+                gameObject.GetComponent<Animator>().SetTrigger("PowerUp");
                 break;
             case "coco":
                 PoderCoco();
+                gameObject.GetComponent<Animator>().SetTrigger("PowerUp");
                 break;
             case "nino":
                 PoderNino();
+                gameObject.GetComponent<Animator>().SetTrigger("PowerUp");
                 break;
             case "areli":
                 PoderAreli();
