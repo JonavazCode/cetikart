@@ -26,6 +26,8 @@ public class RacingModeGameManager : MonoBehaviourPunCallbacks
     //Implementando un Singleton
     public static RacingModeGameManager instance = null;
 
+    public List<GameObject> Ganador = new List<GameObject>();
+
 
     private bool bandera1 = false;
     private void Awake()
@@ -63,7 +65,7 @@ public class RacingModeGameManager : MonoBehaviourPunCallbacks
         {
             gm.SetActive(false);
         }
-
+        
     }
 
     IEnumerator GenerarItems()

@@ -140,7 +140,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             */
             RoomOptions roomOptions = new RoomOptions();
             roomOptions.MaxPlayers = (byte)(maxPlayers);
-
             //ns = nombre sala
             //ps = password sala
             //m = map
@@ -327,7 +326,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
             }
 
         }
-
         StartGameButton.SetActive(false);
     }
     public override void OnPlayerEnteredRoom(Player newPlayer)
@@ -362,7 +360,6 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
 
         }
-
         StartGameButton.SetActive(checkPlayersReady());
     }
     public override void OnPlayerLeftRoom(Player otherPlayer)

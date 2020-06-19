@@ -1,6 +1,8 @@
 ﻿using Photon.Pun;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
@@ -16,12 +18,18 @@ public class CarMovement : MonoBehaviourPun
 
     public bool controlsEnabled;
 
-
+    private int reductor = 10;
     private float movement = 0f;
     private float rotation = 0f;
 
     public bool canJump;
     // Start is called before the first frame update
+
+
+    [Header("Variables de Cohete")]
+    public bool ControlCohete = false;
+    public float SpeedCohete = 100f;
+    public Vector2 input;
     void Start()
     {
         controlsEnabled = false;
@@ -46,7 +54,7 @@ public class CarMovement : MonoBehaviourPun
                 gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(250f, 1000f));
             }
         }
-        
+
     }
 
     private void FixedUpdate()
@@ -55,6 +63,14 @@ public class CarMovement : MonoBehaviourPun
         {
             backWheel.useMotor = false;
             frontWheel.useMotor = false;
+            if (rb.angularVelocity > 0)
+            {
+                rb.angularVelocity -= 0.01f; 
+            }
+            if (rb.angularVelocity < 0)
+            {
+                rb.angularVelocity += 0.01f;
+            }
         }
         else
         {
@@ -64,9 +80,28 @@ public class CarMovement : MonoBehaviourPun
             JointMotor2D motor = new JointMotor2D { motorSpeed = movement, maxMotorTorque = 10000 };
             backWheel.motor = motor;
             frontWheel.motor = motor;
+            rb.AddTorque(rotation * rotationSpeed * Time.fixedDeltaTime);
         }
+        //rb.AddTorque(rotation * rotationSpeed * Time.fixedDeltaTime);
+        if (ControlCohete)
+        {
+            if (CrossPlatformInputManager.GetButton("Run") || Input.GetKey(KeyCode.D))
+            {
+                if (input.x <= 5f)
+                    input.x += 0.050f;
+                rb.velocity = input * SpeedCohete * Time.fixedDeltaTime;
+            }
+            else
+                input.x = 0f;
 
-        rb.AddTorque(rotation * rotationSpeed * Time.fixedDeltaTime);
+            if (CrossPlatformInputManager.GetButton("Jump") || Input.GetKey(KeyCode.Space))
+            {
+                input.y += 0.1f;
+                rb.velocity = input * SpeedCohete * Time.fixedDeltaTime;
+            }
+            else
+                input.y = -1f;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -83,4 +118,8 @@ public class CarMovement : MonoBehaviourPun
         speed += velocidad;
     }
 
+    public void ControlesCohete()
+    {
+        ControlCohete = !ControlCohete;
+    }
 }

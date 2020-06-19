@@ -52,15 +52,23 @@ public class LapController : MonoBehaviourPun
 
             if (viewID == photonView.ViewID)
             {
-                //el jugador actual soy yo
-                orderUITextGameObject.GetComponent<Text>().text = finishOrder + ", " + nickNameOfFinishedPlayer;
-                orderUITextGameObject.GetComponent<Text>().color = Color.red;
-
+                if (!RacingModeGameManager.instance.Ganador.Contains(gameObject))
+                {
+                    orderUITextGameObject.GetComponent<Text>().text = "Eres el ganador!";
+                    RacingModeGameManager.instance.Ganador.Add(gameObject);
+                    StartCoroutine(Esperar5s());
+                }
 
             }
             else
             {
-                orderUITextGameObject.GetComponent<Text>().text = finishOrder + ", " + nickNameOfFinishedPlayer + " (TÚ)";
+                if(!RacingModeGameManager.instance.Ganador.Contains(gameObject))
+                {
+                   orderUITextGameObject.GetComponent<Text>().text = "El ganador es: " + nickNameOfFinishedPlayer;
+                   RacingModeGameManager.instance.Ganador.Add(gameObject);
+                   StartCoroutine(Esperar5s());
+                }
+                
             }
 
             
@@ -84,7 +92,6 @@ public class LapController : MonoBehaviourPun
     void GameFinished()
     {
         GetComponent<CarMovement>().enabled = false;
-
         finishOrder += 1;
         string nickName = photonView.Owner.NickName;
         int viewID = photonView.ViewID;
@@ -104,6 +111,14 @@ public class LapController : MonoBehaviourPun
         };
         PhotonNetwork.RaiseEvent((byte)RaiseEventsCode.WhoFinishedEventCode, data, raiseEventOptions, sendOptions);
 
-
+    }
+    public IEnumerator Esperar5s()
+    {
+        yield return new WaitForSecondsRealtime(5f);
+        var jugadores = GameObject.FindGameObjectsWithTag("Player");
+        foreach (GameObject j in jugadores)
+        {
+            j.GetComponent<PhotonView>().RPC("salirdeljuego", RpcTarget.All);
+        }
     }
 }

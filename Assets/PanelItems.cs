@@ -10,6 +10,7 @@ public class PanelItems : MonoBehaviour
     LogoCeti LogoCeti;
     ItemFlechas ItemFlechas;
     ItemSombrero IS;
+    ItemCohete IC;
 
     Vector3 pos_temp_Atacante, pos_temp_Afectado;
 
@@ -87,6 +88,14 @@ public class PanelItems : MonoBehaviour
             StartCoroutine(EsperarSegundos(5f, 3));
         }
     }
+
+    public void OnCoheteClicked()
+    {
+        IC = new ItemCohete();
+        IC.setAtacante(name);
+        IC.AVolar();
+        StartCoroutine(EsperarSegundos(5f, 4));
+    }
     public IEnumerator EsperarSegundos(float seg, int id)
     {
         yield return new WaitForSeconds(seg);
@@ -101,6 +110,9 @@ public class PanelItems : MonoBehaviour
             case 3:
                 IS.CambiarEscala(IS.Afectado, 2f);
                 IS.updateVelocidadAtacante(IS.Afectado, 600f);
+                break;
+            case 4:
+                IC.AVolar();
                 break;
         }
     }

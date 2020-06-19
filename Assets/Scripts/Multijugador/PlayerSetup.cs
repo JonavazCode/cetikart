@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 using TMPro;
+using UnityEngine.SceneManagement;
+
 public class PlayerSetup : MonoBehaviourPunCallbacks
 {
     public string id;
@@ -53,5 +55,17 @@ public class PlayerSetup : MonoBehaviourPunCallbacks
             }
         }
 
+    }
+
+    [PunRPC]
+    public void salirdeljuego()
+    {
+        PhotonNetwork.LeaveRoom();
+    }
+
+    public override void OnLeftRoom()
+    {
+        SceneManager.LoadScene("LobbyScene");
+        Destroy(gameObject);
     }
 }
