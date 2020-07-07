@@ -25,8 +25,6 @@ public class pausar_juego : MonoBehaviour
             canvas.enabled = active;
             Time.timeScale = (active) ? 0 : 1f;
             cancion.mute = !cancion.mute;
-
-
         }
 
     }

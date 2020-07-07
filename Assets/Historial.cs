@@ -68,7 +68,7 @@ public class Historial : MonoBehaviour
         }
         else  
         {
-            return "Profesor Ulyses";
+            return "Profesor Luis Rene";
         }
         
 

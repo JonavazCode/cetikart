@@ -69,10 +69,11 @@ public class LevelManager : MonoBehaviour
     */
     public void RespawnPlayer(string pjName, GameObject currentCheckpoint)
     {
-       Debug.Log("Nombre del  personaje: " + pjName);
-       Debug.Log("nombre del checkpoint: " + currentCheckpoint.name);
-       GameObject pj = GameObject.Find(pjName);
-       pj.transform.position = currentCheckpoint.transform.position;
+        Debug.Log("Nombre del  personaje: " + pjName);
+        Debug.Log("nombre del checkpoint: " + currentCheckpoint.name);
+        GameObject pj = GameObject.Find(pjName);
+        pj.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+        pj.transform.position = currentCheckpoint.transform.position;
     }
 
     IEnumerator GenerarAtajo()

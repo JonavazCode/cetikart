@@ -22,7 +22,8 @@ public class CheckpointJump : MonoBehaviour
         if (tag == "Enemy")
         {
             puedeSaltar.canJump = false;
-            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 1000f));
+            collision.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            collision.GetComponent<Rigidbody2D>().AddForce(new Vector2(500f, 1000f));
 
         }
 
