@@ -25,12 +25,17 @@ public class Tacometro : MonoBehaviour
         tacometro = controles.transform.GetChild(7).gameObject;
         punteroGO = tacometro.transform.GetChild(0).gameObject;
         punteroEjeZ = punteroGO.transform;
-        jugador = FindObjectOfType<KartController>();
-        _rigidbody = jugador.rb;
+        //jugador = FindObjectOfType<KartController>();
+        //_rigidbody = jugador.rb;
         AnguloEulerInicial = punteroEjeZ.transform.localEulerAngles;
         
     }
-    
+
+    public void Start()
+    {
+        jugador = FindObjectOfType<KartController>();
+        _rigidbody = jugador.rb;
+    }
     private void Update()
     {
         velocidadJugador = _rigidbody.velocity.magnitude * 3.6f;
