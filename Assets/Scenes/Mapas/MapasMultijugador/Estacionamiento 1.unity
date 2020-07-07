@@ -1643,6 +1643,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3457811892399386549, guid: c35c553bf48740e4193e5f083f67444e,
         type: 3}
+      propertyPath: obj.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457811892399386549, guid: c35c553bf48740e4193e5f083f67444e,
+        type: 3}
       propertyPath: InitialPositionCheckpoint
       value: 
       objectReference: {fileID: 366228523}
@@ -1850,12 +1855,18 @@ PrefabInstance:
         type: 3}
       propertyPath: FinishedOrderUIGameObjects.Array.data[1]
       value: 
-      objectReference: {fileID: 1769083866}
+      objectReference: {fileID: 0}
     - target: {fileID: 3457811892399386549, guid: c35c553bf48740e4193e5f083f67444e,
         type: 3}
       propertyPath: FinishedOrderUIGameObjects.Array.data[2]
       value: 
-      objectReference: {fileID: 1769083865}
+      objectReference: {fileID: 0}
+    - target: {fileID: 3457811892399386549, guid: c35c553bf48740e4193e5f083f67444e,
+        type: 3}
+      propertyPath: obj.Array.data[6]
+      value: 
+      objectReference: {fileID: 8153728184452477681, guid: fb924c19283dae94a8040ad67f7433e3,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c35c553bf48740e4193e5f083f67444e, type: 3}
 --- !u!114 &847172571 stripped
@@ -4911,20 +4922,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: PresionarBotonSalir
       objectReference: {fileID: 0}
+    - target: {fileID: 1942744653, guid: f7ff6cc9e36c5e341bd13320c6e212ef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.999939
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7ff6cc9e36c5e341bd13320c6e212ef, type: 3}
---- !u!1 &1769083865 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1122267614, guid: f7ff6cc9e36c5e341bd13320c6e212ef,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769083864}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1769083866 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 713613687, guid: f7ff6cc9e36c5e341bd13320c6e212ef,
-    type: 3}
-  m_PrefabInstance: {fileID: 1769083864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1769083867 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1466165998, guid: f7ff6cc9e36c5e341bd13320c6e212ef,
